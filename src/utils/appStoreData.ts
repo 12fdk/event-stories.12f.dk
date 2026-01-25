@@ -25,7 +25,7 @@ interface AppStoreApiResponse {
   results: AppStoreData[];
 }
 
-const APP_ID = "6754754960";
+const APP_ID = "6755695151";
 const COUNTRY = "dk";
 const API_URL = `https://itunes.apple.com/lookup?id=${APP_ID}&country=${COUNTRY}`;
 
@@ -53,9 +53,9 @@ export async function fetchAppStoreData(): Promise<AppStoreData | null> {
 
 // Fallback data for when API fails
 export const fallbackAppStoreData: AppStoreData = {
-  trackName: "Home Stories: Renovation App",
+  trackName: "Event Stories: Party Planner",
   description:
-    "Your complete project management tool for home renovations. Track budgets, organize tasks, document progress with photos, and export professional PDF reports.",
+    "Your complete event planning companion. Manage guest lists, track budgets, coordinate schedules, and organize vendors. Export professional PDF reports.",
   version: "1.0.0",
   artworkUrl512: "/logo.svg",
   artworkUrl100: "/logo.svg",

@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://home-stories.12f.dk",
+  site: "https://event-stories.12f.dk",
   base: "/",
   vite: {
     css: {

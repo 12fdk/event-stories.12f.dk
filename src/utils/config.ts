@@ -1,11 +1,11 @@
 import type { TemplateConfig } from "./configType";
 
 const templateConfig: TemplateConfig = {
-  name: "Home Stories",
+  name: "Event Stories",
   seo: {
-    title: "Home Stories - Free Home Renovation Tracker for iPhone",
+    title: "Event Stories - Free Party Planner App for iPhone",
     description:
-      "Track your renovation budget, organize tasks, and document progress with photos. Export professional PDF reports. Free for iPhone - download now!",
+      "Plan your perfect event with guest lists, budget tracking, schedules, and vendor management. Export professional PDF reports. Free for iPhone - download now!",
   },
   // Draws grid behind main container
   backgroundGrid: false,
@@ -16,7 +16,7 @@ const templateConfig: TemplateConfig = {
   // Shows switch to toggle between dark and light modes
   showThemeSwitch: true,
   appStoreLink:
-    "https://apps.apple.com/dk/app/home-stories-renovation-app/id6754754960",
+    "https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151",
   googlePlayLink: "",
   footer: {
     legalLinks: {
@@ -44,9 +44,9 @@ const templateConfig: TemplateConfig = {
   },
   appBanner: {
     id: "app-banner",
-    title: "Download Home Stories Today!",
+    title: "Download Event Stories Today!",
     subtitle:
-      "Your complete project management tool for home renovations. Track budgets, organize tasks, and document your progress. Available on the App Store.",
+      "Your complete event planning companion. Manage guest lists, track budgets, coordinate schedules, and organize vendors. Available on the App Store.",
     screenshots: [
       "/screenshots/projects-list.webp",
       "/screenshots/budget-chart.webp",
@@ -55,29 +55,29 @@ const templateConfig: TemplateConfig = {
   },
   home: {
     seo: {
-      title: "Home Stories - Free Home Renovation Tracker for iPhone",
+      title: "Event Stories - Free Party Planner App for iPhone",
       description:
-        "Track your renovation budget, organize tasks, and document progress with photos. Export professional PDF reports. Free for iPhone - download now!",
+        "Plan your perfect event with guest lists, budget tracking, schedules, and vendor management. Export professional PDF reports. Free for iPhone - download now!",
     },
     testimonials: {
       id: "testimonials",
-      title: "What Homeowners Say",
-      subtitle: "Hear from renovators using Home Stories",
+      title: "What Event Planners Say",
+      subtitle: "Hear from hosts using Event Stories",
       cards: [
         {
-          name: "Anders T.",
+          name: "Emma L.",
           comment:
-            "Home Stories made our kitchen renovation so much easier to manage. The budget tracking feature showed exactly where every krone went, and the photo timeline became a fantastic record of the transformation.",
+            "Event Stories made planning my wedding so much easier. The guest list with RSVP tracking was perfect, and I could see exactly where the budget was going with the visual charts.",
         },
         {
-          name: "Maria S.",
+          name: "Michael K.",
           comment:
-            "I'm renovating multiple rooms and Home Stories keeps everything organized. Each project has its own tasks, budget, and photos. The PDF export is perfect for sharing progress with contractors.",
+            "I organize corporate events regularly and Event Stories keeps everything in one place. Guest management, vendor contacts, schedules - it's all there. The PDF export is great for sharing with clients.",
         },
         {
-          name: "Thomas H.",
+          name: "Sarah B.",
           comment:
-            "The budget charts are incredible. I can see at a glance what's spent, what's remaining, and potential costs. No more spreadsheets - Home Stories has everything in one place.",
+            "Planned my daughter's birthday party without any stress. The task lists kept me on track, and I loved being able to document everything with photos. Will definitely use it for future events!",
         },
       ],
     },
@@ -89,68 +89,68 @@ const templateConfig: TemplateConfig = {
       id: "how-it-works",
       title: "How it works",
       subtitle:
-        "Manage your renovation project from start to finish with Home Stories",
+        "Plan your perfect event from start to finish with Event Stories",
       steps: [
         {
-          title: "Create Your Project",
+          title: "Create Your Event",
           subtitle:
-            "Set up a renovation project with your budget and timeline to get started tracking your home improvement.",
+            "Set up your event with date, budget, and details to get started planning your celebration.",
           image: "/stock/01.webp",
         },
         {
-          title: "Add Tasks & Items",
+          title: "Build Your Guest List",
           subtitle:
-            "Break down the work into manageable tasks and track materials, fixtures, and items needed for each phase.",
+            "Add guests, track RSVPs, manage dietary requirements, and organize seating arrangements.",
           image: "/stock/02.webp",
         },
         {
           title: "Track Your Budget",
           subtitle:
-            "Monitor spending with visual charts showing spent, potential, and remaining budget at a glance.",
+            "Monitor spending with visual charts showing expenses by category and remaining budget at a glance.",
           image: "/stock/03.webp",
         },
         {
-          title: "Document Progress",
+          title: "Coordinate Vendors & Schedule",
           subtitle:
-            "Capture photos throughout your renovation to create a visual timeline of your home's transformation.",
+            "Manage vendor contacts, create timelines, and keep your event running smoothly with integrated maps.",
           image: "/stock/04.webp",
         },
         {
           title: "Export & Share",
           subtitle:
-            "Generate professional PDF reports to share with contractors, keep for records, or show off your progress.",
+            "Generate professional PDF reports with guest lists, budgets, and event details to share with your team.",
           image: "/stock/05.webp",
         },
       ],
     },
     features: {
       id: "features",
-      title: "Everything You Need for Your Renovation",
+      title: "Everything You Need for Your Event",
       subtitle:
-        "Plan, track, and document your home improvement projects with powerful features",
+        "Plan, organize, and execute memorable events with powerful features",
       cards: [
         {
-          title: "Budget Tracking",
+          title: "Guest List Management",
           subtitle:
-            "Track costs vs. estimates with visual charts showing spent, potential, and remaining budget. Stay on top of your renovation finances.",
+            "Track RSVPs, manage contact info, dietary requirements, and plus-ones. Keep your guest list organized and up-to-date.",
           icon: "/icons/budget-tracking.png",
         },
         {
-          title: "Photo Timeline",
+          title: "Budget Tracking",
           subtitle:
-            "Document your renovation progress with photos organized by date. Create a visual record of your home's transformation.",
+            "Visualize expenses by category, track payments to vendors, and stay on top of your event budget with clear charts.",
           icon: "/icons/photo-timeline.png",
         },
         {
-          title: "Task Management",
+          title: "Schedule & Timeline",
           subtitle:
-            "Organize work into tasks, track completion status, and keep your renovation project moving forward efficiently.",
+            "Create detailed event schedules with map integration. Coordinate vendors, activities, and keep everything on track.",
           icon: "/icons/task-management.png",
         },
         {
           title: "PDF Export",
           subtitle:
-            "Generate professional project reports to share with contractors, insurance, or keep for your records.",
+            "Generate professional reports with guest lists, budgets, vendor contacts, and schedules to share with your team.",
           icon: "/icons/pdf-export.png",
         },
       ],
@@ -160,50 +160,50 @@ const templateConfig: TemplateConfig = {
       title: "Frequently Asked Questions",
       qa: [
         {
-          question: "Is Home Stories free to use?",
+          question: "Is Event Stories free to use?",
           answer:
-            "Yes, it's free! We also offer a Premium Lifetime upgrade with more advanced features for serious renovators.",
+            "Yes, it's free! We also offer a Premium Lifetime upgrade with more advanced features for serious event planners.",
         },
         {
           question: "Does the app work offline?",
           answer:
-            "Absolutely! Home Stories is designed to work fully offline so you can access your projects, budgets, and photos even without internet access - perfect for job sites.",
+            "Absolutely! Event Stories is designed to work fully offline so you can access your events, guest lists, and budgets even without internet access - perfect for venue visits.",
         },
         {
-          question: "Can I share projects with others?",
+          question: "Can I share events with others?",
           answer:
-            "Yes! With iCloud sync your projects stay up to date across your devices. You can also export professional PDF reports to share with contractors, family, or keep for records.",
+            "Yes! With iCloud sync your events stay up to date across your devices. You can also export professional PDF reports to share with co-planners, vendors, or your event team.",
         },
         {
           question: "How do I export reports?",
           answer:
-            "Simply open your project, tap the export button, and choose PDF. Home Stories generates a professional report with your budget summary, task progress, photos, and notes.",
+            "Simply open your event, tap the export button, and choose PDF. Event Stories generates a professional report with your guest list, budget summary, vendor contacts, and schedule.",
         },
         {
           question: "What devices are supported?",
           answer:
-            "Home Stories is currently available for iPhone and requires iOS 17.0 or later. We're focused on delivering the best possible experience on iOS first.",
+            "Event Stories is currently available for iPhone and requires iOS 17.0 or later. We're focused on delivering the best possible experience on iOS first.",
         },
       ],
     },
     header: {
-      headline: "Manage Your Home Renovation",
+      headline: "Plan Your Perfect Event",
       subtitle:
-        "Home Stories is your complete project management tool for home renovations. Track budgets, organize tasks, document progress with photos, and export professional reports.",
+        "Event Stories is your complete event planning companion. Manage guest lists, track budgets, coordinate schedules, organize vendors, and document your celebration.",
       screenshots: [
         "/screenshots/tasks.webp",
         "/screenshots/budget-chart.webp",
         "/screenshots/projects-list.webp",
       ],
       rewards: [],
-      usersDescription: "Join homeowners managing their renovations",
+      usersDescription: "Join event planners organizing memorable celebrations",
       headlineMark: [2, 3],
     },
   },
   privacyPolicy: {
     seo: {
-      title: "Privacy Policy - Home Stories",
-      description: "Privacy Policy for Home Stories - Renovation App",
+      title: "Privacy Policy - Event Stories",
+      description: "Privacy Policy for Event Stories - Party Planner App",
     },
     content: `# Privacy Policy
 
@@ -211,9 +211,9 @@ const templateConfig: TemplateConfig = {
 
 ## Introduction
 
-Welcome to Home Stories (the "App"). Robert Jensen ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you use our App.
+Welcome to Event Stories (the "App"). Robert Jensen ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you use our App.
 
-For the full privacy policy, please visit: [https://www.12f.dk/home-stories/privacy-policy/](https://www.12f.dk/home-stories/privacy-policy/)
+For the full privacy policy, please visit: [https://www.12f.dk/event-stories/privacy-policy/](https://www.12f.dk/event-stories/privacy-policy/)
 
 ## Contact Us
 
@@ -228,8 +228,8 @@ robert@12f.dk
   },
   cookiesPolicy: {
     seo: {
-      title: "Cookies Policy - Home Stories",
-      description: "Cookies Policy for Home Stories",
+      title: "Cookies Policy - Event Stories",
+      description: "Cookies Policy for Event Stories",
     },
     content: `# Cookies Policy
 
@@ -242,8 +242,8 @@ If you have any questions, please contact us at robert@12f.dk
   },
   termsAndConditions: {
     seo: {
-      title: "Terms and Conditions - Home Stories",
-      description: "Terms and Conditions for Home Stories - Renovation App",
+      title: "Terms and Conditions - Event Stories",
+      description: "Terms and Conditions for Event Stories - Party Planner App",
     },
     content: `# Terms and Conditions
 
@@ -251,7 +251,7 @@ If you have any questions, please contact us at robert@12f.dk
 
 ## Introduction
 
-Welcome to Home Stories (the "App"). These Terms and Conditions govern your use of the App provided by Robert Jensen ("we," "our," or "us"). By accessing or using our App, you agree to be bound by these Terms.
+Welcome to Event Stories (the "App"). These Terms and Conditions govern your use of the App provided by Robert Jensen ("we," "our," or "us"). By accessing or using our App, you agree to be bound by these Terms.
 
 ## Use of the App
 

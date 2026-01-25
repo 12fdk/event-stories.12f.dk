@@ -52,7 +52,7 @@ function VideoDemo() {
             See It In Action
           </h2>
           <p className="text-base-content/70 max-w-2xl mx-auto">
-            Watch how Home Stories helps you manage your renovation projects
+            Watch how Event Stories helps you plan your perfect events
           </p>
         </motion.div>
 
