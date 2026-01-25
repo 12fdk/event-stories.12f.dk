@@ -1,7 +1,7 @@
-# Home Stories Landing Page
+# Event Stories Landing Page
 
 ## Project Overview
-Static landing page for the **Event Stories: Renovation App** iOS app, hosted on GitHub Pages at `event-stories.12f.dk`.
+Static landing page for the **Event Stories: Party Planner** iOS app, hosted on GitHub Pages at `event-stories.12f.dk`.
 
 Based on [mobile-app-landing-template](https://github.com/sofiyevsr/mobile-app-landing-template).
 
@@ -15,9 +15,9 @@ Based on [mobile-app-landing-template](https://github.com/sofiyevsr/mobile-app-l
 ## App Store Integration
 The website should automatically pull data from the iOS App Store:
 
-- **App Store URL**: https://apps.apple.com/dk/app/home-stories-renovation-app/id6754754960
-- **App ID**: 6754754960
-- **Bundle ID**: 12f.home-stories
+- **App Store URL**: https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151
+- **App ID**: 6755695151
+- **Bundle ID**: 12f.event-stories
 
 ### Data to Fetch Automatically
 - App icon
@@ -29,7 +29,7 @@ The website should automatically pull data from the iOS App Store:
 
 ### App Store Lookup API
 ```
-https://itunes.apple.com/lookup?id=6754754960&country=dk
+https://itunes.apple.com/lookup?id=6755695151&country=dk
 ```
 
 ## Development
@@ -88,7 +88,7 @@ Main configuration in `src/utils/config.ts` - customize:
 ```
 
 ## App Information (Reference)
-- **App Name**: Event Stories: Travel Planner
+- **App Name**: Event Stories: Party Planner
 - **Developer**: Robert Jensen
 - **Contact**: robert@12f.dk
 - **Privacy Policy**: https://www.12f.dk/event-stories/privacy-policy/
