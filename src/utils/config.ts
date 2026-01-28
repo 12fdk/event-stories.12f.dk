@@ -49,8 +49,8 @@ const templateConfig: TemplateConfig = {
       "Your complete event planning companion. Manage guest lists, track budgets, coordinate schedules, and organize vendors. Available on the App Store.",
     screenshots: [
       "/screenshots/projects-list.webp",
-      "/screenshots/budget-chart.webp",
-      "/screenshots/tasks.webp",
+      "/screenshots/guest-list.webp",
+      "/screenshots/budget-overview.webp",
     ],
   },
   home: {
@@ -191,9 +191,9 @@ const templateConfig: TemplateConfig = {
       subtitle:
         "Event Stories is your complete event planning companion. Manage guest lists, track budgets, coordinate schedules, organize vendors, and document your celebration.",
       screenshots: [
-        "/screenshots/tasks.webp",
-        "/screenshots/budget-chart.webp",
         "/screenshots/projects-list.webp",
+        "/screenshots/guest-list.webp",
+        "/screenshots/budget-overview.webp",
       ],
       rewards: [],
       usersDescription: "Join event planners organizing memorable celebrations",
