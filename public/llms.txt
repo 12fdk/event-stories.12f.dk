@@ -1,0 +1,42 @@
+# Event Stories: Party Planner
+
+> Event Stories is a free iOS app for planning events, parties, weddings, and celebrations. Manage guest lists, track budgets, coordinate schedules, organize vendors, and export professional PDF reports.
+
+## Key Information
+
+- App Name: Event Stories: Party Planner
+- Developer: Robert Jensen
+- Platform: iPhone (iOS 17.0+)
+- Price: Free (Premium Lifetime upgrade available)
+- App Store: https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151
+- Website: https://event-stories.12f.dk
+- Contact: robert@12f.dk
+
+## Features
+
+- Guest List Management: Track RSVPs, contact info, dietary requirements, plus-ones, and seating
+- Budget Tracking: Visual expense charts by category, vendor payment tracking, remaining budget overview
+- Schedule & Timeline: Detailed event schedules with map integration and vendor coordination
+- Vendor Management: Organize vendor contacts, contracts, and communications in one place
+- PDF Export: Generate professional reports with guest lists, budgets, vendor contacts, and schedules
+- iCloud Sync: Keep events synced across all your Apple devices
+- Offline Support: Full functionality without internet access
+- Photo Documentation: Capture and organize event photos and memories
+
+## Pages
+
+- [Home](https://event-stories.12f.dk/)
+- [Privacy Policy](https://event-stories.12f.dk/privacy-policy/)
+- [Terms and Conditions](https://event-stories.12f.dk/terms-and-conditions/)
+- [Cookies Policy](https://event-stories.12f.dk/cookies-policy/)
+
+## FAQ
+
+- Is Event Stories free to use? Yes, it's free with a Premium Lifetime upgrade available.
+- Does the app work offline? Yes, fully functional offline.
+- Can I share events with others? Yes, via iCloud sync and PDF export.
+- What devices are supported? iPhone with iOS 17.0 or later.
+
+## Detailed Information
+
+For complete app details, visit: https://event-stories.12f.dk/llms-full.txt
