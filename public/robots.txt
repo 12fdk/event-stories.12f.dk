@@ -1,4 +1,50 @@
+# Event Stories: Party Planner - https://event-stories.12f.dk
+# Allow all crawlers including AI/LLM bots
+
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://event-stories.12f.dk/sitemap-index.xml
+
+# AI/LLM Crawler Guidance
+# These bots are explicitly welcomed to index our content
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /

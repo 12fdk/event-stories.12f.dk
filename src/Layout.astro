@@ -34,13 +34,20 @@ const ogImage = logo.startsWith("http") ? logo : new URL("/og-image.png", Astro.
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
 
+    <!-- Sitemap & AI Crawler Hints -->
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
+
+    <!-- Language -->
+    <meta http-equiv="content-language" content="en" />
+
     <!-- Primary Meta Tags -->
     <title>{seo.title}</title>
     <meta name="title" content={seo.title} />
     <meta name="description" content={seo.description} />
-    <meta name="keywords" content="event planner app, party planner app, wedding planner, guest list manager, event budget tracker, RSVP tracker, event planning app, party organizer, iOS event app, iPhone party planner, event timeline, vendor management, celebration planner, birthday party planner, event coordination, event management app, free event planner" />
+    <meta name="keywords" content="event planner app, party planner app, wedding planner, guest list manager, event budget tracker, RSVP tracker, event planning app, party organizer, iOS event app, iPhone party planner, event timeline, vendor management, celebration planner, birthday party planner, event coordination, event management app, free event planner, wedding budget tracker, party guest list, event schedule app, vendor management app" />
     <meta name="author" content="Robert Jensen" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
     <!-- Apple App Store Smart Banner -->
     <meta name="apple-itunes-app" content="app-id=6755695151" />
@@ -70,14 +77,15 @@ const ogImage = logo.startsWith("http") ? logo : new URL("/og-image.png", Astro.
     <!-- Structured Data - Software Application -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Event Stories: Party Planner",
-      "operatingSystem": "iOS",
+      "operatingSystem": "iOS 17.0+",
       "applicationCategory": "LifestyleApplication",
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -87,11 +95,26 @@ const ogImage = logo.startsWith("http") ? logo : new URL("/og-image.png", Astro.
       "description": seo.description,
       "url": canonicalURL.href,
       "downloadUrl": appStoreLink,
-      "screenshot": new URL("/screenshots/projects-list.webp", Astro.site).href,
+      "installUrl": appStoreLink,
+      "screenshot": [
+        new URL("/screenshots/projects-list.webp", Astro.site).href,
+        new URL("/screenshots/guest-list.webp", Astro.site).href,
+        new URL("/screenshots/budget-overview.webp", Astro.site).href
+      ],
       "author": {
         "@type": "Person",
         "name": "Robert Jensen"
-      }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "12f",
+        "url": "https://www.12f.dk"
+      },
+      "softwareVersion": "1.0",
+      "datePublished": "2025-01-01",
+      "inLanguage": "en",
+      "featureList": "Guest List Management, Budget Tracking, Schedule & Timeline, Vendor Management, PDF Export, iCloud Sync, Offline Support",
+      "keywords": "event planner, party planner, wedding planner, guest list, budget tracker, RSVP, vendor management"
     })} />
 
     <!-- Structured Data - FAQ -->
@@ -147,7 +170,31 @@ const ogImage = logo.startsWith("http") ? logo : new URL("/og-image.png", Astro.
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": name,
-      "url": Astro.site?.href
+      "url": Astro.site?.href,
+      "description": seo.description,
+      "publisher": {
+        "@type": "Organization",
+        "name": "12f",
+        "url": "https://www.12f.dk"
+      }
+    })} />
+
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "12f",
+      "url": "https://www.12f.dk",
+      "logo": new URL("/logo.png", Astro.site).href,
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "robert@12f.dk",
+        "contactType": "customer support"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Robert Jensen"
+      }
     })} />
 
     <script is:inline define:vars={{ forceTheme }}>
