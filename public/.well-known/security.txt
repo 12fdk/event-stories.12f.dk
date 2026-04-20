@@ -1,0 +1,4 @@
+Contact: mailto:robert@12f.dk
+Expires: 2027-04-20T00:00:00Z
+Preferred-Languages: en, da
+Canonical: https://event-stories.12f.dk/.well-known/security.txt

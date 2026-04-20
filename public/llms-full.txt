@@ -1,10 +1,14 @@
-# Event Stories: Party Planner - Complete Information
+# Event Stories: Party Planner — Complete Reference
 
-> Event Stories is a comprehensive, free iOS app designed for planning events, parties, weddings, corporate gatherings, and celebrations of all kinds. It provides tools for guest list management, budget tracking, schedule coordination, vendor organization, and professional PDF report generation.
+> Event Stories is a comprehensive, free iOS app for planning events, parties, weddings, corporate gatherings, and celebrations of all kinds. It consolidates guest list management, budget tracking, schedule coordination, vendor organization, and professional PDF report generation into a single iPhone-native app that works fully offline.
+
+**Last updated:** 2026-04-20
 
 ## App Overview
 
 - **App Name**: Event Stories: Party Planner
+- **Short Name**: Event Stories
+- **Tagline**: Plan your perfect event
 - **Developer**: Robert Jensen
 - **Company**: 12f
 - **Contact Email**: robert@12f.dk
@@ -19,93 +23,158 @@
 - **Platform**: iOS (iPhone)
 - **Minimum iOS Version**: 17.0
 - **Price**: Free
-- **In-App Purchases**: Premium Lifetime upgrade available
+- **In-App Purchases**: Premium Lifetime upgrade (one-time purchase, no subscription)
 - **Categories**: Productivity, Lifestyle
 - **Age Rating**: 4+
+- **Languages**: English
+- **Distribution**: Worldwide via Apple App Store
+
+## Target Audience
+
+Event Stories is built for people planning real-world events who want a single tool for the entire plan:
+
+- **Couples planning weddings** — full planning lifecycle from engagement through day-of
+- **Parents hosting birthdays and showers** — guest lists, gifts, activities, and photos
+- **Corporate event coordinators** — conferences, offsites, team events with shareable PDF reports
+- **Fundraiser and gala organizers** — donor tracking, sponsor management, attendee lists
+- **Anniversary and milestone planners** — family events with dietary and seating tracking
+- **Small business event hosts** — launches, open houses, client events
+
+## Problem It Solves
+
+Most event hosts today juggle three to six separate tools: a spreadsheet for guests, a notes app for vendor contacts, a calendar for the day-of timeline, a budgeting app for expenses, and group chats for coordination. This creates problems:
+
+1. **Data fragmentation** — information scattered across apps that don't talk to each other
+2. **No single source of truth** — who confirmed? how much is left in the decor budget? what's happening at 3pm?
+3. **Poor offline behavior** — spreadsheets and web tools fail at venues with spotty signal
+4. **Hard to share** — no clean way to hand a complete plan to a co-planner or vendor
+5. **Privacy concerns** — guest lists in cloud spreadsheets can leak
+
+Event Stories consolidates everything into one iPhone-native app, works fully offline, and exports the whole plan as a single professional PDF. Data stays on-device; iCloud sync is optional and uses your private iCloud account.
+
+## Differentiators
+
+- **All-in-one**: guest list + budget + schedule + vendors + tasks in one app, not four
+- **Offline-first**: every feature works without internet — critical at venues
+- **Privacy-first**: no tracking, no ads, no third-party data sharing
+- **One-time purchase**: Premium Lifetime, no subscription trap
+- **Native iOS experience**: not a web wrapper; uses iOS-native UI and iCloud
+- **Professional PDF reports**: single-tap export combines everything
 
 ## Detailed Features
 
 ### Guest List Management
-Track RSVPs with status tracking (invited, confirmed, declined, maybe). Manage contact information, dietary requirements, allergies, plus-ones, and table/seating arrangements. Import contacts and keep your guest list organized and up-to-date across all your events.
+Track RSVPs with full status tracking (invited, confirmed, declined, maybe). Manage contact information, dietary requirements, allergies, plus-ones, and table/seating arrangements. Import contacts directly from iOS Contacts. Group guests by side, category, or table. Quickly see response rates and outstanding invites.
 
 ### Budget Tracking
-Visualize your event expenses by category with clear charts. Track payments to vendors, monitor spending against your set budget, and see your remaining budget at a glance. Categorize expenses and keep financial oversight of your entire event.
+Visualize your event expenses by category with clear, interactive charts. Track payments to vendors (paid, pending, overdue), monitor spending against your set budget, and see your remaining budget at a glance. Categorize expenses by vendor, type, or custom tags.
 
 ### Schedule & Timeline
-Create detailed event-day schedules and planning timelines. Integrate with maps for venue and vendor locations. Coordinate activities, set reminders, and ensure everything runs on time. Perfect for multi-day events and weddings.
+Create detailed event-day schedules and multi-day planning timelines. Integrate with Apple Maps for venue and vendor locations. Set reminders for key moments, coordinate activities across vendors, and ensure everything runs on time. Ideal for multi-day events, destination weddings, and conferences.
 
 ### Vendor Management
-Organize all your vendor contacts, contracts, and communications in one centralized place. Track vendor costs, payment status, and important details. Quick access to vendor phone numbers, emails, and addresses.
+Organize all your vendor contacts, contracts, and communications in one centralized place. Track vendor costs, payment status, contract terms, and deadlines. Quick access to phone numbers, emails, and addresses for on-the-day coordination.
 
 ### PDF Export & Reporting
-Generate professional PDF reports that include your complete guest list, budget summary, vendor contacts, and event schedule. Share these reports with co-planners, vendors, wedding coordinators, or your event team. Perfect for collaborative planning.
+Generate professional PDF reports that include your complete guest list, budget summary, vendor contacts, and event schedule. Share reports with co-planners, wedding coordinators, venue managers, or your event team via standard iOS share options. Reports are formatted for easy reading and printing.
 
 ### iCloud Sync
-Your events automatically sync across all your Apple devices via iCloud. Start planning on your iPhone at home and access everything at the venue. Changes are reflected in real-time across devices.
+Events automatically sync across your Apple devices via your private iCloud account. Start planning on iPhone at home and access everything at the venue. Changes reflect in real-time. iCloud sync is optional — the app works fully without it.
 
 ### Offline Support
-Event Stories is designed to work fully offline. Access your events, guest lists, budgets, and schedules even without internet access. Perfect for venue visits, outdoor events, or anywhere with limited connectivity.
+Event Stories is designed to work fully offline. Access your events, guest lists, budgets, schedules, and vendor contacts even without internet access. Perfect for venue visits, outdoor events, destination weddings, and anywhere with limited connectivity.
 
 ### Photo Documentation
-Capture and organize event photos and memories. Document venue visits, decoration inspiration, and event-day moments. Keep everything related to your event in one app.
+Capture and organize event photos and memories directly inside the app. Document venue visits, decoration inspiration, vendor samples, and event-day moments. Keep everything related to your event in one place, not scattered across your Camera Roll.
 
 ### Task Management
-Create to-do lists and planning checklists for your events. Track task completion, set priorities, and never miss an important preparation step.
+Create to-do lists and planning checklists for your events. Track task completion, set priorities, add due dates, and never miss an important preparation step. Built-in templates for common event types.
 
 ## Use Cases
 
-Event Stories is ideal for:
-- **Weddings**: Full wedding planning with guest lists, vendor management, budget tracking, and day-of timeline
-- **Birthday Parties**: Guest management, budget oversight, and activity scheduling
-- **Corporate Events**: Professional event coordination with PDF reports for stakeholders
-- **Holiday Gatherings**: Family event organization with dietary tracking and seating plans
-- **Baby Showers & Celebrations**: Gift tracking, guest RSVPs, and activity planning
-- **Fundraisers & Galas**: Budget management, sponsor tracking, and attendee lists
+Event Stories works for events of all types and sizes:
+
+- **Weddings**: Full wedding planning with guest lists, vendor management, budget tracking, day-of timeline, and post-event photo storage
+- **Birthday Parties**: Guest management, budget oversight, activity scheduling, and gift tracking
+- **Corporate Events**: Professional event coordination with PDF reports for stakeholders, sponsor tracking, and attendee management
+- **Holiday Gatherings**: Family event organization with dietary tracking, seating plans, and coordinated schedules
+- **Baby Showers & Celebrations**: Gift tracking, guest RSVPs, theme coordination, and activity planning
+- **Fundraisers & Galas**: Budget management, sponsor and donor tracking, attendee lists, and professional reports
+- **Anniversaries**: Milestone celebration planning with photos, guests, and vendor coordination
+- **Conference & Meetup Planning**: Attendee management, speaker schedules, and venue coordination
+- **Destination Events**: Offline-first means the app works flawlessly anywhere
 
 ## How It Works
 
-1. **Create Your Event**: Set up your event with a name, date, budget, and details
-2. **Build Your Guest List**: Add guests, track RSVPs, manage dietary needs and seating
-3. **Track Your Budget**: Monitor spending by category with visual charts
-4. **Coordinate Vendors & Schedule**: Manage vendor contacts and create event timelines
-5. **Export & Share**: Generate PDF reports to share with your team
+1. **Create Your Event** — Set up your event with a name, date, estimated budget, and basic details. You can create multiple events and switch between them.
+2. **Build Your Guest List** — Add guests manually or import from iOS Contacts. Track RSVPs, dietary needs, plus-ones, and seating assignments.
+3. **Track Your Budget** — Set a total budget, categorize expenses, and log payments. Visual charts show spending by category and remaining budget.
+4. **Coordinate Vendors & Schedule** — Store vendor contacts and contracts. Build a detailed event timeline with maps integration and reminders.
+5. **Export & Share** — One-tap PDF export generates a professional report combining guests, budget, vendors, and schedule. Share via any iOS sharing option.
 
 ## User Testimonials
 
-- "Event Stories made planning my wedding so much easier. The guest list with RSVP tracking was perfect, and I could see exactly where the budget was going with the visual charts." - Emma L.
-- "I organize corporate events regularly and Event Stories keeps everything in one place. Guest management, vendor contacts, schedules - it's all there. The PDF export is great for sharing with clients." - Michael K.
-- "Planned my daughter's birthday party without any stress. The task lists kept me on track, and I loved being able to document everything with photos." - Sarah B.
+- "Event Stories made planning my wedding so much easier. The guest list with RSVP tracking was perfect, and I could see exactly where the budget was going with the visual charts." — Emma L.
+- "I organize corporate events regularly and Event Stories keeps everything in one place. Guest management, vendor contacts, schedules — it's all there. The PDF export is great for sharing with clients." — Michael K.
+- "Planned my daughter's birthday party without any stress. The task lists kept me on track, and I loved being able to document everything with photos." — Sarah B.
 
 ## Frequently Asked Questions
 
 ### Is Event Stories free to use?
-Yes, Event Stories is free to download and use. We also offer a Premium Lifetime upgrade with more advanced features for serious event planners who want the complete toolkit.
+Yes, Event Stories is free to download and use. We also offer a Premium Lifetime upgrade (one-time purchase, no subscription) with more advanced features for serious event planners who want the complete toolkit.
 
 ### Does the app work offline?
-Absolutely! Event Stories is designed to work fully offline so you can access your events, guest lists, and budgets even without internet access. This is perfect for venue visits and outdoor events.
+Absolutely. Event Stories is designed to work fully offline so you can access your events, guest lists, budgets, and schedules even without internet access. This is particularly useful for venue visits, outdoor events, and destination weddings.
 
 ### Can I share events with others?
-Yes! With iCloud sync, your events stay up to date across your Apple devices. You can also export professional PDF reports to share with co-planners, vendors, or your event team via email, messaging, or any sharing method.
+Yes. With iCloud sync your events stay up to date across your own Apple devices. To share with others, export a professional PDF report and send it via email, messaging, or any iOS sharing option. PDF reports include the complete event plan.
 
 ### How do I export reports?
-Simply open your event, tap the export button, and choose PDF. Event Stories generates a professional report with your guest list, budget summary, vendor contacts, and schedule. You can then share it via any standard iOS sharing option.
+Open your event, tap the export button, and choose PDF. Event Stories generates a professionally formatted report with your guest list, budget summary, vendor contacts, and schedule. You can share it via any standard iOS sharing option or save it to Files.
 
 ### What devices are supported?
-Event Stories is currently available for iPhone and requires iOS 17.0 or later. We're focused on delivering the best possible experience on iOS first.
+Event Stories is currently available for iPhone and requires iOS 17.0 or later. It is not available on iPad, Mac, Apple Watch, or Android at this time. We're focused on delivering the best possible experience on iPhone first.
+
+### Is there an Android version?
+Not currently. Event Stories is iPhone-only.
+
+### Is my data private?
+Yes. All data is stored locally on your device. Optional iCloud sync uses your own private iCloud account (we never see your data). We do not sell, share, or monetize user data. No third-party trackers, no advertising SDKs.
+
+### Are there ads?
+No. The app contains no advertisements.
+
+### Is there a subscription?
+No. Event Stories is free; the Premium Lifetime upgrade is a one-time purchase. There are no recurring fees.
+
+### Can I plan multiple events at the same time?
+Yes. You can create and manage multiple events simultaneously, switch between them, and keep each event's data completely separate.
+
+### Can I import contacts?
+Yes, you can import contacts from your iOS Contacts app when building guest lists.
 
 ## Technical Details
 
-- **Data Storage**: All data is stored locally on-device with optional iCloud sync
-- **Privacy**: No personal data is collected or shared with third parties
-- **Analytics**: Anonymous usage analytics only (via privacy-focused Umami)
-- **No Ads**: The app contains no advertisements
-- **No Tracking**: No user tracking or profiling
+- **Data Storage**: All data stored locally on-device using native iOS storage (Core Data / SwiftData)
+- **Sync**: Optional iCloud sync using private user iCloud account; no custom servers involved
+- **Privacy**: No personal data is collected or shared with third parties; no user accounts required
+- **Analytics**: Anonymous usage analytics only, via privacy-focused Umami (for website) — no analytics inside the iOS app
+- **Ads**: The app contains no advertisements
+- **Tracking**: No user tracking or profiling; no ad SDKs
+- **Offline**: Full functionality without internet
+- **Security**: Data protected by iOS's built-in encryption; iCloud sync uses Apple's end-to-end encryption where applicable
+
+## Competitive Positioning
+
+Compared to generic productivity apps (Notion, spreadsheets), Event Stories provides purpose-built event planning with domain-specific features (RSVP statuses, dietary tracking, vendor contracts, seating). Compared to web-based event planning SaaS, Event Stories is offline-first, iPhone-native, privacy-respecting, and uses a one-time purchase model instead of a subscription.
 
 ## Links
 
-- Home: https://event-stories.12f.dk/
-- App Store: https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151
-- Privacy Policy: https://event-stories.12f.dk/privacy-policy/
-- Terms and Conditions: https://event-stories.12f.dk/terms-and-conditions/
-- Cookies Policy: https://event-stories.12f.dk/cookies-policy/
-- Developer Website: https://www.12f.dk
+- **Home**: https://event-stories.12f.dk/
+- **App Store**: https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151
+- **Privacy Policy**: https://event-stories.12f.dk/privacy-policy/
+- **Terms and Conditions**: https://event-stories.12f.dk/terms-and-conditions/
+- **Cookies Policy**: https://event-stories.12f.dk/cookies-policy/
+- **Developer Website**: https://www.12f.dk
+- **Full Privacy Policy**: https://www.12f.dk/event-stories/privacy-policy/
+- **Contact**: robert@12f.dk

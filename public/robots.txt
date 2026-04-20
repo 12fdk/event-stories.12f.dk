@@ -1,50 +1,140 @@
 # Event Stories: Party Planner - https://event-stories.12f.dk
-# Allow all crawlers including AI/LLM bots
+# Allow all crawlers including AI/LLM bots (training + search + real-time retrieval)
 
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemap & AI manifests
 Sitemap: https://event-stories.12f.dk/sitemap-index.xml
 
-# AI/LLM Crawler Guidance
-# These bots are explicitly welcomed to index our content
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
+# ============================================================
+# Traditional Search Engines
+# ============================================================
 
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Anthropic-AI
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Cohere-AI
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-User-agent: Bytespider
+User-agent: DuckDuckBot
 Allow: /
 
 User-agent: Applebot
 Allow: /
 
+# ============================================================
+# OpenAI (ChatGPT)
+# ============================================================
+
+# Training crawler
+User-agent: GPTBot
+Allow: /
+
+# Real-time retrieval for ChatGPT browsing
+User-agent: ChatGPT-User
+Allow: /
+
+# Search index for ChatGPT search
+User-agent: OAI-SearchBot
+Allow: /
+
+# ============================================================
+# Anthropic (Claude)
+# ============================================================
+
+# Training crawler
+User-agent: ClaudeBot
+Allow: /
+
+# Real-time retrieval for Claude
+User-agent: Claude-User
+Allow: /
+
+# Search index for Claude
+User-agent: Claude-SearchBot
+Allow: /
+
+# Legacy / general
+User-agent: anthropic-ai
+Allow: /
+
+# ============================================================
+# Google AI (Gemini, AI Overviews)
+# ============================================================
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# ============================================================
+# Apple Intelligence
+# ============================================================
+
 User-agent: Applebot-Extended
+Allow: /
+
+# ============================================================
+# Perplexity
+# ============================================================
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ============================================================
+# Other AI assistants & search
+# ============================================================
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: AndiBot
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: Kagibot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl (feeds many AI datasets)
+User-agent: CCBot
 Allow: /

@@ -2,11 +2,204 @@
 import "@styles/styles.scss";
 import type { TemplateConfig } from "utils/configType";
 
-const { backgroundGrid, seo, logo, theme, forceTheme, appStoreLink, name } =
+const { backgroundGrid, seo, logo, theme, forceTheme, appStoreLink, name, home, appStore } =
   Astro.props as TemplateConfig;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const siteURL = Astro.site?.href ?? "https://event-stories.12f.dk/";
 const ogImage = logo.startsWith("http") ? logo : new URL("/og-image.png", Astro.site).href;
+const isHome = Astro.url.pathname === "/" || Astro.url.pathname === "";
+
+// Real rating from App Store, with sensible minimum for display
+const ratingValue = appStore && appStore.rating > 0 ? appStore.rating : 5;
+const ratingCount = appStore && appStore.ratingCount > 0 ? appStore.ratingCount : 1;
+const appVersion = appStore?.version ?? "1.0";
+const appDescription = appStore?.description ?? seo.description;
+const datePublished = appStore?.lastUpdated?.slice(0, 10) ?? "2025-01-01";
+const iosRequirement = appStore?.minimumOsVersion ?? "17.0";
+
+const screenshotURLs = home?.header?.screenshots?.map(s =>
+  s.startsWith("http") ? s : new URL(s, Astro.site).href
+) ?? [];
+
+// Breadcrumb list (only shown for non-home pages)
+const pathSegments = Astro.url.pathname.split("/").filter(Boolean);
+const breadcrumbItems = [
+  { "@type": "ListItem", position: 1, name: "Home", item: siteURL }
+];
+if (!isHome && pathSegments.length > 0) {
+  const title = seo.title.split(" - ")[0];
+  breadcrumbItems.push({
+    "@type": "ListItem",
+    position: 2,
+    name: title,
+    item: canonicalURL.href,
+  });
+}
+
+// Build consolidated @graph so each entity has a stable @id and can cross-reference.
+const graph: any[] = [
+  {
+    "@type": "Organization",
+    "@id": `${siteURL}#organization`,
+    name: "12f",
+    url: "https://www.12f.dk",
+    logo: new URL("/logo.png", Astro.site).href,
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "robert@12f.dk",
+      contactType: "customer support",
+    },
+    founder: {
+      "@type": "Person",
+      name: "Robert Jensen",
+    },
+  },
+  {
+    "@type": "WebSite",
+    "@id": `${siteURL}#website`,
+    name,
+    url: siteURL,
+    description: seo.description,
+    publisher: { "@id": `${siteURL}#organization` },
+    inLanguage: "en",
+  },
+  {
+    "@type": "WebPage",
+    "@id": `${canonicalURL.href}#webpage`,
+    url: canonicalURL.href,
+    name: seo.title,
+    description: seo.description,
+    isPartOf: { "@id": `${siteURL}#website` },
+    inLanguage: "en",
+    breadcrumb: { "@id": `${canonicalURL.href}#breadcrumb` },
+  },
+  {
+    "@type": "BreadcrumbList",
+    "@id": `${canonicalURL.href}#breadcrumb`,
+    itemListElement: breadcrumbItems,
+  },
+];
+
+if (isHome) {
+  graph.push({
+    "@type": "MobileApplication",
+    "@id": `${siteURL}#app`,
+    name: "Event Stories: Party Planner",
+    alternateName: "Event Stories",
+    operatingSystem: `iOS ${iosRequirement}+`,
+    applicationCategory: "LifestyleApplication",
+    applicationSubCategory: "Event Planning",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: String(ratingValue),
+      ratingCount: String(ratingCount),
+      bestRating: "5",
+      worstRating: "1",
+    },
+    description: appDescription,
+    url: siteURL,
+    downloadUrl: appStoreLink,
+    installUrl: appStoreLink,
+    screenshot: screenshotURLs,
+    image: screenshotURLs[0],
+    author: { "@type": "Person", name: "Robert Jensen" },
+    publisher: { "@id": `${siteURL}#organization` },
+    softwareVersion: appVersion,
+    datePublished,
+    dateModified: datePublished,
+    inLanguage: "en",
+    featureList: [
+      "Guest List Management with RSVP Tracking",
+      "Event Budget Tracking with Visual Charts",
+      "Schedule & Timeline Planning",
+      "Vendor Contact & Contract Management",
+      "Professional PDF Report Export",
+      "iCloud Sync Across Apple Devices",
+      "Offline Support",
+      "Photo Documentation",
+      "Task Management & Checklists",
+    ],
+    keywords:
+      "event planner, party planner, wedding planner, guest list, budget tracker, RSVP, vendor management, event timeline",
+    audience: {
+      "@type": "Audience",
+      audienceType:
+        "Event hosts, wedding planners, corporate event organizers, party hosts",
+    },
+    review: home?.testimonials?.cards?.map(card => ({
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      author: { "@type": "Person", name: card.name },
+      reviewBody: card.comment,
+    })) ?? [],
+  });
+
+  if (home?.faq?.qa?.length) {
+    graph.push({
+      "@type": "FAQPage",
+      "@id": `${siteURL}#faq`,
+      mainEntity: home.faq.qa.map(item => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    });
+  }
+
+  if (home?.howItWorks?.steps?.length) {
+    graph.push({
+      "@type": "HowTo",
+      "@id": `${siteURL}#howto`,
+      name: "How to plan your event with Event Stories",
+      description:
+        "Plan your perfect event from start to finish with the Event Stories iPhone app.",
+      totalTime: "PT10M",
+      step: home.howItWorks.steps.map((step, i) => ({
+        "@type": "HowToStep",
+        position: i + 1,
+        name: step.title,
+        text: step.subtitle,
+        image: step.image.startsWith("http")
+          ? step.image
+          : new URL(step.image, Astro.site).href,
+      })),
+    });
+  }
+
+  if (home?.features?.cards?.length) {
+    graph.push({
+      "@type": "ItemList",
+      "@id": `${siteURL}#features`,
+      name: home.features.title,
+      description: home.features.subtitle,
+      itemListElement: home.features.cards.map((card, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: card.title,
+        description: card.subtitle,
+      })),
+    });
+  }
+}
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": graph,
+};
 ---
 
 <!doctype html>
@@ -37,6 +230,8 @@ const ogImage = logo.startsWith("http") ? logo : new URL("/og-image.png", Astro.
     <!-- Sitemap & AI Crawler Hints -->
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
+    <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM Information (Detailed)" />
+    <link rel="author" type="text/plain" href="/humans.txt" />
 
     <!-- Language -->
     <meta http-equiv="content-language" content="en" />
@@ -47,7 +242,12 @@ const ogImage = logo.startsWith("http") ? logo : new URL("/og-image.png", Astro.
     <meta name="description" content={seo.description} />
     <meta name="keywords" content="event planner app, party planner app, wedding planner, guest list manager, event budget tracker, RSVP tracker, event planning app, party organizer, iOS event app, iPhone party planner, event timeline, vendor management, celebration planner, birthday party planner, event coordination, event management app, free event planner, wedding budget tracker, party guest list, event schedule app, vendor management app" />
     <meta name="author" content="Robert Jensen" />
+    <meta name="publisher" content="12f" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="rating" content="General" />
+    <meta name="category" content="Productivity, Lifestyle, Event Planning" />
 
     <!-- Apple App Store Smart Banner -->
     <meta name="apple-itunes-app" content="app-id=6755695151" />
@@ -62,8 +262,10 @@ const ogImage = logo.startsWith("http") ? logo : new URL("/og-image.png", Astro.
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Event Stories - Party Planner app for iPhone showing guest lists, budget tracking, and event schedules" />
     <meta property="og:site_name" content={name} />
     <meta property="og:locale" content="en_US" />
 
@@ -73,129 +275,10 @@ const ogImage = logo.startsWith("http") ? logo : new URL("/og-image.png", Astro.
     <meta name="twitter:title" content={seo.title} />
     <meta name="twitter:description" content={seo.description} />
     <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content="Event Stories - Party Planner app for iPhone" />
 
-    <!-- Structured Data - Software Application -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "Event Stories: Party Planner",
-      "operatingSystem": "iOS 17.0+",
-      "applicationCategory": "LifestyleApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "1"
-      },
-      "description": seo.description,
-      "url": canonicalURL.href,
-      "downloadUrl": appStoreLink,
-      "installUrl": appStoreLink,
-      "screenshot": [
-        new URL("/screenshots/projects-list.webp", Astro.site).href,
-        new URL("/screenshots/guest-list.webp", Astro.site).href,
-        new URL("/screenshots/budget-overview.webp", Astro.site).href
-      ],
-      "author": {
-        "@type": "Person",
-        "name": "Robert Jensen"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "12f",
-        "url": "https://www.12f.dk"
-      },
-      "softwareVersion": "1.0",
-      "datePublished": "2025-01-01",
-      "inLanguage": "en",
-      "featureList": "Guest List Management, Budget Tracking, Schedule & Timeline, Vendor Management, PDF Export, iCloud Sync, Offline Support",
-      "keywords": "event planner, party planner, wedding planner, guest list, budget tracker, RSVP, vendor management"
-    })} />
-
-    <!-- Structured Data - FAQ -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Event Stories free to use?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, it's free! We also offer a Premium Lifetime upgrade with more advanced features for serious event planners."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does the app work offline?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely! Event Stories is designed to work fully offline so you can access your events, guest lists, and budgets even without internet access - perfect for venue visits."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I share events with others?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes! With iCloud sync your events stay up to date across your devices. You can also export professional PDF reports to share with co-planners, vendors, or your event team."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I export reports?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Simply open your event, tap the export button, and choose PDF. Event Stories generates a professional report with your guest list, budget summary, vendor contacts, and schedule."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What devices are supported?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Event Stories is currently available for iPhone and requires iOS 17.0 or later. We're focused on delivering the best possible experience on iOS first."
-          }
-        }
-      ]
-    })} />
-
-    <!-- Structured Data - Website -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": name,
-      "url": Astro.site?.href,
-      "description": seo.description,
-      "publisher": {
-        "@type": "Organization",
-        "name": "12f",
-        "url": "https://www.12f.dk"
-      }
-    })} />
-
-    <!-- Structured Data - Organization -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "12f",
-      "url": "https://www.12f.dk",
-      "logo": new URL("/logo.png", Astro.site).href,
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "robert@12f.dk",
-        "contactType": "customer support"
-      },
-      "founder": {
-        "@type": "Person",
-        "name": "Robert Jensen"
-      }
-    })} />
+    <!-- Consolidated Structured Data (@graph) -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
     <script is:inline define:vars={{ forceTheme }}>
       function getPreferredColorScheme() {

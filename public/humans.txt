@@ -1,0 +1,16 @@
+/* TEAM */
+Developer: Robert Jensen
+Company: 12f
+Contact: robert [at] 12f.dk
+Location: Farum, Denmark
+Site: https://www.12f.dk
+
+/* THANKS */
+Landing page template: mobile-app-landing-template by sofiyevsr
+Device frames: jamesjingyi/mockup-device-frames
+
+/* SITE */
+Last update: 2026-04-20
+Standards: HTML5, CSS3, JSON-LD, llms.txt
+Components: Astro, React, TailwindCSS, DaisyUI
+Software: Claude Code

@@ -1,0 +1,20 @@
+# ai.txt - AI usage policy for event-stories.12f.dk
+# https://site.spawning.ai/spawning-ai-txt
+
+User-Agent: *
+Allow: *
+Disallow:
+
+# Explicit permissions for AI systems
+# All content on this site may be indexed and referenced by AI crawlers,
+# including for training, search indexing, and real-time retrieval.
+
+# Training: allowed
+# Search indexing: allowed
+# Real-time retrieval: allowed
+# Derivative works: allowed with attribution
+
+# Attribution (when citing):
+# "Event Stories: Party Planner — https://event-stories.12f.dk"
+
+# Contact: robert@12f.dk
