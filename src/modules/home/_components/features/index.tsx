@@ -3,7 +3,6 @@ import clsx from "clsx";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
-import { withBase } from "../../../../utils/basePath";
 
 function Features() {
   const {
@@ -56,22 +55,16 @@ function Features() {
               }
             )}
           >
-            <div className="relative mb-4 mt-4">
-              <div
-                className={clsx(
-                  "absolute left-0 right-0 top-0 bottom-0 bg-secondary/50 -z-10 rounded-lg"
-                )}
-              />
-              <figure className="py-4">
-                <img
-                  src={withBase(feat.icon)}
-                  alt={feat.title}
-                  className="w-40 transition-transform group-hover:scale-90"
-                  loading="lazy"
-                  width={160}
-                  height={160}
-                />
-              </figure>
+            <div className="mb-4 mt-8 flex justify-center">
+              <div className="flex items-center justify-center w-24 h-24 rounded-full bg-secondary/20 transition-transform group-hover:scale-110">
+                <span
+                  className="text-5xl"
+                  role="img"
+                  aria-label={feat.title}
+                >
+                  {feat.emoji}
+                </span>
+              </div>
             </div>
             <div className="w-full pt-0 px-0 card-body items-center text-center transition-transform max-w-none group-hover:scale-95">
               <h3 className="card-title text-2xl font-bold">{feat.title}</h3>

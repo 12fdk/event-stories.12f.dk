@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
 import { withBase } from "../../../../utils/basePath";
+import IphoneFrame from "../../../../components/iphoneFrame";
 import SwirlArrowBottomLeft from "./svg/swirlArrowBottomLeft";
 import SwirlArrowBottomRight from "./svg/swirlArrowBottomRight";
 import SwirlArrowBottom from "./svg/swirlArrowBottom";
@@ -104,14 +105,7 @@ function HowItWorks() {
               }}
               className="flex-1 flex justify-center"
             >
-              <img
-                className="rounded-3xl lg:w-[75%]"
-                src={withBase(step.image)}
-                alt={step.title}
-                loading="lazy"
-                width={400}
-                height={300}
-              />
+              <IphoneFrame src={withBase(step.image)} alt={step.title} />
             </motion.div>
           </motion.div>
         ))}
