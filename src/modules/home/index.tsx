@@ -10,7 +10,6 @@ import Gallery from "./_components/gallery";
 import Faq from "./_components/faq";
 import HowItWorks from "./_components/howItWorks";
 import Testimonials from "./_components/testimonials";
-import VideoDemo from "./_components/videoDemo";
 import StickyDownload from "../../components/stickyDownload";
 import SectionCta from "../../components/sectionCta";
 
@@ -27,7 +26,6 @@ function Home({ config }: Props) {
         <Features />
         <UseCases />
         <SectionCta text="Ready to plan your perfect event?" variant="minimal" />
-        <VideoDemo />
         <HowItWorks />
         <Gallery />
         <SectionCta text="Join event planners organizing memorable celebrations" variant="minimal" />
