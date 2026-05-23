@@ -27,7 +27,9 @@ const templateConfig: TemplateConfig = {
     socials: {},
     links: [
       { href: "/#features", title: "Features" },
+      { href: "/#use-cases", title: "Use cases" },
       { href: "/#how-it-works", title: "How it works" },
+      { href: "/#gallery", title: "Gallery" },
       { href: "/#faq", title: "FAQ" },
     ],
   },
@@ -38,7 +40,9 @@ const templateConfig: TemplateConfig = {
     hideGooglePlay: true,
     links: [
       { href: "/#features", title: "Features" },
+      { href: "/#use-cases", title: "Use cases" },
       { href: "/#how-it-works", title: "How it works" },
+      { href: "/#gallery", title: "Gallery" },
       { href: "/#faq", title: "FAQ" },
     ],
   },
@@ -80,10 +84,6 @@ const templateConfig: TemplateConfig = {
             "Planned my daughter's birthday party without any stress. The task lists kept me on track, and I loved being able to document everything with photos. Will definitely use it for future events!",
         },
       ],
-    },
-    partners: {
-      title: "",
-      logos: [],
     },
     howItWorks: {
       id: "how-it-works",
@@ -155,6 +155,66 @@ const templateConfig: TemplateConfig = {
         },
       ],
     },
+    useCases: {
+      id: "use-cases",
+      title: "Perfect for Every Occasion",
+      subtitle:
+        "Whatever you're celebrating, Event Stories keeps every detail in one place.",
+      cards: [
+        {
+          emoji: "💍",
+          title: "Weddings",
+          subtitle:
+            "From the guest list and seating to the budget and vendor contacts, keep your big day organized down to the last detail.",
+        },
+        {
+          emoji: "🎂",
+          title: "Birthday Parties",
+          subtitle:
+            "Plan kids' parties or milestone birthdays with task lists, RSVPs, and a photo timeline of the celebration.",
+        },
+        {
+          emoji: "💼",
+          title: "Corporate Events",
+          subtitle:
+            "Coordinate attendees, schedules, and vendors, then export a professional PDF to share with clients and your team.",
+        },
+        {
+          emoji: "🍼",
+          title: "Baby Showers",
+          subtitle:
+            "Track invites, gifts, and to-dos so you can focus on celebrating the new arrival.",
+        },
+        {
+          emoji: "🥂",
+          title: "Anniversaries & Reunions",
+          subtitle:
+            "Bring everyone together with a shared guest list, schedule, and a running budget you can keep an eye on.",
+        },
+        {
+          emoji: "🎄",
+          title: "Holiday Gatherings",
+          subtitle:
+            "Manage menus, guests, and tasks so hosting the holidays feels effortless instead of overwhelming.",
+        },
+      ],
+    },
+    gallery: {
+      id: "gallery",
+      title: "A Closer Look",
+      subtitle:
+        "Take a tour through Event Stories, from your event dashboard to the finished PDF report.",
+      images: [
+        { src: "/screenshots/projects-list.webp", caption: "All your events at a glance" },
+        { src: "/screenshots/guest-list.webp", caption: "Guest lists with RSVP tracking" },
+        { src: "/screenshots/budget-overview.webp", caption: "Visual budget breakdown" },
+        { src: "/screenshots/items.webp", caption: "Track items and to-dos" },
+        { src: "/screenshots/photo-timeline.webp", caption: "A photo timeline of your event" },
+        { src: "/screenshots/note-detail.webp", caption: "Notes for every detail" },
+        { src: "/screenshots/export-pdf.webp", caption: "Professional PDF export" },
+        { src: "/screenshots/settings-home.webp", caption: "Simple, private settings" },
+      ],
+    },
     faq: {
       id: "faq",
       title: "Frequently Asked Questions",
@@ -183,6 +243,26 @@ const templateConfig: TemplateConfig = {
           question: "What devices are supported?",
           answer:
             "Event Stories is currently available for iPhone and requires iOS 17.0 or later. We're focused on delivering the best possible experience on iOS first.",
+        },
+        {
+          question: "Can I use Event Stories to plan a wedding?",
+          answer:
+            "Definitely. Weddings are one of the most popular uses - manage your guest list and RSVPs, plan seating, track the budget across categories, keep all your vendor contacts in one place, and build a timeline for the big day.",
+        },
+        {
+          question: "Do I need to create an account?",
+          answer:
+            "No account is required. Event Stories works right out of the box and fully offline. If you want your events to stay in sync across your devices, you can optionally enable iCloud sync using your existing Apple account.",
+        },
+        {
+          question: "Is my event data private?",
+          answer:
+            "Yes. Your events, guests, and budgets stay on your device and sync privately through your own iCloud account. We don't sell your data or use it for advertising.",
+        },
+        {
+          question: "What's included in Premium Lifetime?",
+          answer:
+            "All the core planning tools are free to use. Premium Lifetime is a one-time purchase - never a subscription - that unlocks advanced features for serious event planners.",
         },
       ],
     },
