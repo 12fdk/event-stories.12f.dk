@@ -123,6 +123,25 @@ export type TemplateConfig = {
                 subtitle: string;
             }[];
         } | undefined;
+        useCases?: {
+            id?: string | undefined;
+            title: string;
+            subtitle?: string | undefined;
+            cards: {
+                emoji: string;
+                title: string;
+                subtitle: string;
+            }[];
+        } | undefined;
+        gallery?: {
+            id?: string | undefined;
+            title: string;
+            subtitle?: string | undefined;
+            images: {
+                src: string;
+                caption: string;
+            }[];
+        } | undefined;
         pricing?: {
             id?: string | undefined;
             title: string;
