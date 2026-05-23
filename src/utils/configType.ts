@@ -118,7 +118,7 @@ export type TemplateConfig = {
             title: string;
             subtitle?: string | undefined;
             cards: {
-                icon: string;
+                emoji: string;
                 title: string;
                 subtitle: string;
             }[];

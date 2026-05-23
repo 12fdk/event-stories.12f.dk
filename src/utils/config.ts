@@ -95,31 +95,31 @@ const templateConfig: TemplateConfig = {
           title: "Create Your Event",
           subtitle:
             "Set up your event with date, budget, and details to get started planning your celebration.",
-          image: "/stock/01.webp",
+          image: "/screenshots/projects-list.webp",
         },
         {
           title: "Build Your Guest List",
           subtitle:
             "Add guests, track RSVPs, manage dietary requirements, and organize seating arrangements.",
-          image: "/stock/02.webp",
+          image: "/screenshots/guest-list.webp",
         },
         {
           title: "Track Your Budget",
           subtitle:
             "Monitor spending with visual charts showing expenses by category and remaining budget at a glance.",
-          image: "/stock/03.webp",
+          image: "/screenshots/budget-overview.webp",
         },
         {
           title: "Coordinate Vendors & Schedule",
           subtitle:
             "Manage vendor contacts, create timelines, and keep your event running smoothly with integrated maps.",
-          image: "/stock/04.webp",
+          image: "/screenshots/items.webp",
         },
         {
           title: "Export & Share",
           subtitle:
             "Generate professional PDF reports with guest lists, budgets, and event details to share with your team.",
-          image: "/stock/05.webp",
+          image: "/screenshots/export-pdf.webp",
         },
       ],
     },
@@ -133,25 +133,25 @@ const templateConfig: TemplateConfig = {
           title: "Guest List Management",
           subtitle:
             "Track RSVPs, manage contact info, dietary requirements, and plus-ones. Keep your guest list organized and up-to-date.",
-          icon: "/icons/budget-tracking.png",
+          emoji: "👥",
         },
         {
           title: "Budget Tracking",
           subtitle:
             "Visualize expenses by category, track payments to vendors, and stay on top of your event budget with clear charts.",
-          icon: "/icons/photo-timeline.png",
+          emoji: "💰",
         },
         {
           title: "Schedule & Timeline",
           subtitle:
             "Create detailed event schedules with map integration. Coordinate vendors, activities, and keep everything on track.",
-          icon: "/icons/task-management.png",
+          emoji: "📅",
         },
         {
           title: "PDF Export",
           subtitle:
             "Generate professional reports with guest lists, budgets, vendor contacts, and schedules to share with your team.",
-          icon: "/icons/pdf-export.png",
+          emoji: "📄",
         },
       ],
     },
