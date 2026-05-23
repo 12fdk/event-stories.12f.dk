@@ -110,12 +110,6 @@ const templateConfig: TemplateConfig = {
           image: "/screenshots/budget-overview.webp",
         },
         {
-          title: "Coordinate Vendors & Schedule",
-          subtitle:
-            "Manage vendor contacts, create timelines, and keep your event running smoothly with integrated maps.",
-          image: "/screenshots/items.webp",
-        },
-        {
           title: "Export & Share",
           subtitle:
             "Generate professional PDF reports with guest lists, budgets, and event details to share with your team.",
@@ -208,9 +202,6 @@ const templateConfig: TemplateConfig = {
         { src: "/screenshots/projects-list.webp", caption: "All your events at a glance" },
         { src: "/screenshots/guest-list.webp", caption: "Guest lists with RSVP tracking" },
         { src: "/screenshots/budget-overview.webp", caption: "Visual budget breakdown" },
-        { src: "/screenshots/items.webp", caption: "Track items and to-dos" },
-        { src: "/screenshots/photo-timeline.webp", caption: "A photo timeline of your event" },
-        { src: "/screenshots/note-detail.webp", caption: "Notes for every detail" },
         { src: "/screenshots/export-pdf.webp", caption: "Professional PDF export" },
         { src: "/screenshots/settings-home.webp", caption: "Simple, private settings" },
       ],
