@@ -22,7 +22,7 @@ function Gallery() {
           subtitle={gallery.subtitle}
         />
 
-        <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3">
           {gallery.images.map((image, index) => {
             const mobileSrc = image.src.replace(/\.webp$/, "-mobile.webp");
             return (
@@ -42,7 +42,7 @@ function Gallery() {
                   <img
                     src={withBase(image.src)}
                     srcSet={`${withBase(mobileSrc)} 220w, ${withBase(image.src)} 1206w`}
-                    sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 200px"
+                    sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 340px"
                     alt={image.caption}
                     className="absolute inset-0 h-full w-full object-cover object-top"
                     loading="lazy"
