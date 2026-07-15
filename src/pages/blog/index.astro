@@ -1,0 +1,38 @@
+---
+import Layout from "Layout.astro";
+import type { TemplateConfig } from "utils/configType";
+import defaultTemplateConfig from "utils/config";
+
+const config: TemplateConfig = {
+  ...defaultTemplateConfig,
+  seo: {
+    ...defaultTemplateConfig.seo,
+    title: "Writing",
+    description: "Insights and guides for planning memorable events.",
+  },
+};
+---
+
+<Layout {...config}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="mb-12">
+      <h1 class="text-4xl md:text-5xl font-display font-bold tracking-tight mb-4">Writing</h1>
+      <p class="text-lg text-base-content/70">Insights and guides for planning memorable events.</p>
+    </div>
+    <div class="space-y-8">
+      <a class="block p-6 bg-base-100 rounded-xl shadow hover:shadow-md transition-shadow" href="/blog/the-ultimate-event-budget-and-planning-guide.html">
+        <div class="flex items-center gap-3 text-sm text-base-content/70 mb-3">
+          <span>Jul 10, 2025</span>
+          <span class="w-1 h-1 rounded-full bg-base-content/30"></span>
+          <span>5 min read</span>
+        </div>
+        <h2 class="text-xl font-semibold mb-2">The Ultimate Event Budget and Planning Guide</h2>
+        <p class="text-base-content/70 mb-3">A comprehensive guide covering everything from creating your first budget to executing flawless event plans.</p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="badge badge-outline badge-sm font-normal">event-budget</span>
+          <span class="badge badge-outline badge-sm font-normal">planning</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</Layout>
