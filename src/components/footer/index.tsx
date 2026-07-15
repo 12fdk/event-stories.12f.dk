@@ -3,135 +3,111 @@ import { ConfigContext } from "../../utils/configContext";
 import InstagramLogo from "./svgs/instagram";
 import FacebookLogo from "./svgs/facebook";
 import TwitterLogo from "./svgs/twitter";
+import { withBase } from "../../utils/basePath";
 import { motion } from "framer-motion";
 
 function Footer() {
   const {
+    name,
+    logo,
     footer: { links, legalLinks, socials },
   } = useContext(ConfigContext)!;
 
+  const legal = [
+    legalLinks.termsAndConditions && {
+      title: "Terms & conditions",
+      href: "/terms-and-conditions",
+    },
+    legalLinks.privacyPolicy && {
+      title: "Privacy policy",
+      href: "/privacy-policy",
+    },
+    legalLinks.cookiesPolicy && {
+      title: "Cookies policy",
+      href: "/cookies-policy",
+    },
+  ].filter(Boolean) as { title: string; href: string }[];
+
   return (
-    <footer className="relative bg-neutral text-neutral-content px-4 pt-0 pb-12">
-      <div className="absolute rounded-t-[50%] -top-12 left-0 bg-neutral w-full h-12" />
+    <footer className="border-t border-base-300 bg-base-200/60 px-4 pb-12 pt-16">
       <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.4 }}
-        className="max-w-screen-lg mx-auto mt-12"
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-40px" }}
+        transition={{ duration: 0.5 }}
+        className="mx-auto max-w-screen-lg"
       >
-        <nav className="flex flex-col items-start gap-4">
-          {links.map(({ title, href }, index) => (
-            <motion.a
-              key={index}
-              variants={{
-                hidden: { opacity: 0, x: "-100%" },
-                visible: { opacity: 1, x: 0 },
-              }}
-              transition={{ delay: index * 0.25 }}
-              className="text-xl font-bold block uppercase whitespace-nowrap link no-underline text-primary hover:text-primary/50 md:text-4xl"
-              href={href}
-            >
-              {title}
-            </motion.a>
-          ))}
-        </nav>
-        <aside className="flex flex-col items-center justify-between mt-4 w-full overflow-hidden md:flex-row lg:overflow-visible">
-          <div className="flex items-center gap-3 w-full text-primary">
-            {socials?.facebook && (
-              <motion.a
-                variants={{
-                  hidden: { opacity: 0, x: "-100%" },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ delay: 0.25 }}
-                className="w-8 h-8 hover:text-primary/50"
-                target="_blank"
-                href={socials.facebook}
-              >
-                <FacebookLogo />
-              </motion.a>
-            )}
-            {socials?.instagram && (
-              <motion.a
-                variants={{
-                  hidden: { opacity: 0, x: "-100%" },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ delay: 0.5 }}
-                className="w-8 h-8 hover:text-primary/50"
-                target="_blank"
-                href={socials.instagram}
-              >
-                <InstagramLogo />
-              </motion.a>
-            )}
-            {socials?.twitter && (
-              <motion.a
-                variants={{
-                  hidden: { opacity: 0, x: "-100%" },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ delay: 0.75 }}
-                className="w-8 h-8 hover:text-primary/50"
-                target="_blank"
-                href={socials.twitter}
-              >
-                <TwitterLogo />
-              </motion.a>
+        <div className="flex flex-col justify-between gap-10 md:flex-row">
+          <div className="max-w-xs">
+            <a href="/" className="flex items-center gap-2">
+              <img
+                className="h-10 rounded-[22%]"
+                src={withBase(logo)}
+                alt={`${name} logo`}
+                width={40}
+                height={40}
+              />
+              <span className="font-display text-xl font-semibold tracking-tight">
+                {name}
+              </span>
+            </a>
+            <p className="mt-4 text-sm text-base-content/60">
+              The party planner that keeps every guest, every euro, and every
+              moment in one place.
+            </p>
+            {(socials?.facebook || socials?.instagram || socials?.twitter) && (
+              <div className="mt-5 flex items-center gap-3 text-base-content/70">
+                {socials?.facebook && (
+                  <a className="h-8 w-8 hover:text-primary" target="_blank" href={socials.facebook}>
+                    <FacebookLogo />
+                  </a>
+                )}
+                {socials?.instagram && (
+                  <a className="h-8 w-8 hover:text-primary" target="_blank" href={socials.instagram}>
+                    <InstagramLogo />
+                  </a>
+                )}
+                {socials?.twitter && (
+                  <a className="h-8 w-8 hover:text-primary" target="_blank" href={socials.twitter}>
+                    <TwitterLogo />
+                  </a>
+                )}
+              </div>
             )}
           </div>
-          <div className="flex gap-4 mt-8 mb-4 md:m-0">
-            {legalLinks.termsAndConditions && (
-              <motion.a
-                variants={{
-                  hidden: { opacity: 0, scale: 0.4 },
-                  visible: { opacity: 1, scale: 1 },
-                }}
-                transition={{ delay: 0.25 }}
-                className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
-                href="/terms-and-conditions"
+
+          <nav className="flex flex-col gap-3">
+            <p className="tick-label text-base-content/45">On this page</p>
+            {links.map(({ title, href }) => (
+              <a
+                key={href}
+                className="w-fit text-base-content/75 transition-colors hover:text-primary"
+                href={href}
               >
-                Terms & conditions
-              </motion.a>
-            )}
-            {legalLinks.privacyPolicy && (
-              <motion.a
-                variants={{
-                  hidden: { opacity: 0, scale: 0.4 },
-                  visible: { opacity: 1, scale: 1 },
-                }}
-                transition={{ delay: 0.5 }}
-                className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
-                href="/privacy-policy"
-              >
-                Privacy policy
-              </motion.a>
-            )}
-            {legalLinks.cookiesPolicy && (
-              <motion.a
-                variants={{
-                  hidden: { opacity: 0, scale: 0.4 },
-                  visible: { opacity: 1, scale: 1 },
-                }}
-                transition={{ delay: 0.75 }}
-                className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
-                href="/cookies-policy"
-              >
-                Cookies policy
-              </motion.a>
-            )}
-          </div>
-          <motion.p
-            variants={{
-              hidden: { opacity: 0, scale: 0.4 },
-              visible: { opacity: 1, scale: 1 },
-            }}
-            transition={{ delay: 1 }}
-            className="mt-0.5 md:ml-4 md:whitespace-nowrap"
-          >
-            All rights reserved © {new Date().getFullYear()}
-          </motion.p>
-        </aside>
+                {title}
+              </a>
+            ))}
+          </nav>
+        </div>
+
+        <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-base-300 pt-6 text-sm text-base-content/55 sm:flex-row sm:items-center">
+          <p className="m-0">
+            All rights reserved © {new Date().getFullYear()} {name}
+          </p>
+          {legal.length > 0 && (
+            <div className="flex flex-wrap gap-x-5 gap-y-2">
+              {legal.map(({ title, href }) => (
+                <a
+                  key={href}
+                  className="hover:text-primary"
+                  href={href}
+                >
+                  {title}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
       </motion.div>
     </footer>
   );

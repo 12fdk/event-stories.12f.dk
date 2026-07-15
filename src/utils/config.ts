@@ -258,17 +258,28 @@ const templateConfig: TemplateConfig = {
       ],
     },
     header: {
-      headline: "Plan Your Perfect Event",
+      eyebrow: "Party planner · iPhone",
+      headline: "Plan the perfect event",
       subtitle:
-        "Event Stories is your complete event planning companion. Manage guest lists, track budgets, coordinate schedules, organize vendors, and document your celebration.",
+        "Event Stories keeps the whole celebration in one place — guest lists and RSVPs, a budget that adds up, the schedule, your vendors, and a professional PDF to share when it all comes together.",
       screenshots: [
         "/screenshots/projects-list.webp",
         "/screenshots/guest-list.webp",
         "/screenshots/budget-overview.webp",
       ],
       rewards: [],
-      usersDescription: "Join event planners organizing memorable celebrations",
+      usersDescription: "Free on the App Store · No account required · Works offline",
       headlineMark: [2, 3],
+      programme: {
+        title: "Run of show · Sample",
+        caption: "One evening",
+        items: [
+          { time: "15:00", title: "Ceremony", note: "Garden terrace" },
+          { time: "16:30", title: "Drinks reception", note: "62 guests" },
+          { time: "19:00", title: "Dinner served", note: "Seating plan set" },
+          { time: "22:00", title: "First dance", note: "Band on at 21:45" },
+        ],
+      },
     },
   },
   privacyPolicy: {
