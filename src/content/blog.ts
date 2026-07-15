@@ -20,6 +20,17 @@ export const blogPosts: BlogPostMeta[] = [
     readingTime: 8,
     author: "Robert Jensen",
   },
+  {
+    slug: "boost-event-engagement",
+    title: "7 Proven Ways to Boost Event Engagement With Your Event App",
+    description:
+      "Practical strategies for event creators to increase attendee participation using push notifications, networking tools, live polls, and more.",
+    date: "2026-07-15",
+    image: "boost-event-engagement.png",
+    tags: ["engagement", "networking", "event app", "attendees", "best practices"],
+    readingTime: 10,
+    author: "Robert Jensen",
+  },
 ];
 
 // Map of slug -> markdown content file path
@@ -27,4 +38,5 @@ export const blogPosts: BlogPostMeta[] = [
 // For now, we reference them; the actual content lives in .md files
 export const blogPostPaths: Record<string, string> = {
   "ultimate-event-budget-guide": "ultimate-event-budget-guide.mdx",
+  "boost-event-engagement": "boost-event-engagement.md",
 };
