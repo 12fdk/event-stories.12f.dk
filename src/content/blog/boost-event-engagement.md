@@ -10,8 +10,9 @@ tags: ["event engagement", "event app", "push notifications", "gamification"]
 cover: "/blog/boost-event-engagement-cover.png"
 coverAlt: "A vibrant event space with attendees smiling and using their smartphones, modern interior with warm lighting, photorealistic"
 
-relatedSlugs: ["how-to-build-the-perfect-event-timeline", "how-to-plan-an-event-timeline-step-by-step", "ultimate-event-budget-guide"]
-
+relatedSlugs:
+  - "how-to-plan-an-event-timeline-step-by-step"
+  - "how-to-build-the-perfect-event-timeline"
 ---
 
 

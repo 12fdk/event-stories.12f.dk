@@ -10,8 +10,9 @@ tags: ["event timeline", "event planning", "step by step"]
 cover: "/blog/how-to-plan-an-event-timeline-step-by-step-cover.png"
 coverAlt: "A relaxed event planner looking at a tablet with a schedule, natural light, photorealistic"
 
-relatedSlugs: ["boost-event-engagement", "how-to-build-the-perfect-event-timeline", "ultimate-event-budget-guide"]
-
+relatedSlugs:
+  - "how-to-build-the-perfect-event-timeline"
+  - "ultimate-event-budget-guide"
 ---
 
 

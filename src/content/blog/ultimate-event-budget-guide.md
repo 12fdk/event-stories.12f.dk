@@ -10,8 +10,9 @@ tags: ["event budget", "event planning", "expense tracking"]
 cover: "/blog/ultimate-event-budget-cover.png"
 coverAlt: "A warm desk scene with a budget planner, coffee, and a gentle natural light, photorealistic"
 
-relatedSlugs: ["boost-event-engagement", "how-to-build-the-perfect-event-timeline", "how-to-plan-an-event-timeline-step-by-step"]
-
+relatedSlugs:
+  - "how-to-plan-an-event-timeline-step-by-step"
+  - "boost-event-engagement"
 ---
 
 
