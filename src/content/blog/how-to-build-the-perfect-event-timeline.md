@@ -1,15 +1,20 @@
 ---
-title: "How to Build the Perfect Event Timeline: A Step-by-Step Guide for Event Creators"
-description: "A warm, practical guide to building an event timeline that runs smoothly — from the first sketch to the final schedule your attendees will love."
+
+
+title: "Event Timeline Planning: The Perfect Step-by-Step Guide"
+description: "Event timeline planning made simple — a warm, practical guide to building a schedule your attendees will love."
 lede: "Every event has a timeline. The ones that people remember are the ones where the schedule was thoughtfully designed, not just thrown together on the fly. Here's how to build one that works — and why the schedule is the single most important thing you create for your event."
 keyword: "event timeline planning"
 publishDate: 2026-07-15
 tags: ["event timeline", "event planning", "schedule"]
 cover: "/blog/how-to-build-the-perfect-event-timeline-cover.png"
 coverAlt: "A detailed event timeline displayed on a tablet, soft natural light on a cozy desk, photorealistic"
+
+relatedSlugs: ["boost-event-engagement", "how-to-plan-an-event-timeline-step-by-step", "ultimate-event-budget-guide"]
+
 ---
 
-# How to Build the Perfect Event Timeline: A Step-by-Step Guide for Event Creators
+
 
 Every event has a timeline. The ones that flow beautifully are the ones where the timeline was designed — carefully, deliberately — rather than discovered on the day itself.
 
@@ -19,7 +24,8 @@ A well-designed event timeline tells your attendees when to be where, gives your
 
 ![A detailed event timeline displayed on a tablet, soft natural light on a cozy desk, photorealistic](/blog/how-to-build-the-perfect-event-timeline-cover.png)
 
----
+
+
 
 ## 1. Start with the things you can't change
 
@@ -33,7 +39,8 @@ Before you sketch anything, list the immovable objects. The hard constraints tha
 
 **What does your budget allow?** How many meals? How many rooms? How many breaks? The budget doesn't just limit choices — it shapes them. And that's okay. Constraints often lead to the best decisions.
 
----
+
+
 
 ## 2. Design the attendee experience (not just the session list)
 

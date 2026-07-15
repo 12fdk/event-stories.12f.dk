@@ -1,15 +1,20 @@
 ---
-title: "How to Plan an Event Timeline Step by Step"
-description: "A calm, practical walkthrough of building an event timeline — from defining what matters most to day-of execution — so your event runs smoothly and you enjoy it."
+
+
+title: "Event Timeline Step by Step: A Calm Planning Walkthrough"
+description: "A calm walkthrough of event timeline step by step planning — from defining what matters to day-of execution."
 lede: "Great events don't happen by accident. They happen because someone took the time to think through every hour, anticipate the things that tend to go wrong, and build in room for the moments you can't plan. Here's a gentle, step-by-step guide to building a timeline that works."
 keyword: "event timeline step by step"
 publishDate: 2026-07-15
 tags: ["event timeline", "event planning", "step by step"]
 cover: "/blog/how-to-plan-an-event-timeline-step-by-step-cover.png"
 coverAlt: "A relaxed event planner looking at a tablet with a schedule, natural light, photorealistic"
+
+relatedSlugs: ["boost-event-engagement", "how-to-build-the-perfect-event-timeline", "ultimate-event-budget-guide"]
+
 ---
 
-# How to Plan an Event Timeline Step by Step
+
 
 Great events don't happen by accident. They happen because someone took the time to think through the details — not so they could control every moment, but so they could relax and enjoy the day.
 
@@ -19,7 +24,8 @@ Whether you're organizing a two-day conference, a product launch, or a gathering
 
 ![A relaxed event planner looking at a tablet with a schedule, natural light, photorealistic](/blog/how-to-plan-an-event-timeline-step-by-step-cover.png)
 
----
+
+
 
 ## Phase 1: Lock down what can't move (Weeks 1–2 out)
 
@@ -32,7 +38,8 @@ Before you draw a single time slot, lock in the anchors. These are the things th
 
 These are your anchors. Once you have them, everything else starts to feel more grounded.
 
----
+
+
 
 ## Phase 2: Sketch the big blocks (Weeks 2–4 out)
 
