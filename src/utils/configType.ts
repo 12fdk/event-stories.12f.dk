@@ -1,5 +1,16 @@
 import type { AppStoreMetadata } from "./appStoreData";
 
+export type BlogPost = {
+    slug: string;
+    title: string;
+    description: string;
+    date: string;
+    image?: string;
+    tags: string[];
+    readingTime: number;
+    author: string;
+};
+
 export type TemplateConfig = {
     appStore?: AppStoreMetadata;
     name: string;
@@ -158,12 +169,27 @@ export type TemplateConfig = {
             title: string;
             actionText?: string | undefined;
             subtitle?: string | undefined;
-            plans?: {
+plans?: {
                 featured?: boolean | undefined;
                 title: string;
                 price: string;
                 rows: string[];
             }[] | undefined;
+        };
+        writing?: {
+            id?: string | undefined;
+            title: string;
+            subtitle?: string | undefined;
+            posts: BlogPost[];
+            allPostsLink: string;
         } | undefined;
+    };
+    blog: {
+        seo: {
+            title: string;
+            description: string;
+        };
+        title: string;
+        subtitle?: string | undefined;
     };
 }

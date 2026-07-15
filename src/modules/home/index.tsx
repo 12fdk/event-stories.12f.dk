@@ -10,6 +10,7 @@ import Gallery from "./_components/gallery";
 import Faq from "./_components/faq";
 import HowItWorks from "./_components/howItWorks";
 import Testimonials from "./_components/testimonials";
+import WritingSection from "./_components/writing";
 import StickyDownload from "../../components/stickyDownload";
 import SectionCta from "../../components/sectionCta";
 
@@ -30,6 +31,7 @@ function Home({ config }: Props) {
         <Gallery />
         <SectionCta text="Join event planners organizing memorable celebrations" variant="minimal" />
         <Testimonials />
+        <WritingSection />
         <Faq />
         <AppBanner />
         <Footer />

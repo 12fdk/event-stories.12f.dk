@@ -30,6 +30,7 @@ const templateConfig: TemplateConfig = {
       { href: "/#use-cases", title: "Use cases" },
       { href: "/#how-it-works", title: "How it works" },
       { href: "/#gallery", title: "Gallery" },
+      { href: "/blog", title: "Blog" },
       { href: "/#faq", title: "FAQ" },
     ],
   },
@@ -42,7 +43,7 @@ const templateConfig: TemplateConfig = {
       { href: "/#features", title: "Features" },
       { href: "/#use-cases", title: "Use cases" },
       { href: "/#how-it-works", title: "How it works" },
-      { href: "/#gallery", title: "Gallery" },
+      { href: "/blog", title: "Blog" },
       { href: "/#faq", title: "FAQ" },
     ],
   },
@@ -270,6 +271,25 @@ const templateConfig: TemplateConfig = {
         },
       ],
     },
+    writing: {
+      id: "writing",
+      title: "Writing",
+      subtitle:
+        "Tips and guides for planning memorable events.",
+posts: [
+        {
+          slug: "ultimate-event-budget-guide",
+          title: "The Ultimate Guide to Event Budgets: How to Plan Without Stress",
+          description:
+            "A step-by-step guide to creating an event budget that actually works — from the first number you write down to the last receipt you file.",
+          date: "2026-01-10",
+          tags: ["budgeting", "planning", "guide"],
+          readingTime: 8,
+          author: "Robert Jensen",
+        },
+      ],
+      allPostsLink: "/blog",
+    },
     header: {
       eyebrow: "Party planner · iPhone",
       headline: "Plan the perfect event",
@@ -294,6 +314,15 @@ const templateConfig: TemplateConfig = {
         ],
       },
     },
+  },
+  blog: {
+    seo: {
+      title: "Blog - Event Stories",
+      description:
+        "Tips, guides, and stories for planning memorable events. Budget tips, checklists, and planning advice.",
+    },
+    title: "Event Stories Blog",
+    subtitle: "Tips and guides for planning memorable events.",
   },
   privacyPolicy: {
     seo: {
