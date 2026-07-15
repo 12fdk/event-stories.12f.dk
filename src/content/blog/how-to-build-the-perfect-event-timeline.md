@@ -1,3 +1,14 @@
+---
+title: "How to Build the Perfect Event Timeline: A Step-by-Step Guide for Event Creators"
+description: "How to build an event timeline that runs smoothly: from non-negotiables to the final schedule, with practical advice for event creators."
+lede: "Every event has a timeline. The ones that run smoothly are the ones where the timeline was designed, not discovered. A well-designed event timeline tells your attendees when to be where, gives your speakers the breathing room they need, and creates pockets of connection that attendees remember long after the last session closes."
+keyword: "event timeline planning"
+publishDate: 2026-07-15
+tags: ["event timeline", "event planning", "schedule"]
+cover: "/blog/how-to-build-the-perfect-event-timeline.png"
+coverAlt: "A detailed event timeline displayed on a tablet, modern interior with natural light, photorealistic"
+---
+
 # How to Build the Perfect Event Timeline: A Step-by-Step Guide for Event Creators
 
 Every event has a timeline. The ones that run smoothly are the ones where the timeline was designed, not discovered.

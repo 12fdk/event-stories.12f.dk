@@ -1,3 +1,14 @@
+---
+title: "7 Proven Ways to Boost Event Engagement With Your Event App"
+description: "Seven proven strategies to boost event engagement using push notifications, gamification, and smart app features that keep attendees coming back."
+lede: "Engagement is the difference between an event that people attend and one they remember. The attendees who come back year after year aren't there for the venue or the catering — they're there because they met someone, learned something, and left with the feeling that their time was well spent. Event apps are the tool that makes that feeling possible at scale."
+keyword: "event engagement strategies"
+publishDate: 2026-07-13
+tags: ["event engagement", "event app", "push notifications", "gamification"]
+cover: "/blog/boost-event-engagement.png"
+coverAlt: "A vibrant event space with attendees using tablets and smartphones, modern interior with warm lighting, photorealistic"
+---
+
 # 7 Proven Ways to Boost Event Engagement With Your Event App
 
 Engagement is the difference between an event that people attend and one they remember. The attendees who come back year after year aren't there for the venue or the catering — they're there because they met someone, learned something, and left with the feeling that their time was well spent.
@@ -128,5 +139,3 @@ The event app is the tool that connects all of these phases. Without it, you're 
 
 - The Ultimate Guide to Event Budgets: How to Plan Without Stress
 - How to Plan an Event Timeline Step by Step
-- Wedding Checklist: Every Task by Timeline
-- How to Choose the Right Venue for Your Event

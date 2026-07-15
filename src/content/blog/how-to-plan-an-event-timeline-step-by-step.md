@@ -1,3 +1,14 @@
+---
+title: "How to Plan an Event Timeline Step by Step"
+description: "How to plan an event timeline step by step: from defining non-negotiables through day-of execution, with practical advice for event creators."
+lede: "A great event doesn't happen by accident. It happens because someone mapped out every hour, anticipated every bottleneck, and built in buffer time for the things that always go wrong. The event app is the tool that makes this manageable — not just for the day-of schedule, but for the months of planning that come before."
+keyword: "event timeline step by step"
+publishDate: 2026-07-15
+tags: ["event timeline", "event planning", "step by step"]
+cover: "/blog/how-to-plan-an-event-timeline-step-by-step.png"
+coverAlt: "A professional event planner standing in a conference hall holding a tablet with a schedule, modern interior with natural light, photorealistic"
+---
+
 # How to Plan an Event Timeline Step by Step
 
 A great event doesn't happen by accident. It happens because someone mapped out every hour, anticipated every bottleneck, and built in buffer time for the things that always go wrong.
