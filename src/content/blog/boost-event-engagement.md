@@ -5,8 +5,8 @@ lede: "Engagement is the difference between an event that people attend and one 
 keyword: "event engagement strategies"
 publishDate: 2026-07-13
 tags: ["event engagement", "event app", "push notifications", "gamification"]
-cover: "/blog/boost-event-engagement.png"
-coverAlt: "A vibrant event space with attendees using tablets and smartphones, modern interior with warm lighting, photorealistic"
+cover: "/blog/boost-event-engagement-cover.png"
+coverAlt: "A vibrant event space with attendees using tablets and smartphones at a conference, modern interior with warm lighting, photorealistic"
 ---
 
 # 7 Proven Ways to Boost Event Engagement With Your Event App
@@ -14,6 +14,8 @@ coverAlt: "A vibrant event space with attendees using tablets and smartphones, m
 Engagement is the difference between an event that people attend and one they remember. The attendees who come back year after year aren't there for the venue or the catering — they're there because they met someone, learned something, and left with the feeling that their time was well spent.
 
 Event apps are the tool that makes that feeling possible at scale. Push notifications, networking matchers, session recommendations, live polls, and social feeds — these features only work if an event creator actually uses them. The following seven strategies are the ones that consistently move the needle, from pre-event excitement through to post-event follow-up.
+
+![A vibrant event space with attendees using tablets and smartphones at a conference, modern interior with warm lighting, photorealistic](/blog/boost-event-engagement-cover.png)
 
 ---
 
@@ -38,6 +40,8 @@ Event Stories makes it easy to send push notifications to your attendees from th
 Leaderboards and badges work when they're tied to things that genuinely improve the attendee experience. The goal isn't to turn networking into a competition; it's to reward curiosity.
 
 Here's what actually drives engagement:
+
+![Event speakers presenting at a conference, professional stage lighting and presentation screens, photorealistic](/blog/boost-event-engagement-img1.png)
 
 - **Session exploration badges** — "Attended 3 sessions in a different track" or "Checked in at the workshop hall." Reward breadth of attendance, not just depth in one area.
 - **Networking milestones** — "Connected with 5 new people" or "Had your first 1:1 meeting." These encourage the behavior that most attendees say they want but don't always get around to.
@@ -80,6 +84,8 @@ The best networking tools are optional. Nobody should feel forced into them. But
 ## 5. Live polls and Q&A during sessions
 
 The gap between a speaker and their audience is closing, and the event app is the bridge. Live polls, live Q&A, and real-time feedback during sessions do three things that change the dynamic:
+
+![Event attendees networking with coffee cups in a modern lounge area, warm ambient lighting, photorealistic](/blog/boost-event-engagement-img2.png)
 
 1. **Attendees become active participants** rather than passive listeners. Raising a question through the app feels less intimidating than raising a hand or shouting across a crowded room.
 2. **Speakers get real-time feedback** on whether they're moving too fast, repeating themselves, or hitting a concept that needs more explanation.

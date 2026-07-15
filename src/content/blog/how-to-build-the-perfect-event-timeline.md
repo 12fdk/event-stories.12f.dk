@@ -5,7 +5,7 @@ lede: "Every event has a timeline. The ones that run smoothly are the ones where
 keyword: "event timeline planning"
 publishDate: 2026-07-15
 tags: ["event timeline", "event planning", "schedule"]
-cover: "/blog/how-to-build-the-perfect-event-timeline.png"
+cover: "/blog/how-to-build-the-perfect-event-timeline-cover.png"
 coverAlt: "A detailed event timeline displayed on a tablet, modern interior with natural light, photorealistic"
 ---
 
@@ -16,6 +16,8 @@ Every event has a timeline. The ones that run smoothly are the ones where the ti
 The difference between an event that flows naturally and one that feels chaotic is rarely the venue or the catering. It's the schedule. A well-designed event timeline tells your attendees when to be where, gives your speakers the breathing room they need, and creates pockets of connection that attendees remember long after the last session closes.
 
 Here's how to build one — from the first draft to the final schedule that goes live.
+
+![A detailed event timeline displayed on a tablet, modern interior with natural light, photorealistic](/blog/how-to-build-the-perfect-event-timeline-cover.png)
 
 ---
 
@@ -58,6 +60,8 @@ Don't start by slotting sessions into time slots. Start by defining the structur
 ### Step 1: Define the tracks
 
 Most events have at least two tracks: a main track and one or more breakout tracks. The main track has the keynotes and the must-see sessions. The breakouts let attendees pursue their specific interests.
+
+![Event schedule on whiteboard with colored markers and sticky notes, photorealistic](/blog/how-to-build-the-perfect-event-timeline-img1.png)
 
 If you have three tracks and four hours of content, you're looking at roughly four sessions per track (15 minutes each, including transitions). If you have two tracks and six hours, you might fit two 90-minute sessions per track or four 45-minute sessions.
 

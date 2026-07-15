@@ -5,7 +5,7 @@ lede: "Creating an event budget doesn't have to mean spreadsheets, anxiety, and 
 keyword: "event budget planning"
 publishDate: 2026-07-13
 tags: ["event budget", "event planning", "expense tracking"]
-cover: "/blog/ultimate-event-budget-guide.png"
+cover: "/blog/ultimate-event-budget-cover.png"
 coverAlt: "A clean event budget spreadsheet on a desk with coffee and planner, warm lighting, photorealistic"
 ---
 
@@ -14,6 +14,8 @@ coverAlt: "A clean event budget spreadsheet on a desk with coffee and planner, w
 Creating an event budget doesn't have to mean spreadsheets, anxiety, and surprises that blow your budget. The right approach breaks the entire planning process into manageable steps.
 
 This guide walks you through every phase of event budgeting — from the first number you write down to the last receipt you file.
+
+![A clean event budget spreadsheet on a desk with coffee and planner, warm lighting, photorealistic](/blog/ultimate-event-budget-cover.png)
 
 ---
 
@@ -30,6 +32,8 @@ The most common reason event budgets fail is that they're treated as a spreadshe
 ## Step 1: Define your event scope
 
 Before you think about money, you need to know what you're planning. Every event that starts without a clear scope ends with budget creep.
+
+![Event budget spreadsheet and financial planning notes on desk, calculator and pen, warm lighting, photorealistic](/blog/ultimate-event-budget-img1.png)
 
 ### Key questions to answer:
 
@@ -59,6 +63,8 @@ Decide in advance: what is the maximum amount you're willing to spend? This numb
 ## Step 3: Allocate by category
 
 Now divide your budget across the major categories. These percentages are guidelines — adjust based on your priorities:
+
+![Event venue floor plan and seating chart spread across large table, planning documents, warm office lighting, photorealistic](/blog/ultimate-event-budget-img2.png)
 
 - **Venue:** 25–30%
 - **Catering & drinks:** 25–30%

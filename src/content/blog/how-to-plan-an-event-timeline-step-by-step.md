@@ -5,7 +5,7 @@ lede: "A great event doesn't happen by accident. It happens because someone mapp
 keyword: "event timeline step by step"
 publishDate: 2026-07-15
 tags: ["event timeline", "event planning", "step by step"]
-cover: "/blog/how-to-plan-an-event-timeline-step-by-step.png"
+cover: "/blog/how-to-plan-an-event-timeline-step-by-step-cover.png"
 coverAlt: "A professional event planner standing in a conference hall holding a tablet with a schedule, modern interior with natural light, photorealistic"
 ---
 
@@ -13,7 +13,7 @@ coverAlt: "A professional event planner standing in a conference hall holding a 
 
 A great event doesn't happen by accident. It happens because someone mapped out every hour, anticipated every bottleneck, and built in buffer time for the things that always go wrong.
 
-![A professional event planner standing in a conference hall holding a tablet with a schedule, modern interior with natural light, photorealistic](/blog/how-to-plan-an-event-timeline-step-by-step.png)
+![A professional event planner standing in a conference hall holding a tablet with a schedule, modern interior with natural light, photorealistic](/blog/how-to-plan-an-event-timeline-step-by-step-cover.png)
 
 The event app is the tool that makes this manageable — not just for the day-of schedule, but for the months of planning that come before. Whether you're organizing a two-day conference, a product launch, or a community gathering, the timeline is where the plan lives.
 
@@ -46,6 +46,8 @@ For each block, note:
 - **Start and end time**
 - **Who's responsible** (the session organizer, the volunteer, the speaker)
 - **What equipment is needed** (projector, mic, stage, video feed)
+
+![Event planning tablet interface showing drag-drop timeline, modern UI design on screen, photorealistic desk setting](/blog/how-to-plan-an-event-timeline-step-by-step-img1.png)
 
 This skeleton becomes the first draft of your event schedule in Event Stories. It's rough, but it's a concrete starting point.
 
@@ -102,6 +104,8 @@ The best event timelines are the ones that adapt gracefully when things go wrong
 ---
 
 ## Putting it together with Event Stories
+
+![Event venue walkthrough with checklist and measurements, architectural details, natural daylight, photorealistic](/blog/how-to-plan-an-event-timeline-step-by-step-img2.png)
 
 Event Stories is designed to be the single tool that holds your entire event timeline — from the rough draft on day one to the real-time adjustments on event day.
 
