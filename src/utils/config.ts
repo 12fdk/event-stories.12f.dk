@@ -138,8 +138,20 @@ const templateConfig: TemplateConfig = {
         {
           title: "Schedule & Timeline",
           subtitle:
-            "Create detailed event schedules with map integration. Coordinate vendors, activities, and keep everything on track.",
+            "Build the run of show for the day with times, durations, and locations. Coordinate vendors and activities, then export to your calendar.",
           emoji: "📅",
+        },
+        {
+          title: "Seating & Table Planner",
+          subtitle:
+            "Arrange tables and drag guests to their seats. Balance the head table, track who's seated, and see every table fill up at a glance.",
+          emoji: "🪑",
+        },
+        {
+          title: "Task Checklist",
+          subtitle:
+            "Keep every to-do in one checklist with due dates and reminders — from booking the venue to sending the save-the-dates.",
+          emoji: "✅",
         },
         {
           title: "PDF Export",
@@ -201,9 +213,10 @@ const templateConfig: TemplateConfig = {
       images: [
         { src: "/screenshots/projects-list.webp", caption: "All your events at a glance" },
         { src: "/screenshots/guest-list.webp", caption: "Guest lists with RSVP tracking" },
+        { src: "/screenshots/seating-plan.webp", caption: "Drag guests to their seats" },
+        { src: "/screenshots/schedule.webp", caption: "The run of show, hour by hour" },
         { src: "/screenshots/budget-overview.webp", caption: "Visual budget breakdown" },
         { src: "/screenshots/export-pdf.webp", caption: "Professional PDF export" },
-        { src: "/screenshots/settings-home.webp", caption: "Simple, private settings" },
       ],
     },
     faq: {
