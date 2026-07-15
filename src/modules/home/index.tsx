@@ -1,8 +1,10 @@
+import { MotionConfig } from "framer-motion";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import AppBanner from "../../components/appBanner";
 import { ConfigContext } from "../../utils/configContext";
 import type { TemplateConfig } from "../../utils/configType";
+import type { BlogTeaser } from "../../content/blog";
 import Header from "./_components/header";
 import Features from "./_components/features";
 import UseCases from "./_components/useCases";
@@ -16,12 +18,13 @@ import SectionCta from "../../components/sectionCta";
 
 interface Props {
   config: TemplateConfig;
+  posts?: BlogTeaser[];
 }
 
-function Home({ config }: Props) {
+function Home({ config, posts = [] }: Props) {
   return (
     <ConfigContext.Provider value={config}>
-      <main>
+      <MotionConfig reducedMotion="user">
         <Navbar />
         <Header />
         <Features />
@@ -31,12 +34,12 @@ function Home({ config }: Props) {
         <Gallery />
         <SectionCta text="Join event planners organizing memorable celebrations" variant="minimal" />
         <Testimonials />
-        <WritingSection />
+        <WritingSection posts={posts} />
         <Faq />
         <AppBanner />
         <Footer />
         <StickyDownload />
-      </main>
+      </MotionConfig>
     </ConfigContext.Provider>
   );
 }

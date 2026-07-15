@@ -1,87 +1,77 @@
+import { motion } from "framer-motion";
 import { useContext } from "react";
-import { withBase } from "../../../../utils/basePath";
 import { ConfigContext } from "../../../../utils/configContext";
-import type { BlogPostMeta } from "../../../../content/blog";
-import { blogPosts } from "../../../../content/blog";
+import type { BlogTeaser } from "../../../../content/blog";
 
-function WritingSection() {
-  const { home } = useContext(ConfigContext)!;
-  const writing = home?.writing;
+interface Props {
+  posts: BlogTeaser[];
+}
 
-  if (!writing || blogPosts.length === 0) return null;
+function WritingSection({ posts }: Props) {
+  const { ui } = useContext(ConfigContext)!;
+  if (!posts.length) return null;
 
   return (
-    <section id={writing.id} className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-screen-lg mx-auto">
-        <div className="mb-10">
-          <h2 className="text-3xl font-display font-bold tracking-tight">
-            {writing.title}
+    <section
+      id="writing"
+      className="mx-auto max-w-screen-lg px-4 py-20 md:py-28"
+    >
+      <div className="flex flex-wrap items-end justify-between gap-6">
+        <div>
+          <p className="tick-label m-0 flex items-center gap-3 text-base-content/50">
+            <span className="inline-block h-0.5 w-8 bg-primary" />
+            {ui?.sectionLabels?.writing ?? "Writing"}
+          </p>
+          <h2 className="mb-3 mt-5 font-display text-3xl font-extrabold leading-[1.05] tracking-tightest md:text-4xl">
+            {ui?.blog?.title ?? "What we've written"}
           </h2>
-          {writing.subtitle && (
-            <p className="text-base-content/70 mt-2">{writing.subtitle}</p>
+          {ui?.blog?.subtitle && (
+            <p className="text-lg leading-relaxed text-base-content/70">
+              {ui.blog.subtitle}
+            </p>
           )}
         </div>
+        <a
+          href="/blog/"
+          className="tick-label shrink-0 border-b-2 border-primary pb-1 text-base-content transition-colors hover:text-primary"
+        >
+          {ui?.blog?.allPosts ?? "All posts"}
+        </a>
+      </div>
 
-        {/* Show blog posts in a grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {blogPosts.slice(0, 3).map((post: BlogPostMeta) => (
+      <ul className="mt-12 list-none divide-y divide-base-300 border-y border-base-300 p-0">
+        {posts.map((post, index) => (
+          <motion.li
+            key={post.slug}
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{
+              duration: 0.45,
+              delay: index * 0.06,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            className="m-0 p-0"
+          >
             <a
               href={`/blog/${post.slug}/`}
-              className="group block"
+              className="group flex flex-col gap-2 py-6 md:flex-row md:items-baseline md:gap-8"
             >
-              <div className="bg-base-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <div className="h-48 overflow-hidden">
-                  {post.image ? (
-                    <img
-                      src={withBase(post.image)}
-                      alt={post.title}
-                      className="w-full h-full object-cover transition-transform group-hover:scale-105"
-                      loading="lazy"
-                    />
-                  ) : (
-                    <div className="w-full h-48 bg-base-200" />
-                  )}
-                </div>
-                <div className="p-5">
-                  <div className="flex items-center gap-2 text-xs text-base-content/60 mb-2">
-                    <span>{new Date(post.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
-                    <span className="w-1 h-1 rounded-full bg-base-content/30" />
-                    <span>{post.readingTime} min read</span>
-                  </div>
-                  {post.tags.length > 0 && (
-                    <div className="flex gap-1.5 mb-3 flex-wrap">
-                      {post.tags.map((tag: string) => (
-                        <span className="text-xs bg-base-200 text-base-content/70 px-2 py-0.5 rounded-full">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                  <h3 className="font-semibold text-base mb-2 group-hover:underline line-clamp-2">
-                    {post.title}
-                  </h3>
-                  <p className="text-sm text-base-content/60 line-clamp-2">
-                    {post.description}
-                  </p>
-                </div>
-              </div>
+              <span className="tick-label shrink-0 text-base-content/40 md:w-40">
+                {post.date} · {post.minutes} min
+              </span>
+              <span className="flex-1">
+                <span className="block font-display text-xl font-bold tracking-tight text-base-content transition-colors group-hover:text-primary md:text-2xl">
+                  {post.title}
+                </span>
+                <span className="mt-1 block text-base-content/70">
+                  {post.description}
+                </span>
+              </span>
             </a>
-          ))}
-        </div>
-
-        {/* All posts link */}
-        <div className="text-center mt-8">
-          <a
-            href="/blog/"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-primary link link-hover"
-          >
-            All posts
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-              <path d="m9 18 6-6-6-6"/>
-            </svg>
-          </a>
-        </div>
-      </div>
+          </motion.li>
+        ))}
+      </ul>
     </section>
   );
 }
