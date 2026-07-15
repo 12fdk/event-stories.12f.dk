@@ -1,115 +1,87 @@
-import AnimatedText from "../../../../components/animatedText";
-import clsx from "clsx";
 import { motion } from "framer-motion";
+import clsx from "clsx";
 import { useContext } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
 import { withBase } from "../../../../utils/basePath";
 import IphoneFrame from "../../../../components/iphoneFrame";
-import SwirlArrowBottomLeft from "./svg/swirlArrowBottomLeft";
-import SwirlArrowBottomRight from "./svg/swirlArrowBottomRight";
-import SwirlArrowBottom from "./svg/swirlArrowBottom";
+import SectionHeading from "../../../../components/sectionHeading";
 
 function HowItWorks() {
   const {
     home: { howItWorks },
   } = useContext(ConfigContext)!;
-
   if (!howItWorks) return null;
 
   return (
     <section
       id={howItWorks.id}
-      className="overflow-hidden max-w-screen-lg mx-auto px-4 py-12"
+      className="mx-auto max-w-screen-lg overflow-hidden px-4 py-20 md:py-28"
     >
-      <div className="mb-12 max-w-none flex flex-col items-center prose prose-lg text-center">
-        <h2 className="mb-3">
-          <AnimatedText text={howItWorks.title} />
-        </h2>
-        {howItWorks.subtitle && (
-          <motion.p
-            initial={{ y: "100%", opacity: 0 }}
-            whileInView={{ y: "0%", opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-md max-w-lg text-base-content"
-          >
-            {howItWorks.subtitle}
-          </motion.p>
-        )}
-      </div>
-      <div className="flex flex-col gap-52">
+      <SectionHeading
+        label="Order of the day"
+        title={howItWorks.title}
+        subtitle={howItWorks.subtitle}
+      />
+
+      {/* The run-of-show, at full size: a hanging spine, one moment per step */}
+      <ol className="relative mt-16 list-none space-y-16 pl-0 md:space-y-24">
+        <span
+          aria-hidden="true"
+          className="programme-spine absolute bottom-4 left-[10px] top-4 text-base-content md:left-1/2"
+        />
         {howItWorks.steps.map((step, index) => (
-          <motion.div
-            key={index}
+          <motion.li
+            key={step.title}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.4 }}
             className={clsx(
-              "text-primary relative flex flex-col rounded-md md:flex-row",
-              {
-                "md:flex-row-reverse": index % 2 === 0,
-              }
+              "relative grid items-center gap-8 pl-10 md:grid-cols-2 md:gap-14 md:pl-0",
+              { "md:[direction:rtl]": index % 2 === 1 }
             )}
           >
-            {index < howItWorks!.steps.length - 1 && (
-              <>
-                <motion.div
-                  variants={{
-                    hidden: {
-                      scale: 0,
-                      translateX: "-50%",
-                    },
-                    visible: { scale: 1, translateX: "-50%" },
-                  }}
-                  transition={{ stiffness: 150, type: "spring" }}
-                  className="hidden w-48 absolute -bottom-44 left-1/2 md:block"
-                >
-                  {index % 2 === 0 ? (
-                    <SwirlArrowBottomLeft />
-                  ) : (
-                    <SwirlArrowBottomRight />
-                  )}
-                </motion.div>
-                <motion.div
-                  variants={{
-                    hidden: {
-                      scale: 0,
-                      translateX: "-50%",
-                    },
-                    visible: { scale: 1, translateX: "-50%" },
-                  }}
-                  transition={{ stiffness: 150, type: "spring" }}
-                  className="w-16 absolute -bottom-48 left-1/2 md:hidden md:-bottom-36"
-                >
-                  <SwirlArrowBottom />
-                </motion.div>
-              </>
-            )}
+            {/* The foil tick pinning this moment to the spine */}
+            <span
+              aria-hidden="true"
+              className="foil-tick absolute left-[6px] top-2 md:left-1/2 md:-translate-x-1/2"
+            />
+
             <motion.div
               variants={{
-                hidden: { x: index % 2 === 0 ? "100%" : "-100%", opacity: 0 },
-                visible: { x: "0%", opacity: 1 },
+                hidden: { opacity: 0, y: 16 },
+                visible: { opacity: 1, y: 0 },
               }}
-              className="mb-8 flex flex-col text-center justify-center prose flex-1"
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="[direction:ltr] md:px-8"
             >
-              <div className="pb-0 font-sketch text-8xl text-primary">
-                {index < 10 && 0}
-                {index + 1}
+              <div className="tick-label text-foil">
+                Step {String(index + 1).padStart(2, "0")}
               </div>
-              <h3 className="mt-0 text-2xl font-bold">{step.title}</h3>
-              <p className="mx-auto max-w-sm text-base-content">{step.subtitle}</p>
+              <h3 className="mt-3 font-display text-2xl font-semibold tracking-tight text-base-content md:text-3xl">
+                {step.title}
+              </h3>
+              <p className="mt-3 max-w-md text-base-content/70">
+                {step.subtitle}
+              </p>
             </motion.div>
+
             <motion.div
               variants={{
-                hidden: { x: index % 2 === 1 ? "100%" : "-100%", opacity: 0 },
-                visible: { x: "0%", opacity: 1 },
+                hidden: { opacity: 0, scale: 0.92 },
+                visible: { opacity: 1, scale: 1 },
               }}
-              className="flex-1 flex justify-center"
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="flex justify-center [direction:ltr]"
             >
-              <IphoneFrame src={withBase(step.image)} alt={step.title} />
+              <IphoneFrame
+                src={withBase(step.image)}
+                alt={step.title}
+                className="[--iphone-width:220px] sm:[--iphone-width:240px]"
+              />
             </motion.div>
-          </motion.div>
+          </motion.li>
         ))}
-      </div>
+      </ol>
     </section>
   );
 }

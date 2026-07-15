@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import AnimatedText from "../../../../components/animatedText";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
 import { Autoplay } from "swiper/modules";
+import SectionHeading from "../../../../components/sectionHeading";
 
 function Testimonials() {
   const {
@@ -14,54 +14,50 @@ function Testimonials() {
   if (!testimonials) return null;
 
   return (
-    <section className="max-w-screen-lg mx-auto px-4 py-12">
-      <div className="mb-6 max-w-none flex flex-col items-center prose prose-lg text-center">
-        <h2 className="mb-0">
-          <AnimatedText text={testimonials.title} />
-        </h2>
-        <motion.p
-          initial={{ y: "100%", opacity: 0 }}
-          whileInView={{ y: "0%", opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-xl max-w-lg text-base-content"
-        >
-          {testimonials.subtitle}
-        </motion.p>
-      </div>
+    <section className="mx-auto max-w-screen-lg px-4 py-20 md:py-28">
+      <SectionHeading
+        label="The guest book"
+        title={testimonials.title}
+        subtitle={testimonials.subtitle}
+      />
+
       <motion.div
-        initial={{ scale: 0, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{ duration: 0.5 }}
+        className="mt-12"
       >
         <Swiper
           loop
-          autoplay
+          autoplay={{ delay: 4200, disableOnInteraction: false }}
           modules={[Autoplay]}
-          spaceBetween={32}
+          spaceBetween={24}
           breakpoints={{
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
           slidesPerView={1}
         >
-          {testimonials.cards.map(({ name, comment }, index) => (
-            <SwiperSlide className="!h-[22rem] my-2" key={index}>
-              <div className="h-full card shadow bg-primary">
-                <div className="p-6 card-body">
-                  <div className="flex mb-4">
-                    {Array(5)
-                      .fill(0)
-                      .map((_, index) => (
-                        <div
-                          key={index}
-                          className="h-6 w-6 mask mask-star-2 bg-primary-content"
-                        />
-                      ))}
-                  </div>
-                  <p className="text-primary-content">{comment}</p>
-                  <h3 className="card-title text-primary-content">{name}</h3>
-                </div>
-              </div>
+          {testimonials.cards.map(({ name, comment }) => (
+            <SwiperSlide className="my-2 !h-auto" key={name}>
+              <figure className="flex h-full flex-col justify-between rounded-box border border-base-300 bg-base-100 p-7">
+                <blockquote>
+                  <span
+                    aria-hidden="true"
+                    className="font-display text-5xl leading-none text-foil"
+                  >
+                    &ldquo;
+                  </span>
+                  <p className="mt-2 text-base-content/80">{comment}</p>
+                </blockquote>
+                <figcaption className="mt-6 flex items-center gap-2.5 border-t border-base-300 pt-4">
+                  <span aria-hidden="true" className="foil-tick" />
+                  <span className="tick-label text-base-content/60">
+                    {name}
+                  </span>
+                </figcaption>
+              </figure>
             </SwiperSlide>
           ))}
         </Swiper>

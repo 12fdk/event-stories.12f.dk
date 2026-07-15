@@ -56,7 +56,7 @@ function Navbar() {
         <div className="navbar-start">
           <a href="/" className="flex items-center">
             <img className="h-12 rounded-[22%]" src={withBase(logo)} alt={`${name} logo`} width={48} height={48} />
-            <span className="font-bold mx-1 md:text-lg">{name}</span>
+            <span className="mx-1.5 font-display text-lg font-semibold tracking-tight md:text-xl">{name}</span>
           </a>
         </div>
         <div className="navbar-end md:hidden">
@@ -81,7 +81,7 @@ function Navbar() {
             ))}
           </ul>
           {topNavbar.cta && appStoreLink && (
-            <a href={appStoreLink} target="_blank" rel="noopener noreferrer" className="ml-3 btn py-4 bg-[#0066CC] hover:bg-[#0055AA] text-white border-none">
+            <a href={appStoreLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary ml-3 py-4">
               {topNavbar.cta}
             </a>
           )}

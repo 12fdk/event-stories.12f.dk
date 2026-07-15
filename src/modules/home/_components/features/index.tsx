@@ -1,8 +1,7 @@
-import AnimatedText from "../../../../components/animatedText";
-import clsx from "clsx";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
+import SectionHeading from "../../../../components/sectionHeading";
 
 function Features() {
   const {
@@ -11,69 +10,51 @@ function Features() {
   if (!features) return null;
 
   return (
-    <section id={features.id} className="max-w-screen-lg mx-auto px-4 py-12">
-      <div className="mb-12 max-w-none flex flex-col items-center prose prose-lg text-center">
-        <h2 className="mb-3">
-          <AnimatedText text={features.title} />
-        </h2>
-        <motion.div
-          className="h-2 bg-gradient-to-r from-primary to-secondary rounded-full overflow-hidden [--w:200px] md:[--w:350px]"
-          whileInView={{ width: "var(--w)" }}
-          viewport={{ amount: 1, once: true, margin: "0px 0px -100px 0px" }}
-        />
-        {features.subtitle && (
-          <motion.p
-            initial={{ y: "100%", opacity: 0 }}
-            whileInView={{ y: "0%", opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-md max-w-lg text-base-content"
-          >
-            {features.subtitle}
-          </motion.p>
-        )}
-      </div>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6"
-      >
+    <section
+      id={features.id}
+      className="mx-auto max-w-screen-lg px-4 py-20 md:py-28"
+    >
+      <SectionHeading
+        label="The suite"
+        title={features.title}
+        subtitle={features.subtitle}
+      />
+
+      <div className="mt-14 grid gap-px overflow-hidden rounded-box border border-base-300 bg-base-300 sm:grid-cols-2">
         {features.cards.map((feat, index) => (
-          <motion.div
-            key={index}
-            variants={{
-              hidden: { x: "-100%", opacity: 0 },
-              visible: { x: 0, opacity: 1 },
+          <motion.article
+            key={feat.title}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{
+              duration: 0.5,
+              delay: (index % 2) * 0.08,
+              ease: [0.16, 1, 0.3, 1],
             }}
-            transition={{ delay: 0.25 + index * 0.25 }}
-            className={clsx(
-              "shadow-md border-primary/10 border-2 card relative overflow-hidden group px-12",
-              {
-                "col-span-2":
-                  index === features!.cards.length - 1 &&
-                  features!.cards.length % 2 === 1,
-              }
-            )}
+            className="group flex flex-col gap-4 bg-base-100 p-7 md:p-9"
           >
-            <div className="mb-4 mt-8 flex justify-center">
-              <div className="flex items-center justify-center w-24 h-24 rounded-full bg-secondary/20 transition-transform group-hover:scale-110">
-                <span
-                  className="text-5xl"
-                  role="img"
-                  aria-label={feat.title}
-                >
-                  {feat.emoji}
-                </span>
-              </div>
+            <div className="flex items-center justify-between">
+              <span
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-2xl ring-1 ring-accent/25 transition-transform duration-300 group-hover:-rotate-6"
+                role="img"
+                aria-label={feat.title}
+              >
+                {feat.emoji}
+              </span>
+              <span className="tick-label text-base-content/35">
+                {String(index + 1).padStart(2, "0")}
+              </span>
             </div>
-            <div className="w-full pt-0 px-0 card-body items-center text-center transition-transform max-w-none group-hover:scale-95">
-              <h3 className="card-title text-2xl font-bold">{feat.title}</h3>
-              <div className="h-0.5 w-full bg-primary/10" />
-              <p className="text-base-content">{feat.subtitle}</p>
+            <div>
+              <h3 className="font-display text-xl font-semibold tracking-tight text-base-content md:text-2xl">
+                {feat.title}
+              </h3>
+              <p className="mt-2 text-base-content/70">{feat.subtitle}</p>
             </div>
-          </motion.div>
+          </motion.article>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }

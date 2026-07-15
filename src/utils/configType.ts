@@ -74,12 +74,23 @@ export type TemplateConfig = {
         };
         header: {
             id?: string | undefined;
+            eyebrow?: string | undefined;
             headline: string;
             subtitle: string;
             headlineMark?: number[] | undefined;
             screenshots: string[];
             rewards?: string[] | undefined;
             usersDescription?: string | undefined;
+            /** Run-of-show sample rendered as the hero signature. */
+            programme?: {
+                title: string;
+                caption?: string | undefined;
+                items: {
+                    time: string;
+                    title: string;
+                    note?: string | undefined;
+                }[];
+            } | undefined;
         };
         testimonials?: {
             id?: string | undefined;
