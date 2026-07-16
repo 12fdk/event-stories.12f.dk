@@ -123,12 +123,3 @@ The best timelines are the ones that adapt gracefully when things go wrong. The 
 - **Update live** — if a session runs long, a speaker cancels, or a room changes, push the update to everyone with one tap.
 
 It's free on the App Store. No account required. Works offline. And it's built for the kind of thoughtful planning that makes an event feel effortless.
-
----
-
-## Related posts
-
-- The Ultimate Guide to Event Budgets: How to Plan Without Stress
-- 7 Simple Ways to Keep Your Attendees Engaged All Event Long
-- Wedding Checklist: Every Task by Timeline
-- How to Choose the Right Venue for Your Event

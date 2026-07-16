@@ -138,13 +138,3 @@ A perfect event timeline doesn't exist. The one that works best is the one that 
 That's the stuff that turns a good event into a memorable one.
 
 The event app is the tool that makes all of this possible. From schedule building to push notifications, from networking to real-time updates — [Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151) gives event creators everything they need. It's free on the App Store. No account required. Works offline.
-
----
-
-## Related posts
-
-- 7 Simple Ways to Keep Your Attendees Engaged All Event Long
-- The Ultimate Guide to Event Budgets: How to Plan Without Stress
-- How to Plan an Event Timeline Step by Step
-- Wedding Checklist: Every Task by Timeline
-- How to Choose the Right Venue for Your Event

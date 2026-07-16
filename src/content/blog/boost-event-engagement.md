@@ -157,10 +157,3 @@ These seven strategies work as a system — each one building on the others:
 The event app ties it all together. Without it, you're juggling email, social media, and your best guess at what people want to hear. With it, you have one place to reach every attendee, at the right moment, with the right thing to say.
 
 [Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151) gives event creators everything they need — from push notifications and networking tools to session management and attendee tracking. It's free on the App Store. No account required. Works offline.
-
----
-
-## Related posts
-
-- The Ultimate Guide to Event Budgets: How to Plan Without Stress
-- How to Plan an Event Timeline Step by Step
