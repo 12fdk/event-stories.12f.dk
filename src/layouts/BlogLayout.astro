@@ -15,11 +15,8 @@ const {
   modifiedTime,
   author,
   tags,
+  extraNodes,
 } = Astro.props;
-
-const ogImage = providedOgImage?.startsWith("http")
-  ? providedOgImage
-  : `${Astro.site}${providedOgImage}`;
 
 const canonicalURL = canonicalPath
   ? new URL(canonicalPath, Astro.site)
@@ -31,12 +28,15 @@ const seo = {
   description: description ?? "Tips and guides for planning memorable events.",
 };
 
-const blogOgImage = providedOgImage ?? (canonicalPath ? `/og${canonicalPath.replace(/\/$/, "")}.png` : null);
+// Use the social image passed in (post ogImage → cover) and fall back to the
+// site logo only as a last resort. No /og/*.png guess — that directory does not
+// exist and would 404 (issue #34).
+const blogOgImage = providedOgImage ?? null;
 const resolvedOgImage = blogOgImage && blogOgImage.startsWith("http")
   ? blogOgImage
   : blogOgImage
     ? new URL(blogOgImage, Astro.site).href
-    : defaultTemplateConfig.logo;
+    : new URL("/og-image.png", Astro.site).href;
 
 const config: TemplateConfig = {
   ...defaultTemplateConfig,
@@ -62,6 +62,7 @@ const articleNode = articleSchema ?? ({
     "@type": "Person",
     name: author,
     url: "https://www.12f.dk",
+    sameAs: ["https://www.12f.dk"],
   } : undefined,
   publisher: {
     "@type": "Organization",
@@ -99,7 +100,8 @@ if (seo.title) {
 <Layout
   {...config}
   breadcrumbOverride={breadcrumbItems}
-  extraGraphNodes={[articleNode]}
+  extraGraphNodes={[articleNode, ...(extraNodes ?? [])]}
+  ogImageOverride={resolvedOgImage}
 >
   <SiteNavbar client:load config={config} />
   <div class="max-w-3xl mx-auto px-4 py-10 md:py-16">

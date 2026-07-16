@@ -10,6 +10,25 @@ tags: ["event timeline", "event planning", "step by step"]
 cover: "/blog/how-to-plan-an-event-timeline-step-by-step-cover.png"
 coverAlt: "A relaxed event planner looking at a tablet with a schedule, natural light, photorealistic"
 
+tldr:
+  - "Lock down the immovable anchors first — venue hours, speakers, catering, and registration deadlines."
+  - "Sketch the big blocks before the details, noting timing, owner, and equipment for each."
+  - "Stress-test the schedule for changeovers, bottlenecks, and buffers before event day."
+  - "Do a day-before walkthrough and write down a contingency for every 'what if'."
+  - "On event day, maintain rather than manage — nudge, adjust in real time, and keep the team in the loop."
+
+faq:
+  - question: "What should I lock down first when planning an event timeline?"
+    answer: "Start with the anchors that can't move — venue hours, speaker availability, catering windows, and registration deadlines. Once these are fixed, everything else starts to feel more grounded."
+  - question: "How long should event breaks actually be?"
+    answer: "Usually shorter than you think — plan around 15 minutes rather than 20. But always stress-test the changeovers, because speakers who run over can quietly eat your buffer."
+  - question: "How do I stress test an event schedule?"
+    answer: "Look for the cracks: speaker changeovers that run long, registration bottlenecks with too few desks, and whether your event app holds up when everyone opens it at once. Build a five-minute buffer between sessions."
+  - question: "What should I do the day before the event?"
+    answer: "Run through the whole schedule and answer the 'what if' questions — what happens if a speaker is late, a session runs early, or catering is delayed. Write the contingencies down as team-only notes."
+  - question: "What's my job as an event creator on event day?"
+    answer: "Maintain, don't manage. Keep things moving with gentle nudges, adjust in real time when a speaker or room changes, and keep your team informed about what's happening now."
+
 relatedSlugs:
   - "how-to-build-the-perfect-event-timeline"
   - "ultimate-event-budget-guide"

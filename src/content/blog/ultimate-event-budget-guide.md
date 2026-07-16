@@ -10,6 +10,25 @@ tags: ["event budget", "event planning", "expense tracking"]
 cover: "/blog/ultimate-event-budget-cover.png"
 coverAlt: "A warm desk scene with a budget planner, coffee, and a gentle natural light, photorealistic"
 
+tldr:
+  - "Set your ceiling first — one honest maximum you're comfortable spending, not a target or a guess."
+  - "Break the budget into categories; venue and catering are usually the two biggest lines."
+  - "Build in a 10–20% contingency buffer so unexpected costs never derail you."
+  - "Track every expense in real time instead of reconciling it all later."
+  - "Check in weekly for about fifteen minutes to stay aware and avoid last-minute surprises."
+
+faq:
+  - question: "How much should I budget for a birthday party?"
+    answer: "It varies widely, but most birthday parties fall somewhere between $500 and $3,000 — depending on how many people, where you're hosting, and what kind of food and atmosphere you're going for. Venue and catering are always the biggest costs."
+  - question: "What's the most important budget category?"
+    answer: "Venue and catering. They're usually the largest expenses, and they're also what determines your date availability. Book these first, and everything else fits around them."
+  - question: "How much contingency should I build into an event budget?"
+    answer: "Plan a buffer of 10–20% depending on the event — around 10% for birthday parties and baby showers, 15% for anniversary dinners, and 15–20% for weddings. It isn't extra spending; it's peace of mind for the costs you can't predict."
+  - question: "When should I start tracking my budget?"
+    answer: "From the very first number you write down. As soon as you have a ceiling in mind, enter it. An untracked budget is just a hope with a deadline."
+  - question: "How often should I review my event budget?"
+    answer: "Once a week during planning is plenty. Spend about fifteen minutes checking what you've spent, whether you're staying within your categories, and whether anything is creeping up. Regular check-ins mean you never face a budget emergency on event day."
+
 relatedSlugs:
   - "how-to-plan-an-event-timeline-step-by-step"
   - "boost-event-engagement"
@@ -144,16 +163,3 @@ This isn't about perfection. It's about awareness. When you check in weekly, you
 [Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151) was built around this exact approach. Create your event, set each budget category, and track every expense as it happens from your phone. The visual summaries show you exactly where you stand — clearly, calmly, without the spreadsheet stress.
 
 No account required. Works offline. Free on the App Store.
-
----
-
-## Frequently asked questions
-
-**How much should I budget for a birthday party?**
-It varies widely, but most birthday parties fall somewhere between $500 and $3,000 — depending on how many people, where you're hosting, and what kind of food and atmosphere you're going for. Venue and catering are always the biggest costs.
-
-**What's the most important budget category?**
-Venue and catering. They're usually the largest expenses, and they're also what determines your date availability. Book these first, and everything else fits around them.
-
-**When should I start tracking my budget?**
-From the very first number you write down. As soon as you have a ceiling in mind, enter it. An untracked budget is just a hope with a deadline.

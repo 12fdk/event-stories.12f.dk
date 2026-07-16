@@ -10,6 +10,25 @@ tags: ["event engagement", "event app", "push notifications", "gamification"]
 cover: "/blog/boost-event-engagement-cover.png"
 coverAlt: "A vibrant event space with attendees smiling and using their smartphones, modern interior with warm lighting, photorealistic"
 
+tldr:
+  - "Send intentional push notifications — a morning check-in, personalized session reminders, and rare change alerts."
+  - "Use gamification that rewards real behavior, with a few meaningful milestones rather than many trivial ones."
+  - "Make networking effortless with meeting scheduling, searchable profiles, and optional quiet spaces."
+  - "Bring sessions alive with live polls and Q&A, and keep the energy going with a shared social feed."
+  - "Follow up within 48 hours with a personalized recap, a quick survey, and connection reminders."
+
+faq:
+  - question: "What kinds of push notifications actually help at an event?"
+    answer: "Keep them to three types: a morning check-in with the day's key moments, personalized session reminders, and rare 'something changed' alerts. Everything else belongs in the app's notification center so the important messages get seen."
+  - question: "Does event gamification really work?"
+    answer: "Yes, when it rewards behavior you actually want — trying a new session, making a connection, or exploring the venue. A handful of meaningful milestones beats thirty trivial badges every time."
+  - question: "How can I make networking easier for attendees?"
+    answer: "Offer built-in meeting scheduling, searchable attendee profiles, and optional quiet virtual spaces. The best networking tools are always optional but make finding one specific person effortless."
+  - question: "How do live polls and Q&A improve sessions?"
+    answer: "They turn passive listeners into active participants. Questions feel safer to ask by typing, speakers can read the room in real time, and you get genuine feedback to plan better events next time."
+  - question: "When is the best time to follow up after an event?"
+    answer: "Within the first 48 hours, while people are still excited. Send a personalized recap, a short feedback survey within 24 hours, and a gentle reminder about the connections they made."
+
 relatedSlugs:
   - "how-to-plan-an-event-timeline-step-by-step"
   - "how-to-build-the-perfect-event-timeline"

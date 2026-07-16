@@ -8,14 +8,18 @@ const { backgroundGrid, seo, logo, theme, forceTheme, appStoreLink, name, home, 
 // Optional overrides so nested layouts (e.g. BlogLayout) can supply their own
 // breadcrumb trail and inject extra @graph nodes, keeping Layout the single
 // place that renders JSON-LD (avoids duplicate/conflicting @id entities).
-const { breadcrumbOverride, extraGraphNodes } = Astro.props as {
+const { breadcrumbOverride, extraGraphNodes, noindex, ogImageOverride } = Astro.props as {
   breadcrumbOverride?: any[];
   extraGraphNodes?: any[];
+  noindex?: boolean;
+  ogImageOverride?: string;
 };
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const siteURL = Astro.site?.href ?? "https://event-stories.12f.dk/";
-const ogImage = logo.startsWith("http") ? logo : new URL("/og-image.png", Astro.site).href;
+// Nested layouts (e.g. blog posts) can supply their own social image via
+// `ogImageOverride` (the post cover); everything else uses the site card.
+const ogImage = ogImageOverride ?? new URL("/og-image.png", Astro.site).href;
 const isHome = Astro.url.pathname === "/" || Astro.url.pathname === "";
 
 // Real rating from App Store, with sensible minimum for display
@@ -54,6 +58,10 @@ const graph: any[] = [
     name: "12f",
     url: "https://www.12f.dk",
     logo: new URL("/logo.png", Astro.site).href,
+    sameAs: [
+      "https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151",
+      "https://www.12f.dk",
+    ],
     contactPoint: {
       "@type": "ContactPoint",
       email: "robert@12f.dk",
@@ -257,8 +265,17 @@ const jsonLd = {
     <meta name="keywords" content="event planner app, party planner app, wedding planner, guest list manager, event budget tracker, RSVP tracker, event planning app, party organizer, iOS event app, iPhone party planner, event timeline, vendor management, celebration planner, birthday party planner, event coordination, event management app, free event planner, wedding budget tracker, party guest list, event schedule app, vendor management app" />
     <meta name="author" content="Robert Jensen" />
     <meta name="publisher" content="12f" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    {noindex ? (
+      <>
+        <meta name="robots" content="noindex, follow" />
+        <meta name="googlebot" content="noindex, follow" />
+      </>
+    ) : (
+      <>
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      </>
+    )}
     <meta name="bingbot" content="index, follow" />
     <meta name="rating" content="General" />
     <meta name="category" content="Productivity, Lifestyle, Event Planning" />
