@@ -91,7 +91,10 @@ if (seo.title) {
   breadcrumbItems.push({
     "@type": "ListItem",
     position: 3,
-    name: seo.title.split(" - ")[0],
+    // Blog titles join the post title and site name with an em-dash (" — ");
+    // static-page titles use " - ". Split on either so the crumb is just the
+    // short title, never the full "<title> — Event Stories: Party Planner".
+    name: seo.title.split(/\s[—–-]\s/)[0],
     item: canonicalURL.href,
   });
 }
