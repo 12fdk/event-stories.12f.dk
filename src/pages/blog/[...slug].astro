@@ -111,4 +111,29 @@ const articleSchema = {
   <div class="prose prose-lg max-w-none prose-headings:font-bold prose-h2:mt-12 prose-h2:text-3xl prose-h3:text-xl prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl">
     <Content />
   </div>
+
+  {
+    related.length > 0 && (
+      <aside class="mt-16 border-t border-base-300 pt-10" aria-label="Related posts">
+        <h2 class="mb-6 font-display text-2xl font-bold tracking-tight">Related posts</h2>
+        <ul class="grid list-none gap-4 p-0 sm:grid-cols-2">
+          {related.map((p) => (
+            <li class="m-0 p-0">
+              <a
+                href={`/blog/${p.slug}/`}
+                class="group flex h-full flex-col rounded-box border border-base-300 bg-base-100 p-5 no-underline transition-colors hover:border-base-content/30"
+              >
+                <span class="font-display text-lg font-bold leading-snug tracking-tight text-base-content transition-colors group-hover:text-primary">
+                  {p.data.title}
+                </span>
+                <span class="mt-2 text-sm leading-relaxed text-base-content/70">
+                  {p.data.description}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    )
+  }
 </BlogLayout>

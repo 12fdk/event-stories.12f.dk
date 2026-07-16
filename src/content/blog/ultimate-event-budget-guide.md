@@ -157,12 +157,3 @@ Venue and catering. They're usually the largest expenses, and they're also what 
 
 **When should I start tracking my budget?**
 From the very first number you write down. As soon as you have a ceiling in mind, enter it. An untracked budget is just a hope with a deadline.
-
----
-
-## Related posts
-
-- 7 Simple Ways to Keep Your Attendees Engaged All Event Long
-- How to Plan an Event Timeline Step by Step
-- Wedding Checklist: Every Task by Timeline
-- How to Choose the Right Venue for Your Event
