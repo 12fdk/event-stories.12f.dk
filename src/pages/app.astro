@@ -4,6 +4,6 @@ import Layout from "Layout.astro";
 import defaultTemplateConfig from "utils/config";
 ---
 
-<Layout {...defaultTemplateConfig}>
+<Layout {...defaultTemplateConfig} noindex={true}>
   <AppRedirectionPage client:load config={defaultTemplateConfig} />
 </Layout>

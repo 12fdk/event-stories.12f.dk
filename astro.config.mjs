@@ -36,5 +36,9 @@ export default defineConfig({
       },
     },
   },
-  integrations: [react(), tailwind(), sitemap()],
+  integrations: [
+    react(),
+    tailwind(),
+    sitemap({ filter: (page) => !page.endsWith("/app/") }),
+  ],
 });

@@ -10,6 +10,25 @@ tags: ["event timeline", "event planning", "schedule"]
 cover: "/blog/how-to-build-the-perfect-event-timeline-cover.png"
 coverAlt: "A detailed event timeline displayed on a tablet, soft natural light on a cozy desk, photorealistic"
 
+tldr:
+  - "Start from the fixed constraints — duration, venue, confirmed speakers, and budget — and build around them."
+  - "Design the timeline as a sequence of experiences, not just a list of sessions."
+  - "Build the skeleton first: tracks, anchor keynotes, then speakers, then breaks."
+  - "Give breaks at least 20–30 minutes and leave 30–60 minutes of unstructured time each day."
+  - "Share the schedule early and let attendees build their own personalized version."
+
+faq:
+  - question: "How do I start building an event timeline?"
+    answer: "Begin with the things you can't change — your event's total duration, what your venue can physically do, which speakers are confirmed, and what your budget allows. These fixed points are the anchors everything else is built around."
+  - question: "How long should breaks be at an event?"
+    answer: "Aim for a minimum of 20 minutes, ideally 30. A 15-minute break between two 45-minute sessions leaves people frustrated. Breaks aren't downtime — they're networking, mental-reset, and coffee time."
+  - question: "What should the last session of an event be?"
+    answer: "Close with something that leaves people feeling good — a closing keynote, a panel Q&A, or a celebration. Never end on a technical workshop, because the final impression shapes the entire memory of your event."
+  - question: "How much unstructured time should an event timeline include?"
+    answer: "Build in roughly 30–60 minutes of unstructured time each day. That's when the real connections and conversations happen — the reason people come back next year."
+  - question: "How far in advance should I share the schedule with attendees?"
+    answer: "As soon as your confirmed sessions are set. People who can plan a few days ahead arrive more prepared, network more deliberately, and leave more satisfied."
+
 relatedSlugs:
   - "ultimate-event-budget-guide"
   - "boost-event-engagement"
