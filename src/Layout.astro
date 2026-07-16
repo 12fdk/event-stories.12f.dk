@@ -41,7 +41,8 @@ const breadcrumbItems = breadcrumbOverride ?? [
   { "@type": "ListItem", position: 1, name: "Home", item: siteURL }
 ];
 if (!breadcrumbOverride && !isHome && pathSegments.length > 0) {
-  const title = seo.title.split(" - ")[0];
+  // Trim the site-name suffix whether joined with " - " or an em/en-dash.
+  const title = seo.title.split(/\s[—–-]\s/)[0];
   breadcrumbItems.push({
     "@type": "ListItem",
     position: 2,
