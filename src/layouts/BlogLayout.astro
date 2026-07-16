@@ -47,71 +47,41 @@ const config: TemplateConfig = {
   appStore: toAppStoreMetadata(appStoreData),
 };
 
-// Update structured data for blog article
-const graph = [
-  {
+// Blog article schema. Layout renders the shared @graph (Organization,
+// WebSite, WebPage, BreadcrumbList); we only supply the blog-specific
+// breadcrumb trail and the Article node so a single JSON-LD block is emitted
+// per page (no duplicate/conflicting @id entities). See issue #31.
+const articleNode = articleSchema ?? ({
+  "@type": "Article",
+  headline: seo.title,
+  description: seo.description,
+  image: resolvedOgImage,
+  datePublished: publishedTime,
+  dateModified: modifiedTime || publishedTime,
+  author: author ? {
+    "@type": "Person",
+    name: author,
+    url: "https://www.12f.dk",
+  } : undefined,
+  publisher: {
     "@type": "Organization",
-    "@id": `${Astro.site}#organization`,
     name: "12f",
     url: "https://www.12f.dk",
-    logo: new URL("/logo.png", Astro.site).href,
-    contactPoint: {
-      "@type": "ContactPoint",
-      email: "robert@12f.dk",
-      contactType: "customer support",
-    },
-    founder: {
-      "@type": "Person",
-      name: "Robert Jensen",
+    logo: {
+      "@type": "ImageObject",
+      url: new URL("/logo.png", Astro.site).href,
     },
   },
-  {
-    "@type": "WebSite",
-    "@id": `${Astro.site}#website`,
-    name: "Event Stories: Party Planner",
-    url: Astro.site,
-    description: seo.description,
-    publisher: { "@id": `${Astro.site}#organization` },
-    inLanguage: "en",
+  keywords: tags?.join(", "),
+  inLanguage: "en",
+  isPartOf: {
+    "@type": "Blog",
+    name: "Event Stories Blog",
+    url: new URL("/blog/", Astro.site).href,
   },
-];
+} as Record<string, unknown>);
 
-// Blog article schema
-if (articleSchema) {
-  graph.push(articleSchema);
-} else {
-  graph.push({
-    "@type": "Article",
-    headline: seo.title,
-    description: seo.description,
-    image: resolvedOgImage,
-    datePublished: publishedTime,
-    dateModified: modifiedTime || publishedTime,
-    author: author ? {
-      "@type": "Person",
-      name: author,
-      url: "https://www.12f.dk",
-    } : undefined,
-    publisher: {
-      "@type": "Organization",
-      name: "12f",
-      url: "https://www.12f.dk",
-      logo: {
-        "@type": "ImageObject",
-        url: new URL("/logo.png", Astro.site).href,
-      },
-    },
-    keywords: tags?.join(", "),
-    inLanguage: "en",
-    isPartOf: {
-      "@type": "Blog",
-      name: "Event Stories Blog",
-      url: new URL("/blog/", Astro.site).href,
-    },
-  } as Record<string, unknown>);
-}
-
-// Breadcrumb list
+// Full breadcrumb trail: Home › Blog › [Post title].
 const breadcrumbItems = [
   { "@type": "ListItem", position: 1, name: "Home", item: Astro.site },
   { "@type": "ListItem", position: 2, name: "Blog", item: new URL("/blog/", Astro.site).href },
@@ -124,31 +94,13 @@ if (seo.title) {
     item: canonicalURL.href,
   });
 }
-graph.push({
-  "@type": "BreadcrumbList",
-  "@id": `${canonicalURL.href}#breadcrumb`,
-  itemListElement: breadcrumbItems,
-});
-
-// WebPage
-graph.push({
-  "@type": "WebPage",
-  "@id": `${canonicalURL.href}#webpage`,
-  url: canonicalURL.href,
-  name: seo.title,
-  description: seo.description,
-  isPartOf: { "@id": `${Astro.site}#website` },
-  inLanguage: "en",
-  breadcrumb: { "@id": `${canonicalURL.href}#breadcrumb` },
-});
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@graph": graph,
-};
 ---
 
-<Layout {...config}>
+<Layout
+  {...config}
+  breadcrumbOverride={breadcrumbItems}
+  extraGraphNodes={[articleNode]}
+>
   <SiteNavbar client:load config={config} />
   <div class="max-w-3xl mx-auto px-4 py-10 md:py-16">
     <nav aria-label="Breadcrumb" class="mb-6 text-sm text-base-content/60">
