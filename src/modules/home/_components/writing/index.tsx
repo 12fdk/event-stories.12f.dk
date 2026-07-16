@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { useContext } from "react";
-import { ConfigContext } from "../../../../utils/configContext";
 import type { BlogTeaser } from "../../../../content/blog";
 
 interface Props {
@@ -8,7 +6,6 @@ interface Props {
 }
 
 function WritingSection({ posts }: Props) {
-  const { ui } = useContext(ConfigContext)!;
   if (!posts.length) return null;
 
   return (
@@ -20,22 +17,17 @@ function WritingSection({ posts }: Props) {
         <div>
           <p className="tick-label m-0 flex items-center gap-3 text-base-content/50">
             <span className="inline-block h-0.5 w-8 bg-primary" />
-            {ui?.sectionLabels?.writing ?? "Writing"}
+            Writing
           </p>
           <h2 className="mb-3 mt-5 font-display text-3xl font-extrabold leading-[1.05] tracking-tightest md:text-4xl">
-            {ui?.blog?.title ?? "What we've written"}
+            What we've written
           </h2>
-          {ui?.blog?.subtitle && (
-            <p className="text-lg leading-relaxed text-base-content/70">
-              {ui.blog.subtitle}
-            </p>
-          )}
         </div>
         <a
           href="/blog/"
           className="tick-label shrink-0 border-b-2 border-primary pb-1 text-base-content transition-colors hover:text-primary"
         >
-          {ui?.blog?.allPosts ?? "All posts"}
+          All posts
         </a>
       </div>
 
