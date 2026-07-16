@@ -12,6 +12,11 @@ const blog = defineCollection({
     publishDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     author: z.string().default("Robert Jensen"),
+    authorBio: z
+      .string()
+      .default(
+        "Robert Jensen is the developer of Event Stories and has planned his share of celebrations — birthdays, weddings, and a few too-ambitious dinner parties. He built the app because nothing he tried (spreadsheets, notes apps, generic planners) held up once the guest list and budget started moving.",
+      ),
     tags: z.array(z.string()).default([]),
     ogImage: z.string().optional(),
     tldr: z.array(z.string()).default([]),
