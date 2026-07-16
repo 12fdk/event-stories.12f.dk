@@ -5,6 +5,14 @@ import type { TemplateConfig } from "utils/configType";
 const { backgroundGrid, seo, logo, theme, forceTheme, appStoreLink, name, home, appStore } =
   Astro.props as TemplateConfig;
 
+// Optional overrides so nested layouts (e.g. BlogLayout) can supply their own
+// breadcrumb trail and inject extra @graph nodes, keeping Layout the single
+// place that renders JSON-LD (avoids duplicate/conflicting @id entities).
+const { breadcrumbOverride, extraGraphNodes } = Astro.props as {
+  breadcrumbOverride?: any[];
+  extraGraphNodes?: any[];
+};
+
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const siteURL = Astro.site?.href ?? "https://event-stories.12f.dk/";
 const ogImage = logo.startsWith("http") ? logo : new URL("/og-image.png", Astro.site).href;
@@ -22,12 +30,13 @@ const screenshotURLs = home?.header?.screenshots?.map(s =>
   s.startsWith("http") ? s : new URL(s, Astro.site).href
 ) ?? [];
 
-// Breadcrumb list (only shown for non-home pages)
+// Breadcrumb list (only shown for non-home pages).
+// A nested layout can pass a full trail via `breadcrumbOverride`.
 const pathSegments = Astro.url.pathname.split("/").filter(Boolean);
-const breadcrumbItems = [
+const breadcrumbItems = breadcrumbOverride ?? [
   { "@type": "ListItem", position: 1, name: "Home", item: siteURL }
 ];
-if (!isHome && pathSegments.length > 0) {
+if (!breadcrumbOverride && !isHome && pathSegments.length > 0) {
   const title = seo.title.split(" - ")[0];
   breadcrumbItems.push({
     "@type": "ListItem",
@@ -80,6 +89,11 @@ const graph: any[] = [
     itemListElement: breadcrumbItems,
   },
 ];
+
+// Extra nodes supplied by a nested layout (e.g. a blog Article).
+if (extraGraphNodes?.length) {
+  graph.push(...extraGraphNodes);
+}
 
 if (isHome) {
   graph.push({
