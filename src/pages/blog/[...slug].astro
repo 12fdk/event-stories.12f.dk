@@ -29,11 +29,17 @@ const formatDate = (d: Date) =>
 
 const canonicalPath = `/blog/${post.slug}/`;
 const ogImage = post.data.ogImage ?? null;
-const related = (
-  post.data.relatedSlugs && post.data.relatedSlugs.length > 0
-    ? allPosts.filter((p) => post.data.relatedSlugs.includes(p.slug))
-    : allPosts.filter((p) => p.slug !== post.slug).slice(0, 3)
-).slice(0, 3);
+// Start from the curated relatedSlugs, then top up with other recent posts so
+// the "Keep reading" row always shows up to three cards.
+const relatedBySlug = (post.data.relatedSlugs ?? [])
+  .map((slug) => allPosts.find((p) => p.slug === slug))
+  .filter((p): p is (typeof allPosts)[number] => Boolean(p) && p!.slug !== post.slug);
+
+const fillers = allPosts
+  .filter((p) => p.slug !== post.slug && !relatedBySlug.some((r) => r.slug === p.slug))
+  .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+
+const related = [...relatedBySlug, ...fillers].slice(0, 3);
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -112,23 +118,48 @@ const articleSchema = {
     <Content />
   </div>
 
+  <aside class="mt-16 rounded-box border border-base-300 bg-base-200/60 p-6 sm:p-8" aria-label="About the author">
+    <p class="tick-label m-0 text-base-content/50">Written by</p>
+    <p class="mb-3 mt-2 font-display text-xl font-bold tracking-tight text-base-content">
+      {post.data.author}
+    </p>
+    <p class="m-0 leading-relaxed text-base-content/70">
+      {post.data.authorBio}
+    </p>
+  </aside>
+
   {
     related.length > 0 && (
-      <aside class="mt-16 border-t border-base-300 pt-10" aria-label="Related posts">
-        <h2 class="mb-6 font-display text-2xl font-bold tracking-tight">Related posts</h2>
-        <ul class="grid list-none gap-4 p-0 sm:grid-cols-2">
+      <aside class="mt-14 border-t border-base-300 pt-12" aria-label="Keep reading">
+        <h2 class="mb-8 font-display text-3xl font-extrabold tracking-tight">Keep reading</h2>
+        <ul class="grid list-none gap-6 p-0 sm:grid-cols-2 lg:grid-cols-3">
           {related.map((p) => (
             <li class="m-0 p-0">
               <a
                 href={`/blog/${p.slug}/`}
-                class="group flex h-full flex-col rounded-box border border-base-300 bg-base-100 p-5 no-underline transition-colors hover:border-base-content/30"
+                class="group flex h-full flex-col overflow-hidden rounded-box border border-base-300 bg-base-100 no-underline transition-colors hover:border-base-content/30"
               >
-                <span class="font-display text-lg font-bold leading-snug tracking-tight text-base-content transition-colors group-hover:text-primary">
-                  {p.data.title}
-                </span>
-                <span class="mt-2 text-sm leading-relaxed text-base-content/70">
-                  {p.data.description}
-                </span>
+                {p.data.cover && (
+                  <div class="overflow-hidden border-b border-base-300 bg-base-200">
+                    <img
+                      src={p.data.cover}
+                      alt={p.data.coverAlt ?? ""}
+                      width={640}
+                      height={360}
+                      loading="lazy"
+                      decoding="async"
+                      class="aspect-[16/9] w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+                    />
+                  </div>
+                )}
+                <div class="flex flex-1 flex-col p-5">
+                  <span class="font-display text-lg font-bold leading-snug tracking-tight text-base-content transition-colors group-hover:text-primary">
+                    {p.data.title}
+                  </span>
+                  <span class="mt-2 text-sm leading-relaxed text-base-content/70">
+                    {p.data.description}
+                  </span>
+                </div>
               </a>
             </li>
           ))}
