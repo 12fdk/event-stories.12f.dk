@@ -1,5 +1,6 @@
 ---
 import Layout from "../Layout.astro";
+import { SiteNavbar, SiteFooter } from "@components/siteChrome";
 import defaultTemplateConfig from "utils/config";
 import { fetchAppStoreData, fallbackAppStoreData, toAppStoreMetadata } from "utils/appStoreData";
 import type { TemplateConfig } from "utils/configType";
@@ -148,6 +149,7 @@ const jsonLd = {
 ---
 
 <Layout {...config}>
+  <SiteNavbar client:load config={config} />
   <div class="max-w-3xl mx-auto px-4 py-10 md:py-16">
     <nav aria-label="Breadcrumb" class="mb-6 text-sm text-base-content/60">
       <a href="/" class="hover:text-primary">Home</a>
@@ -171,4 +173,5 @@ const jsonLd = {
       </div>
     </article>
   </div>
+  <SiteFooter client:load config={config} />
 </Layout>
