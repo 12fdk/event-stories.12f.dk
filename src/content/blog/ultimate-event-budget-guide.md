@@ -31,6 +31,7 @@ faq:
 
 relatedSlugs:
   - "wedding-seating-chart"
+  - "rsvp-no-shows"
 ---
 
 

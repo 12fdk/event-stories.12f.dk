@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "rsvp-no-shows",
+          title: "RSVP No-Shows: What to Do When Guests Don't Reply",
+          description:
+            "RSVP no-shows happen to every host. Here's exactly what to do when guests don't reply, with polite follow-up scripts you can copy and paste.",
+          date: "2026-07-17",
+          tags: ["RSVP tracking", "guest list", "event planning"],
+          readingTime: 8,
+          author: "Robert Jensen",
+        },
+        {
           slug: "wedding-seating-chart",
           title: "How to Make a Wedding Seating Chart Without the Stress",
           description:

@@ -34,6 +34,7 @@ faq:
 
 relatedSlugs:
   - "ultimate-event-budget-guide"
+  - "rsvp-no-shows"
 ---
 
 ## The one task everyone dreads
