@@ -25,3 +25,7 @@ pnpm-debug.log*
 
 # pnpm store
 .pnpm-store/
+
+# never commit an accidentally-generated workspace file — an empty `packages`
+# field breaks the CI `pnpm install` ("packages field missing or empty")
+pnpm-workspace.yaml

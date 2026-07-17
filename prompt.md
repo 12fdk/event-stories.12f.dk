@@ -240,9 +240,14 @@ Work in a clone of `git@github.com:12fdk/event-stories.12f.dk.git` (HTTPS clone 
    The build MUST pass. A schema/frontmatter error fails the build — fix it before pushing.
 4. Sanity-check: title ≤60 chars, description ≤160 chars, keyword appears in title +
    naturally in the body, no invented features, no conference language, one CTA only.
-5. Commit and push to `main` (this auto-deploys via GitHub Actions):
+5. Commit and push to `main` (this auto-deploys via GitHub Actions). Commit **only**
+   the post `.md`, its images, and the `config.ts` homepage/`relatedSlugs` edits — do
+   **not** commit install artifacts. In particular, never commit `pnpm-workspace.yaml`
+   (an empty `packages` field breaks CI with "packages field missing or empty"); it is
+   git-ignored, so run `git status` and confirm your staged files before committing.
    ```bash
-   git add -A
+   git add src/content/blog public/blog src/utils/config.ts
+   git status          # confirm nothing stray is staged
    git commit -m "Blog: <title>"
    git push origin main
    ```
