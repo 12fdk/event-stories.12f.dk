@@ -278,11 +278,21 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "wedding-seating-chart",
+          title: "How to Make a Wedding Seating Chart Without the Stress",
+          description:
+            "A practical, stress-free guide to making a wedding seating chart that your guests will actually enjoy — with zero awkward moments.",
+          date: "2026-07-17",
+          tags: ["seating chart", "wedding planning", "guest management"],
+          readingTime: 9,
+          author: "Robert Jensen",
+        },
+        {
           slug: "ultimate-event-budget-guide",
           title: "The Ultimate Guide to Event Budgets: How to Plan Without Stress",
           description:
             "A step-by-step guide to creating an event budget that actually works — from the first number you write down to the last receipt you file.",
-          date: "2026-01-10",
+          date: "2026-07-13",
           tags: ["budgeting", "planning", "guide"],
           readingTime: 8,
           author: "Robert Jensen",

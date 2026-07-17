@@ -29,7 +29,8 @@ faq:
   - question: "How often should I review my event budget?"
     answer: "Once a week during planning is plenty. Spend about fifteen minutes checking what you've spent, whether you're staying within your categories, and whether anything is creeping up. Regular check-ins mean you never face a budget emergency on event day."
 
-relatedSlugs: []
+relatedSlugs:
+  - "wedding-seating-chart"
 ---
 
 
