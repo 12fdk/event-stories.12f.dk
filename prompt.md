@@ -145,8 +145,11 @@ problem the article describes — never the subject of the article.
 - **At most one or two brief, *unbranded* in-body mentions** where a feature genuinely
   removes the friction you just described (e.g. after explaining seating-chart pain:
   "this is exactly the kind of thing a drag-and-drop seating planner makes painless").
-  Keep them generic and helpful — describe the *capability*, never name the app in the
-  body. Optional; zero is fine if none fit naturally.
+  Keep them generic and helpful — describe the *capability* ("a good guest-list tool,"
+  "a single place to track RSVPs"), and **never write the words "Event Stories" anywhere
+  in the body.** The brand name appears exactly once in the whole article: in the closing
+  CTA. If you've typed "Event Stories" before the final section, delete it and describe
+  the capability instead. Optional; zero in-body mentions is fine if none fit naturally.
 - **One honest CTA at the very end**, as its own short section — the model is the
   closing of `ultimate-event-budget-guide.md`. Link once:
   `[Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151)`,
@@ -261,7 +264,8 @@ Work in a clone of `git@github.com:12fdk/event-stories.12f.dk.git` (HTTPS clone 
 - [ ] Reader is a private-celebration host; zero conference language.
 - [ ] Only real Event Stories features are mentioned; nothing invented.
 - [ ] Genuinely useful on its own; ~90% tool-agnostic advice.
-- [ ] Exactly one honest CTA at the end; at most one soft in-body mention.
+- [ ] The brand name "Event Stories" appears ONLY in the closing CTA — never in the body.
+- [ ] Exactly one honest CTA at the end; at most 1–2 soft *unbranded* in-body mentions.
 - [ ] 1,500–2,200 words, no H1 in body, clean H2/H3 structure.
 - [ ] Frontmatter passes the Zod schema; `pnpm build` is green.
 - [ ] Cover + 2–3 photorealistic images, all with alt text.

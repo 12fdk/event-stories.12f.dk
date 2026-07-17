@@ -6,6 +6,9 @@ keyword: "RSVP no-shows"
 publishDate: 2026-07-17
 author: "Robert Jensen"
 tags: ["RSVP tracking", "guest list", "event planning"]
+relatedSlugs:
+  - "wedding-seating-chart"
+  - "ultimate-event-budget-guide"
 cover: "/blog/rsvp-no-shows-cover.png"
 coverAlt: "A person sitting at a kitchen table with a laptop open to a guest list, looking thoughtfully at the screen, a cup of coffee and a notebook nearby, warm natural light from a window"
 
@@ -105,7 +108,7 @@ If you're juggling responses across text messages, email threads, printed cards,
 
 Having a single place where you can see every RSVP, flag the ones that need follow-up, and track the running total of confirmed versus absent makes the whole process calm instead of stressful. You set a deadline, the system flags the non-responders, and you follow your scripts without second-guessing yourself. No spreadsheets multiplying, no guessing who already replied.
 
-That's why I built Event Stories around this kind of problem — the moment when planning feels like it's running away from you because the logistics are scattered everywhere. Guest lists with RSVP tracking, dietary needs, plus-ones, and reminders, all in one place on your phone.
+This is exactly the moment a dedicated planning tool earns its place — when planning feels like it's running away from you because the logistics are scattered everywhere. A single guest list that tracks RSVPs, dietary needs, plus-ones, and reminders, all in one place on your phone, is the difference between guessing and knowing.
 
 ## A word about the "maybe" list
 
@@ -126,7 +129,7 @@ Your RSVP deadline has passed. You've sent your reminders. You've decided who's 
 
 **Confirm with your caterer or venue.** Call or email them with your final count. Most venues want numbers 48 hours before the event; caterers often prefer a week. Check their specific policy — and keep it in writing so you have a paper trail.
 
-**Build your final guest list.** If you're using Event Stories, the guest list section lets you import from contacts, flag dietary requirements, add plus-ones, and export everything as a PDF to share with the venue or your wedding party. No more email chains with updated lists attached.
+**Build your final guest list.** A good guest-list tool lets you import from contacts, flag dietary requirements, add plus-ones, and export everything as a PDF to share with the venue or your wedding party. No more email chains with updated lists attached.
 
 **Set up a shared system if you're co-hosting.** If someone else is helping you plan — a parent, a partner, a friend — you need one source of truth. With iCloud sync, everyone on the planning team sees the same guest list and RSVPs update in real time. No more "wait, did *you* confirm Uncle Dave or did I?"
 
