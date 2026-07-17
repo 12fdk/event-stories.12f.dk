@@ -142,9 +142,11 @@ problem the article describes — never the subject of the article.
 
 - **~90% pure, tool-agnostic help.** Give away the good advice for free, including how
   to do it with a spreadsheet or paper. Never gate the value behind the app.
-- **At most one brief, natural in-body mention** where a feature genuinely removes the
-  friction you just described (e.g. after explaining seating-chart pain: "this is
-  exactly the kind of thing a drag-and-drop seating planner makes painless"). Optional.
+- **At most one or two brief, *unbranded* in-body mentions** where a feature genuinely
+  removes the friction you just described (e.g. after explaining seating-chart pain:
+  "this is exactly the kind of thing a drag-and-drop seating planner makes painless").
+  Keep them generic and helpful — describe the *capability*, never name the app in the
+  body. Optional; zero is fine if none fit naturally.
 - **One honest CTA at the very end**, as its own short section — the model is the
   closing of `ultimate-event-budget-guide.md`. Link once:
   `[Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151)`,
@@ -208,7 +210,8 @@ Generate real, warm, **photorealistic** images (not illustrations, no text overl
 ComfyUI server: `http://spark-72aa.tail7196c.ts.net:8188` (use the `comfy-gen` tool).
 
 - **1 cover** + **2–3 in-body images** at natural section breaks.
-- Save to `public/blog/`:
+- Save to `public/blog/`, using an image prefix that matches the post (keep it
+  consistent with the markdown filename/slug so assets are easy to trace):
   - Cover → `public/blog/SLUG-cover.png`
   - In-body → `public/blog/SLUG-img1.png`, `public/blog/SLUG-img2.png`, …
 - Reference in the body as `![descriptive alt](/blog/SLUG-img1.png)`.
@@ -223,21 +226,27 @@ ComfyUI server: `http://spark-72aa.tail7196c.ts.net:8188` (use the `comfy-gen` t
 Work in a clone of `git@github.com:12fdk/event-stories.12f.dk.git` (HTTPS clone is fine).
 
 1. Create the post at `src/content/blog/SLUG.md` and the images in `public/blog/`.
-2. **Install & build with pnpm** (this repo uses pnpm, not npm):
+   Cross-link: add this post's slug to `relatedSlugs` of 1–2 existing posts too, so the
+   linking is mutual.
+2. **Surface it on the homepage** — prepend an entry for the new post to the
+   `home.writing.posts` array in `src/utils/config.ts` (newest first), matching the
+   shape of the existing entries (`slug`, `title`, `description`, `date`, `tags`,
+   `readingTime`, `author`).
+3. **Install & build with pnpm** (this repo uses pnpm, not npm):
    ```bash
    pnpm install
    pnpm build
    ```
    The build MUST pass. A schema/frontmatter error fails the build — fix it before pushing.
-3. Sanity-check: title ≤60 chars, description ≤160 chars, keyword appears in title +
+4. Sanity-check: title ≤60 chars, description ≤160 chars, keyword appears in title +
    naturally in the body, no invented features, no conference language, one CTA only.
-4. Commit and push to `main` (this auto-deploys via GitHub Actions):
+5. Commit and push to `main` (this auto-deploys via GitHub Actions):
    ```bash
    git add -A
    git commit -m "Blog: <title>"
    git push origin main
    ```
-5. Confirm the push succeeded and the GitHub Actions deploy is green.
+6. Confirm the push succeeded and the GitHub Actions deploy is green.
 
 ---
 
