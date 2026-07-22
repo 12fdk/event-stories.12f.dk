@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "wedding-planning-checklist",
+          title: "Wedding Planning Checklist for Beginners: Where to Start",
+          description:
+            "A clear, calm wedding planning checklist for beginners — a 12-month timeline, the first things to book, and how to keep everything from spiraling.",
+          date: "2026-07-22",
+          tags: ["wedding checklist", "beginner wedding planning", "wedding timeline"],
+          readingTime: 11,
+          author: "Robert Jensen",
+        },
+        {
           slug: "rsvp-no-shows",
           title: "RSVP No-Shows: What to Do When Guests Don't Reply",
           description:

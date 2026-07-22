@@ -7,6 +7,7 @@ publishDate: 2026-07-17
 author: "Robert Jensen"
 tags: ["RSVP tracking", "guest list", "event planning"]
 relatedSlugs:
+  - "wedding-planning-checklist"
   - "wedding-seating-chart"
   - "ultimate-event-budget-guide"
 cover: "/blog/rsvp-no-shows-cover.png"
