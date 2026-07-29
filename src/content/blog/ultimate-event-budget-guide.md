@@ -31,8 +31,8 @@ faq:
 
 relatedSlugs:
   - "wedding-planning-checklist"
+  - "dinner-party-timeline"
   - "wedding-seating-chart"
-  - "rsvp-no-shows"
 ---
 
 

@@ -33,9 +33,9 @@ faq:
     answer: "Young children (under about 8) generally do best at a dedicated kids' table with some activities, or seated alongside their parents if you want them at the family tables. Older children and teenagers can sit with their parents or at a peer table with their friends. Communicate your plan to parents ahead of time so there's no confusion on the day."
 
 relatedSlugs:
-  - "wedding-planning-checklist"
   - "ultimate-event-budget-guide"
   - "rsvp-no-shows"
+  - "dinner-party-timeline"
 ---
 
 ## The one task everyone dreads

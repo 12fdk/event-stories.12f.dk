@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "dinner-party-timeline",
+          title: "Dinner Party Timeline: Cook Everything and Still Sit Down",
+          description:
+            "A realistic dinner party timeline that actually lets you eat — from prep to the last guest's departure, so you cook everything and still sit down.",
+          date: "2026-07-29",
+          tags: ["dinner party", "party timeline", "event schedule"],
+          readingTime: 9,
+          author: "Robert Jensen",
+        },
+        {
           slug: "wedding-planning-checklist",
           title: "Wedding Planning Checklist for Beginners: Where to Start",
           description:

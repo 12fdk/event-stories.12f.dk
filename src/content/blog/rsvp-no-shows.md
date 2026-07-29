@@ -9,7 +9,7 @@ tags: ["RSVP tracking", "guest list", "event planning"]
 relatedSlugs:
   - "wedding-planning-checklist"
   - "wedding-seating-chart"
-  - "ultimate-event-budget-guide"
+  - "dinner-party-timeline"
 cover: "/blog/rsvp-no-shows-cover.png"
 coverAlt: "A person sitting at a kitchen table with a laptop open to a guest list, looking thoughtfully at the screen, a cup of coffee and a notebook nearby, warm natural light from a window"
 
