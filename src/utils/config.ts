@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "baby-shower-planning-guide",
+          title: "How to Host a Baby Shower: Step-by-Step Guide for First-Timers",
+          description:
+            "A stress-free baby shower planning guide for first-timers — from the guest list and registry to the day-of timeline, so you actually enjoy the party you're hosting.",
+          date: "2026-08-05",
+          tags: ["baby shower", "baby shower planning", "first-time host"],
+          readingTime: 10,
+          author: "Robert Jensen",
+        },
+        {
           slug: "dinner-party-timeline",
           title: "Dinner Party Timeline: Cook Everything and Still Sit Down",
           description:

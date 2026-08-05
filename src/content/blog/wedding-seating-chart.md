@@ -36,6 +36,7 @@ relatedSlugs:
   - "ultimate-event-budget-guide"
   - "rsvp-no-shows"
   - "dinner-party-timeline"
+  - "baby-shower-planning-guide"
 ---
 
 ## The one task everyone dreads

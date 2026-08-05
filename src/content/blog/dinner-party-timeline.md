@@ -31,6 +31,11 @@ faq:
     answer: "Cut a task. Not two — one. If the bread isn't warmed, guests will eat fine without it. If the salad is just greens without the fancy garnish, it still tastes good. The goal is to keep your nerves steady. A small compromise is better than cascading panic."
   - question: "How long should a dinner party last?"
     answer: "Two to three hours is the sweet spot for most people. Plan a clear ending around 10:00 or 10:30 pm — put out coffee and mints at 9:30, and let the natural wind-down happen. You don't need to announce the end; the coffee and the clearing of plates signal it gently."
+
+relatedSlugs:
+  - "wedding-planning-checklist"
+  - "rsvp-no-shows"
+  - "baby-shower-planning-guide"
 ---
 
 ## The problem isn't the cooking. It's the ordering.

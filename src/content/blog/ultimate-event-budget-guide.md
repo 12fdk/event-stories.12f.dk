@@ -33,6 +33,7 @@ relatedSlugs:
   - "wedding-planning-checklist"
   - "dinner-party-timeline"
   - "wedding-seating-chart"
+  - "baby-shower-planning-guide"
 ---
 
 

@@ -31,6 +31,11 @@ faq:
     answer: "It varies enormously depending on location, guest count, and priorities. A realistic range is $15,000 to $40,000 for most weddings. The biggest expenses are venue and catering (together usually 50–60% of the total), followed by photography and entertainment. The key isn't how much you spend — it's having a clear ceiling upfront and tracking every expense so nothing surprises you."
   - question: "Who should help me plan the wedding?"
     answer: "At minimum, you and your partner should be co-planning. Beyond that, decide early whether parents or family members are contributing financially — if they are, they'll want input. Keep the planning team small (2–4 people max) and give everyone clear roles. Too many voices and you'll end up with conflicting ideas and nobody in charge."
+
+relatedSlugs:
+  - "rsvp-no-shows"
+  - "wedding-seating-chart"
+  - "baby-shower-planning-guide"
 ---
 
 ## The moment the reality hits
