@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "wedding-cost-per-guest",
+          title: "How Much Does a Wedding Cost Per Guest in 2026?",
+          description:
+            "A realistic breakdown of average wedding cost per guest in 2026, with real numbers by category, per-person food costs, and how to keep your budget from spiraling.",
+          date: "2026-08-12",
+          tags: ["wedding cost per guest", "wedding budget breakdown", "wedding expenses"],
+          readingTime: 9,
+          author: "Robert Jensen",
+        },
+        {
           slug: "baby-shower-planning-guide",
           title: "How to Host a Baby Shower: Step-by-Step Guide for First-Timers",
           description:

@@ -36,6 +36,7 @@ relatedSlugs:
   - "rsvp-no-shows"
   - "wedding-seating-chart"
   - "baby-shower-planning-guide"
+  - "wedding-cost-per-guest"
 ---
 
 ## The moment the reality hits

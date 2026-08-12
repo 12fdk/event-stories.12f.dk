@@ -34,6 +34,7 @@ relatedSlugs:
   - "dinner-party-timeline"
   - "wedding-seating-chart"
   - "baby-shower-planning-guide"
+  - "wedding-cost-per-guest"
 ---
 
 
