@@ -36,6 +36,7 @@ relatedSlugs:
   - "wedding-planning-checklist"
   - "ultimate-event-budget-guide"
   - "rsvp-no-shows"
+  - "wedding-under-10k"
 ---
 
 ## The number you're looking for

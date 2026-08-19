@@ -35,6 +35,7 @@ relatedSlugs:
   - "wedding-seating-chart"
   - "baby-shower-planning-guide"
   - "wedding-cost-per-guest"
+  - "wedding-under-10k"
 ---
 
 

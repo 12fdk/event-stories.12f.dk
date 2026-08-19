@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "wedding-under-10k",
+          title: "How to Plan a Wedding Under $10k Without Cutting Corners",
+          description:
+            "A realistic line-by-line budget for a wedding under 10k — where the money goes, what to trim, and how to host a celebration that still feels like the big day.",
+          date: "2026-08-19",
+          tags: ["wedding budget", "budget wedding", "wedding under 10k", "wedding planning"],
+          readingTime: 9,
+          author: "Robert Jensen",
+        },
+        {
           slug: "wedding-cost-per-guest",
           title: "How Much Does a Wedding Cost Per Guest in 2026?",
           description:
