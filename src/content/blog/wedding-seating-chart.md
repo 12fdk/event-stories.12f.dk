@@ -37,6 +37,7 @@ relatedSlugs:
   - "rsvp-no-shows"
   - "dinner-party-timeline"
   - "baby-shower-planning-guide"
+  - "wedding-reception-program"
 ---
 
 ## The one task everyone dreads

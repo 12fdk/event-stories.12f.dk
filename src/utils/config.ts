@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "wedding-reception-program",
+          title: "How to Make Wedding Table Programs That Look Effortless",
+          description:
+            "A calm, step-by-step guide to making wedding table programs that look effortless — what to include, what to skip, and how to print them without the stress.",
+          date: "2026-08-26",
+          tags: ["wedding reception", "table programs", "reception details"],
+          readingTime: 8,
+          author: "Robert Jensen",
+        },
+        {
           slug: "wedding-under-10k",
           title: "How to Plan a Wedding Under $10k Without Cutting Corners",
           description:

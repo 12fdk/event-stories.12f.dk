@@ -36,6 +36,7 @@ relatedSlugs:
   - "wedding-planning-checklist"
   - "rsvp-no-shows"
   - "baby-shower-planning-guide"
+  - "wedding-reception-program"
 ---
 
 ## The problem isn't the cooking. It's the ordering.
