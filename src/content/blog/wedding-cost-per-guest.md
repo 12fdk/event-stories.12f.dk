@@ -6,7 +6,7 @@ keyword: "average wedding cost per guest"
 publishDate: 2026-08-12
 author: "Robert Jensen"
 tags: ["wedding cost per guest", "wedding budget breakdown", "wedding expenses"]
-cover: "/blog/wedding-cost-per-guest-cover.png"
+cover: "/blog/wedding-cost-per-guest-cover.webp"
 coverAlt: "An overhead shot of a warm kitchen table with a wedding budget notebook open, showing handwritten cost breakdowns per guest, a coffee cup beside it, soft natural morning light"
 
 tldr:
@@ -47,7 +47,7 @@ Here it is: in 2026, a typical American wedding runs **$150 to $250 per guest** 
 
 That's the national average range. It can be lower in smaller markets, higher in cities. It depends on whether you go buffet or plated, open bar or beer-and-wine, 60 guests or 200. But $150 to $250 per person is the band you start from, and from there you can build the numbers that matter for *your* wedding.
 
-![A couple looking at a wedding budget spreadsheet on a laptop at a warm kitchen table, soft natural light](/blog/wedding-cost-per-guest-img1.png)
+![A couple looking at a wedding budget spreadsheet on a laptop at a warm kitchen table, soft natural light](/blog/wedding-cost-per-guest-img1.webp)
 
 ## Why cost per guest is the only metric that matters
 
@@ -132,7 +132,7 @@ Cut 20 names, save $3,000 to $4,000. Cut 40 names, save $6,000 to $8,000. That's
 
 People will understand. Most of them are doing the same math in their own head, and if they're on your list, they want to be there.
 
-![A person writing in a wedding planning notebook at a bright desk with a coffee cup, warm natural light, photorealistic](/blog/wedding-cost-per-guest-img2.png)
+![A person writing in a wedding planning notebook at a bright desk with a coffee cup, warm natural light, photorealistic](/blog/wedding-cost-per-guest-img2.webp)
 
 ## A sample budget, one real couple's numbers
 

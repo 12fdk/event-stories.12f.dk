@@ -7,7 +7,7 @@ lede: "Let's be honest — the word 'budget' probably makes you want to put some
 keyword: "event budget planning"
 publishDate: 2026-07-13
 tags: ["event budget", "event planning", "expense tracking"]
-cover: "/blog/ultimate-event-budget-cover.png"
+cover: "/blog/ultimate-event-budget-cover.webp"
 coverAlt: "A warm desk scene with a budget planner, coffee, and a gentle natural light, photorealistic"
 
 tldr:
@@ -46,7 +46,7 @@ Here's the thing: a budget isn't a set of rules. It's a conversation you have wi
 
 This guide walks you through every phase of event budgeting — from that first number you write down to the last receipt you file. And the best part? You don't need to be a finance person to do it well.
 
-![A warm desk scene with a budget planner, coffee, and a gentle natural light, photorealistic](/blog/ultimate-event-budget-cover.png)
+![A warm desk scene with a budget planner, coffee, and a gentle natural light, photorealistic](/blog/ultimate-event-budget-cover.webp)
 
 
 
@@ -68,7 +68,7 @@ The reason is almost always the same — the budget was treated as a one-time sp
 
 It sounds backwards, but the most important budgeting step has nothing to do with numbers. Before you write a single dollar amount, answer these questions:
 
-![Budget planner open on a desk beside a cup of tea and a notebook, soft morning light, photorealistic](/blog/ultimate-event-budget-img1.png)
+![Budget planner open on a desk beside a cup of tea and a notebook, soft morning light, photorealistic](/blog/ultimate-event-budget-img1.webp)
 
 **What kind of event is this?**
 Is it an intimate gathering of twenty people, a conference of two hundred, a birthday party that's becoming something bigger than you planned? The type of event determines everything — including your budget.
@@ -110,7 +110,7 @@ That 15% on a wedding budget isn't extra spending — it's peace of mind.
 
 Now for the part people usually dread — splitting the numbers. But here's the secret: you get to decide what matters. The percentages below are starting points, not rules.
 
-![A desk covered in a floor plan, a budget sheet, and a coffee, in a bright cozy workspace, photorealistic](/blog/ultimate-event-budget-img2.png)
+![A desk covered in a floor plan, a budget sheet, and a coffee, in a bright cozy workspace, photorealistic](/blog/ultimate-event-budget-img2.webp)
 
 **Venue:** 25–30% — This is usually the biggest single expense, and it sets the tone for everything else.
 

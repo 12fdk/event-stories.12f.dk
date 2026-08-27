@@ -6,7 +6,7 @@ keyword: "how to host a baby shower"
 publishDate: 2026-08-05
 author: "Robert Jensen"
 tags: ["baby shower", "baby shower planning", "first-time host"]
-cover: "/blog/baby-shower-planning-guide-cover.png"
+cover: "/blog/baby-shower-planning-guide-cover.webp"
 coverAlt: "A warm kitchen table covered with baby shower planning papers, a small notebook open to a guest list, a cup of tea, and a single baby shoe sitting nearby, soft morning light through a window"
 
 tldr:
@@ -52,7 +52,7 @@ For the venue, think about what makes sense for the group size and the mom-to-be
 
 Write the date and venue down immediately and mark it on the planning timeline. Everything else — invitations, shopping, food — is scheduled backward from this anchor.
 
-![A warm living room set up for a baby shower with a table of gifts wrapped in pastel colors, a banner reading 'Welcome Baby' on the wall, and soft natural light coming through sheer curtains](/blog/baby-shower-planning-guide-img1.png)
+![A warm living room set up for a baby shower with a table of gifts wrapped in pastel colors, a banner reading 'Welcome Baby' on the wall, and soft natural light coming through sheer curtains](/blog/baby-shower-planning-guide-img1.webp)
 
 ## 2. Set Your Budget and Guest List Together
 

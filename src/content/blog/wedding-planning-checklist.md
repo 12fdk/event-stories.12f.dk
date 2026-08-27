@@ -6,7 +6,7 @@ keyword: "wedding planning checklist for beginners"
 publishDate: 2026-07-22
 author: "Robert Jensen"
 tags: ["wedding checklist", "beginner wedding planning", "wedding timeline"]
-cover: "/blog/wedding-planning-checklist-cover.png"
+cover: "/blog/wedding-planning-checklist-cover.webp"
 coverAlt: "A young couple sitting together at a warm kitchen table reviewing wedding planning papers and a notebook, soft natural morning light from a window"
 
 tldr:
@@ -49,7 +49,7 @@ Suddenly there's a venue to find, guests to invite, a catering menu to taste, a 
 
 Here's what I want you to know right away: *you don't need to have it all figured out by next Tuesday.* Wedding planning is a marathon, not a sprint. But you do need a map — a clear sequence of steps that tells you what comes first, what can wait, and what can safely be delegated.
 
-![A person's hands writing wedding planning tasks in a notebook at a bright desk with coffee cup, warm natural light](/blog/wedding-planning-checklist-img1.png)
+![A person's hands writing wedding planning tasks in a notebook at a bright desk with coffee cup, warm natural light](/blog/wedding-planning-checklist-img1.webp)
 
 ## The foundation: before you look at a single venue
 
@@ -149,7 +149,7 @@ The RSVP tracking phase is where organization really pays off. A single guest li
 
 Finalize your timeline. Do a venue walkthrough. Confirm everything with vendors one last time. Take a breath. You've done the heavy lifting.
 
-![Hands arranging wedding planning materials on a table - invitation mockups, a small ring box, a calendar with marked dates, warm natural lighting](/blog/wedding-planning-checklist-img2.png)
+![Hands arranging wedding planning materials on a table - invitation mockups, a small ring box, a calendar with marked dates, warm natural lighting](/blog/wedding-planning-checklist-img2.webp)
 
 ## Your wedding planning checklist (the one to actually use)
 
@@ -243,7 +243,7 @@ Build this out for *your* day. Some weddings start at noon. Some are multi-day a
 
 This is exactly the kind of planning where a dedicated schedule builder earns its place — building the day hour by hour with times, durations, and locations, then exporting it so every vendor has a copy on their phone.
 
-![A couple walking through a beautiful garden venue, looking at a tablet together, smiling and relaxed, warm golden hour light](/blog/wedding-planning-checklist-img3.png)
+![A couple walking through a beautiful garden venue, looking at a tablet together, smiling and relaxed, warm golden hour light](/blog/wedding-planning-checklist-img3.webp)
 
 ## Keeping it from spiraling
 

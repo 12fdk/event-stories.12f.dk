@@ -6,7 +6,7 @@ keyword: "how to make a wedding seating chart"
 publishDate: 2026-07-17
 author: "Robert Jensen"
 tags: ["seating chart", "wedding planning", "guest management"]
-cover: "/blog/wedding-seating-cover.png"
+cover: "/blog/wedding-seating-cover.webp"
 coverAlt: "A couple sitting together at a warm kitchen table reviewing wedding planning papers and a tablet, soft natural light from a window"
 
 tldr:
@@ -50,7 +50,7 @@ A well-planned seating chart is one of those invisible things — your guests wo
 
 Making a wedding seating chart doesn't need to be stressful. You just need a system, and you need to know the principles that turn a wall of names into a set of tables where people actually enjoy each other's company.
 
-![A warm wooden table set for a wedding reception with round tables, elegant floral centerpieces, place cards, and soft candlelight](/blog/wedding-seating-img1.png)
+![A warm wooden table set for a wedding reception with round tables, elegant floral centerpieces, place cards, and soft candlelight](/blog/wedding-seating-img1.webp)
 
 ## Start with the floor, not the guest list
 
@@ -78,7 +78,7 @@ Here's what that looks like in practice:
 
 **Group 4 — The wildcards.** Your aunt by marriage who you've never met. Your partner's college roommate who lives in another country. The neighbor who lent you their lawnmower three years ago and you still owe a thank-you. Seat these people with your most social, most generous guests — the ones who can make anyone feel welcome.
 
-![An overhead view of a round dining table with elegant wedding place settings, floral centerpieces, and linen tablecloth](/blog/wedding-seating-img2.png)
+![An overhead view of a round dining table with elegant wedding place settings, floral centerpieces, and linen tablecloth](/blog/wedding-seating-img2.webp)
 
 ## A step-by-step system that actually works
 
@@ -166,7 +166,7 @@ The goal isn't a flawless matrix. The goal is a room full of people who feel wel
 
 And when you look around that room and see strangers sharing dessert at a table they'd never have chosen on their own, you'll know it was worth the effort.
 
-![A hand arranging place cards around a round dinner table, warm natural light, soft depth of field](/blog/wedding-seating-img3.png)
+![A hand arranging place cards around a round dinner table, warm natural light, soft depth of field](/blog/wedding-seating-img3.webp)
 
 ## One last thought
 

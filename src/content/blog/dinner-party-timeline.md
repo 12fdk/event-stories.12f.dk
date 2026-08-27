@@ -6,7 +6,7 @@ keyword: "dinner party timeline"
 publishDate: 2026-07-29
 author: "Robert Jensen"
 tags: ["dinner party", "party timeline", "event schedule"]
-cover: "/blog/dinner-party-timeline-cover.png"
+cover: "/blog/dinner-party-timeline-cover.webp"
 coverAlt: "A warm kitchen counter with a wooden cutting board, a roasting pan with herbs, and a clock showing approximately 16:30, soft afternoon light through a window"
 
 tldr:
@@ -47,7 +47,7 @@ This is not a cooking problem. It's a timing problem.
 
 The fix is to build a dinner party timeline — a simple, written schedule that tells you exactly what to do and when — and to follow it like a recipe. Not a complicated one. A short one. Four or five time blocks, written backwards from the moment you sit down to eat.
 
-![A kitchen counter at golden hour with a roasting pan fresh from the oven, a salad bowl, and a set table visible through an open doorway, warm natural light](/blog/dinner-party-timeline-cover.png)
+![A kitchen counter at golden hour with a roasting pan fresh from the oven, a salad bowl, and a set table visible through an open doorway, warm natural light](/blog/dinner-party-timeline-cover.webp)
 
 ## Work backwards from 7:00 pm
 
@@ -67,7 +67,7 @@ Write 7:00 pm on a piece of paper. That's when you sit down to eat. Now work bac
 
 This is the skeleton. It looks almost too simple. That's the point.
 
-![A dining table being set with plates, glasses, candles, and cutlery, hands arranging a floral centerpiece, warm evening light](/blog/dinner-party-timeline-img1.png)
+![A dining table being set with plates, glasses, candles, and cutlery, hands arranging a floral centerpiece, warm evening light](/blog/dinner-party-timeline-img1.webp)
 
 ## Why working backwards actually works
 
@@ -123,7 +123,7 @@ Here's what to do:
 4. **Use arrival time as your buffer.** If your guests are twenty minutes early, that's twenty minutes you didn't have to budget for. Use it.
 5. **Give one person a small job.** "Could you grab the bread from the cupboard?" is better than "What can I do to help?" Most people will say yes — they just need a clear, non-intimidating ask.
 
-![A kitchen island with a cheese board, a bottle of open wine, glasses, and crackers — guests mingling in a warm living room, evening light through windows](/blog/dinner-party-timeline-img2.png)
+![A kitchen island with a cheese board, a bottle of open wine, glasses, and crackers — guests mingling in a warm living room, evening light through windows](/blog/dinner-party-timeline-img2.webp)
 
 ## The stovetop trap (and how to avoid it)
 

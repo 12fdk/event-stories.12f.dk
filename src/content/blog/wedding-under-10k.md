@@ -6,7 +6,7 @@ keyword: "how to plan a wedding under 10k"
 publishDate: 2026-08-19
 author: "Robert Jensen"
 tags: ["wedding budget", "budget wedding", "wedding under 10k", "wedding planning"]
-cover: "/blog/wedding-under-10k-cover.png"
+cover: "/blog/wedding-under-10k-cover.webp"
 coverAlt: "A young couple on the floor of their living room in the evening, planning their wedding with guest lists, a notebook, and a single champagne flute."
 tldr:
   - "A realistic under-10k wedding runs about $150–200 per guest, which fits roughly 50–70 people with room for surprises."
@@ -43,7 +43,7 @@ I've planned weddings at every price point. I've also planned milestone birthday
 
 This is the line-by-line version. Real numbers, real trade-offs, and the few places where "cheaper" is the wrong word.
 
-![A couple on the floor of their living room in the evening, planning their wedding with guest lists, a notebook, and a single champagne flute](/blog/wedding-under-10k-cover.png)
+![A couple on the floor of their living room in the evening, planning their wedding with guest lists, a notebook, and a single champagne flute](/blog/wedding-under-10k-cover.webp)
 
 ## Where the $10,000 actually goes (a realistic 2026 breakdown)
 
@@ -69,7 +69,7 @@ A few notes on that table:
 - **The buffer is not optional.** It's the reason a $9,500 budget doesn't become a $12,000 surprise. More on it below.
 - **These are realistic 2026 numbers** for a small, self-organized wedding — not the national averages, which are skewed by big-venue, big-ballroom spending.
 
-![Hands writing a budget breakdown on a paper grid with a pencil, a calculator, and a cup of coffee on a wooden kitchen table](/blog/wedding-under-10k-img1.png)
+![Hands writing a budget breakdown on a paper grid with a pencil, a calculator, and a cup of coffee on a wooden kitchen table](/blog/wedding-under-10k-img1.webp)
 
 ## Step 1: Decide the guest count first (it sets everything)
 
@@ -167,7 +167,7 @@ A budget you check once, six months in, is a budget that's already dead. Every l
 
 A good budgeting setup — whether it's a careful spreadsheet or a small tool that shows you a chart by category — is the difference between "I think we're fine" and "I *know* where we stand." I keep mine in the same place as the guest list and the schedule, so the numbers and the people stay in sync, and I never have to open three different tabs to answer "what are we spending on food?"
 
-![A home dining table set for a birthday celebration with simple white plates, a small homemade cake with candles, and string lights in the background](/blog/wedding-under-10k-img2.png)
+![A home dining table set for a birthday celebration with simple white plates, a small homemade cake with candles, and string lights in the background](/blog/wedding-under-10k-img2.webp)
 
 ## Step 6: The buffer (the only non-negotiable line)
 
