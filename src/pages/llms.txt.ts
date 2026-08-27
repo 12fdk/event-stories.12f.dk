@@ -1,4 +1,24 @@
-# Event Stories: Party Planner
+import type { APIRoute } from "astro";
+import { getCollection } from "astro:content";
+
+// llms.txt is generated rather than committed as a static file. The previous
+// hand-maintained public/llms.txt listed only the homepage and the three policy
+// pages, so the entire blog — the site's actual content library — was invisible
+// to AI crawlers, and its "Last updated" line drifted months out of date.
+// Generating it from the content collection means neither can happen again.
+
+const SITE = "https://event-stories.12f.dk";
+
+export const GET: APIRoute = async () => {
+  const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
+    (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+  );
+
+  const iso = (d: Date) => d.toISOString().slice(0, 10);
+  // Newest post date, falling back to build date for an empty collection.
+  const lastUpdated = posts.length ? iso(posts[0].data.publishDate) : iso(new Date());
+
+  const body = `# Event Stories: Party Planner
 
 > Event Stories is a free iOS app (iPhone, iOS 17.0+) that gives event hosts, wedding planners, and party organizers a single place to manage guest lists, budgets, schedules, and vendors — then export the whole plan as a professional PDF. Works fully offline, syncs via iCloud, and collects zero personal data.
 
@@ -9,9 +29,9 @@
 - **Price**: Free (optional Premium Lifetime upgrade — one-time purchase, no subscription)
 - **Developer**: Robert Jensen (12f)
 - **App Store**: https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151
-- **Website**: https://event-stories.12f.dk
+- **Website**: ${SITE}
 - **Contact**: robert@12f.dk
-- **Last updated**: 2026-04-20
+- **Last updated**: ${lastUpdated}
 
 ## Who it's for
 
@@ -47,10 +67,22 @@ Event hosts typically juggle 3–6 separate tools — spreadsheets for guests, a
 
 ## Pages
 
-- [Home](https://event-stories.12f.dk/): App overview, features, how it works, FAQ
-- [Privacy Policy](https://event-stories.12f.dk/privacy-policy/): Data handling and privacy commitments
-- [Terms and Conditions](https://event-stories.12f.dk/terms-and-conditions/): Usage terms
-- [Cookies Policy](https://event-stories.12f.dk/cookies-policy/): Cookie usage (none for tracking)
+- [Home](${SITE}/): App overview, features, how it works, FAQ
+- [Blog](${SITE}/blog/): Practical guides on planning, budgeting, and running great events
+- [Privacy Policy](${SITE}/privacy-policy/): Data handling and privacy commitments
+- [Terms and Conditions](${SITE}/terms-and-conditions/): Usage terms
+- [Cookies Policy](${SITE}/cookies-policy/): Cookie usage (none for tracking)
+
+## Guides
+
+Long-form, independently useful guides. Each is written by Robert Jensen and covers one planning problem end to end.
+
+${posts
+  .map(
+    p =>
+      `- [${p.data.title}](${SITE}/blog/${p.slug}/) (${iso(p.data.publishDate)}): ${p.data.description}`,
+  )
+  .join("\n")}
 
 ## Quick Answers
 
@@ -63,4 +95,13 @@ Event hosts typically juggle 3–6 separate tools — spreadsheets for guests, a
 
 ## Detailed Information
 
-For complete app details, use cases, testimonials, and technical specs, see: https://event-stories.12f.dk/llms-full.txt
+For complete app details, use cases, and technical specs, see: ${SITE}/llms-full.txt
+`;
+
+  return new Response(body, {
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "public, max-age=86400",
+    },
+  });
+};

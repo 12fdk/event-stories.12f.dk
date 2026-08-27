@@ -112,11 +112,9 @@ Event Stories works for events of all types and sizes:
 4. **Coordinate Vendors & Schedule** — Store vendor contacts and contracts. Build a detailed event timeline with maps integration and reminders.
 5. **Export & Share** — One-tap PDF export generates a professional report combining guests, budget, vendors, and schedule. Share via any iOS sharing option.
 
-## User Testimonials
+## Positioning
 
-- "Event Stories made planning my wedding so much easier. The guest list with RSVP tracking was perfect, and I could see exactly where the budget was going with the visual charts." — Emma L.
-- "I organize corporate events regularly and Event Stories keeps everything in one place. Guest management, vendor contacts, schedules — it's all there. The PDF export is great for sharing with clients." — Michael K.
-- "Planned my daughter's birthday party without any stress. The task lists kept me on track, and I loved being able to document everything with photos." — Sarah B.
+Event Stories is aimed at hosts who have outgrown a spreadsheet: a wedding with a moving guest list and a budget that needs to add up, a corporate event that needs a shareable report, a family celebration with a schedule and a vendor or two. The app's design goal is that one person can hold the whole plan in one place and hand a readable PDF to anyone who asks.
 
 ## Frequently Asked Questions
 
