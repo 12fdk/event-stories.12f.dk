@@ -22,9 +22,13 @@ const siteURL = Astro.site?.href ?? "https://event-stories.12f.dk/";
 const ogImage = ogImageOverride ?? new URL("/og-image.png", Astro.site).href;
 const isHome = Astro.url.pathname === "/" || Astro.url.pathname === "";
 
-// Real rating from App Store, with sensible minimum for display
-const ratingValue = appStore && appStore.rating > 0 ? appStore.rating : 5;
-const ratingCount = appStore && appStore.ratingCount > 0 ? appStore.ratingCount : 1;
+// Ratings come from the live App Store lookup and are only ever emitted when
+// they actually exist. Never synthesise a fallback: publishing an
+// `aggregateRating` the store cannot corroborate is fake-review markup under
+// Google's structured-data policy, and it costs us the trust signal that AI
+// answer engines weigh most heavily. No ratings yet => no rating node.
+const hasRealRating =
+  !!appStore && appStore.rating > 0 && appStore.ratingCount > 0;
 const appVersion = appStore?.version ?? "1.0";
 const appDescription = appStore?.description ?? seo.description;
 const datePublished = appStore?.lastUpdated?.slice(0, 10) ?? "2025-01-01";
@@ -119,13 +123,15 @@ if (isHome) {
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: String(ratingValue),
-      ratingCount: String(ratingCount),
-      bestRating: "5",
-      worstRating: "1",
-    },
+    ...(hasRealRating && {
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: String(appStore!.rating),
+        ratingCount: String(appStore!.ratingCount),
+        bestRating: "5",
+        worstRating: "1",
+      },
+    }),
     description: appDescription,
     url: siteURL,
     downloadUrl: appStoreLink,
@@ -156,16 +162,10 @@ if (isHome) {
       audienceType:
         "Event hosts, wedding planners, corporate event organizers, party hosts",
     },
-    review: home?.testimonials?.cards?.map(card => ({
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-      },
-      author: { "@type": "Person", name: card.name },
-      reviewBody: card.comment,
-    })) ?? [],
+    // Deliberately no `review` array. The testimonials in config are marketing
+    // copy, not verifiable first-party reviews, so marking them up as `Review`
+    // nodes would be self-serving review markup. They stay as visible page
+    // content; only real App Store reviews would belong here.
   });
 
   if (home?.faq?.qa?.length) {
@@ -231,6 +231,10 @@ const jsonLd = {
     <!-- Global Metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- The only header from the old (inert) public/_headers file that a static
+         page can set for itself. The rest need edge rules — see
+         docs/HOSTING-HEADERS.md. -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     {logo.startsWith("http") && <link rel="apple-touch-icon" href={logo} />}
     <meta name="generator" content={Astro.generator} />
