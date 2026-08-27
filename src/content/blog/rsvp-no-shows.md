@@ -11,7 +11,7 @@ relatedSlugs:
   - "wedding-seating-chart"
   - "dinner-party-timeline"
   - "baby-shower-planning-guide"
-cover: "/blog/rsvp-no-shows-cover.png"
+cover: "/blog/rsvp-no-shows-cover.webp"
 coverAlt: "A person sitting at a kitchen table with a laptop open to a guest list, looking thoughtfully at the screen, a cup of coffee and a notebook nearby, warm natural light from a window"
 
 tldr:
@@ -48,7 +48,7 @@ Here's the short answer: no. You're not being pushy. Following up on RSVPs is a 
 
 What you *are* looking for is the right approach — polite, warm, and effective — without spending hours drafting messages you're not sure about. So let's walk through it together.
 
-![A kitchen table scattered with RSVP response cards, an envelope, and a pen, soft morning light filtering through a nearby window](/blog/rsvp-no-shows-img1.png)
+![A kitchen table scattered with RSVP response cards, an envelope, and a pen, soft morning light filtering through a nearby window](/blog/rsvp-no-shows-img1.webp)
 
 ## When to follow up (and when not to)
 
@@ -143,7 +143,7 @@ You send a gentle reminder. You send one more. You count the silence as a no. Yo
 
 That's not just good hosting. That's great hosting.
 
-![A warm dining table set with place cards, RSVP cards, and a small notepad with handwritten notes, natural light from a window](/blog/rsvp-no-shows-img2.png)
+![A warm dining table set with place cards, RSVP cards, and a small notepad with handwritten notes, natural light from a window](/blog/rsvp-no-shows-img2.webp)
 
 ## Planning everything in one place
 

@@ -6,7 +6,7 @@ keyword: "wedding table programs"
 publishDate: 2026-08-26
 author: "Robert Jensen"
 tags: ["wedding reception", "table programs", "reception details", "wedding planning"]
-cover: "/blog/wedding-reception-program-cover.png"
+cover: "/blog/wedding-reception-program-cover.webp"
 coverAlt: "A wedding reception room in warm candlelight with long banquet tables and floral centerpieces, a small folded paper program resting on the tablecloth in the foreground"
 
 tldr:
@@ -46,7 +46,7 @@ And yet it's one of the most fiddly small details in the whole reception. It's s
 
 You don't need a designer for the second kind. You need a system, and about an hour.
 
-![A wedding reception room in warm candlelight with long banquet tables and floral centerpieces, a small folded paper program on the tablecloth in the foreground](/blog/wedding-reception-program-cover.png)
+![A wedding reception room in warm candlelight with long banquet tables and floral centerpieces, a small folded paper program on the tablecloth in the foreground](/blog/wedding-reception-program-cover.webp)
 
 ## What wedding table programs actually are
 
@@ -76,7 +76,7 @@ If your evening has more than eight moments, group them. "Dinner and toasts" cou
 
 **Name the moments by what guests experience.** "First dance" not "we're going to dance." "Grandmother's toast" not "my mom's speech." "Cocktail hour" not "people wait for the room." The program is the guest's guide, so it should be written in the guest's voice — even though you're the one writing it.
 
-![Hands writing on a small folded paper table program, a fountain pen mid-stroke, on a wooden reception table beside a candle and wildflowers](/blog/wedding-reception-program-img1.png)
+![Hands writing on a small folded paper table program, a fountain pen mid-stroke, on a wooden reception table beside a candle and wildflowers](/blog/wedding-reception-program-img1.webp)
 
 ## Times, or no times?
 
@@ -119,7 +119,7 @@ A few variations by occasion:
 
 The pattern is always the same: *start, entrance, meal, toasts, send-off.* If your evening follows that arc, you already have your program — you just need to write it down.
 
-![A hand placing a folded paper place card on a reception table with white linen and a taper candle, warm golden evening light, guests blurred in the background](/blog/wedding-reception-program-img2.png)
+![A hand placing a folded paper place card on a reception table with white linen and a taper candle, warm golden evening light, guests blurred in the background](/blog/wedding-reception-program-img2.webp)
 
 ## Printing and laying them out on the day
 
@@ -139,7 +139,7 @@ That's the whole job of the table program. It's not a decoration. It's the quiet
 
 And it's the kind of detail guests notice more than you do. They won't say "great program." They'll say "that was such a smooth night," and you'll know exactly which small card on the table helped get them there.
 
-![A cozy home office desk in warm evening lamplight: a laptop, a mug of tea, printed guest lists, a printed table layout with circles, and a stack of blank folded cards](/blog/wedding-reception-program-img3.png)
+![A cozy home office desk in warm evening lamplight: a laptop, a mug of tea, printed guest lists, a printed table layout with circles, and a stack of blank folded cards](/blog/wedding-reception-program-img3.webp)
 
 ## One last thought
 

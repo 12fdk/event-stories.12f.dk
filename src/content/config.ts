@@ -28,6 +28,23 @@ const blog = defineCollection({
         }),
       )
       .default([]),
+    // Optional HowTo markup for step-based guides. Only set this on posts that
+    // genuinely describe an ordered procedure — the steps must correspond to
+    // content actually on the page, or the markup is misleading.
+    howTo: z
+      .object({
+        name: z.string(),
+        description: z.string(),
+        // ISO 8601 duration, e.g. "PT30M" or "P12M".
+        totalTime: z.string().optional(),
+        steps: z.array(
+          z.object({
+            name: z.string(),
+            text: z.string(),
+          }),
+        ),
+      })
+      .optional(),
     relatedSlugs: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
   }),

@@ -6,8 +6,28 @@ keyword: "how to make a wedding seating chart"
 publishDate: 2026-07-17
 author: "Robert Jensen"
 tags: ["seating chart", "wedding planning", "guest management"]
-cover: "/blog/wedding-seating-cover.png"
+cover: "/blog/wedding-seating-cover.webp"
 coverAlt: "A couple sitting together at a warm kitchen table reviewing wedding planning papers and a tablet, soft natural light from a window"
+
+howTo:
+  name: "How to make a wedding seating chart"
+  description: "A seven-step system for building a wedding seating chart, starting from the floor plan rather than the guest list."
+  totalTime: "PT4H"
+  steps:
+    - name: "Lock your VIP tables"
+      text: "Place the couple, immediate family and wedding party first. These tables are the fixed points everything else arranges around."
+    - name: "Triage the guest list"
+      text: "Sort guests into clear groups — family, school friends, work, plus-ones — before trying to place any individual."
+    - name: "Build the clusters"
+      text: "Group guests into table-sized clusters of people who already know each other or share obvious common ground."
+    - name: "Draw it"
+      text: "Map the clusters onto the actual floor plan, respecting real table sizes and shapes rather than an idealised layout."
+    - name: "Walk through every table"
+      text: "Go table by table and check each guest has at least one person they will be glad to sit beside."
+    - name: "Test with a trusted person"
+      text: "Have someone who knows both families review the chart. They will catch the tensions you are too close to see."
+    - name: "Print and share"
+      text: "Produce the final chart and share it with the venue and caterer so the room is set correctly on the day."
 
 tldr:
   - "Start with your VIP guests first — the bridal party, immediate family, and your oldest friends — then build outward from there."
@@ -50,7 +70,7 @@ A well-planned seating chart is one of those invisible things — your guests wo
 
 Making a wedding seating chart doesn't need to be stressful. You just need a system, and you need to know the principles that turn a wall of names into a set of tables where people actually enjoy each other's company.
 
-![A warm wooden table set for a wedding reception with round tables, elegant floral centerpieces, place cards, and soft candlelight](/blog/wedding-seating-img1.png)
+![A warm wooden table set for a wedding reception with round tables, elegant floral centerpieces, place cards, and soft candlelight](/blog/wedding-seating-img1.webp)
 
 ## Start with the floor, not the guest list
 
@@ -78,7 +98,7 @@ Here's what that looks like in practice:
 
 **Group 4 — The wildcards.** Your aunt by marriage who you've never met. Your partner's college roommate who lives in another country. The neighbor who lent you their lawnmower three years ago and you still owe a thank-you. Seat these people with your most social, most generous guests — the ones who can make anyone feel welcome.
 
-![An overhead view of a round dining table with elegant wedding place settings, floral centerpieces, and linen tablecloth](/blog/wedding-seating-img2.png)
+![An overhead view of a round dining table with elegant wedding place settings, floral centerpieces, and linen tablecloth](/blog/wedding-seating-img2.webp)
 
 ## A step-by-step system that actually works
 
@@ -166,7 +186,7 @@ The goal isn't a flawless matrix. The goal is a room full of people who feel wel
 
 And when you look around that room and see strangers sharing dessert at a table they'd never have chosen on their own, you'll know it was worth the effort.
 
-![A hand arranging place cards around a round dinner table, warm natural light, soft depth of field](/blog/wedding-seating-img3.png)
+![A hand arranging place cards around a round dinner table, warm natural light, soft depth of field](/blog/wedding-seating-img3.webp)
 
 ## One last thought
 

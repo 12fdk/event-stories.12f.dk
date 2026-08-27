@@ -24,7 +24,7 @@ const canonicalURL = canonicalPath
 
 const appStoreData = await fetchAppStoreData() ?? fallbackAppStoreData;
 const seo = {
-  title: title ?? "Blog — Event Stories: Party Planner",
+  title: title ?? "Blog — Event Stories",
   description: description ?? "Tips and guides for planning memorable events.",
 };
 
@@ -93,7 +93,7 @@ if (seo.title) {
     position: 3,
     // Blog titles join the post title and site name with an em-dash (" — ");
     // static-page titles use " - ". Split on either so the crumb is just the
-    // short title, never the full "<title> — Event Stories: Party Planner".
+    // short title, never the full "<title> — Event Stories".
     name: seo.title.split(/\s[—–-]\s/)[0],
     item: canonicalURL.href,
   });

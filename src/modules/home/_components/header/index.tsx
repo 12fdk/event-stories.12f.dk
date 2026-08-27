@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useContext, useEffect, useState } from "react";
+import { Fragment, useContext, useEffect, useState } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
 import { withBase } from "../../../../utils/basePath";
 import AppStoreRating from "../../../../components/appStoreRating";
@@ -117,37 +117,42 @@ function Header() {
             {words.map((word, wordIndex) => {
               const highlighted =
                 mark && wordIndex >= mark[0] && wordIndex < mark[1];
+              const isLast = wordIndex === words.length - 1;
               return (
-                <motion.span
-                  key={wordIndex}
-                  initial={{ opacity: 0, y: "0.35em" }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    delay: 0.07 * wordIndex,
-                    duration: 0.5,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                  style={{
-                    marginRight: wordIndex < words.length - 1 ? "0.24em" : 0,
-                  }}
-                  className={highlighted ? "relative inline-block" : "inline-block"}
-                >
-                  {highlighted ? (
-                    <span className="italic text-primary">{word}</span>
-                  ) : (
-                    word
-                  )}
-                  {highlighted && (
-                    <motion.span
-                      aria-hidden="true"
-                      initial={{ scaleX: 0 }}
-                      animate={{ scaleX: 1 }}
-                      transition={{ delay: 0.85, duration: 0.5 }}
-                      style={{ transformOrigin: "left" }}
-                      className="absolute -bottom-1 left-0 right-0 h-[3px] bg-foil"
-                    />
-                  )}
-                </motion.span>
+                // The trailing space is a real text node, not a margin. Spacing
+                // the words with `margin-right` alone left no whitespace in the
+                // DOM, so the H1 read as one run-on word ("Thepartyplanner...")
+                // to screen readers, to copy-paste, and to anything extracting
+                // heading text — which defeats having keywords in the H1 at all.
+                <Fragment key={wordIndex}>
+                  <motion.span
+                    initial={{ opacity: 0, y: "0.35em" }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      delay: 0.07 * wordIndex,
+                      duration: 0.5,
+                      ease: [0.16, 1, 0.3, 1],
+                    }}
+                    className={highlighted ? "relative inline-block" : "inline-block"}
+                  >
+                    {highlighted ? (
+                      <span className="italic text-primary">{word}</span>
+                    ) : (
+                      word
+                    )}
+                    {highlighted && (
+                      <motion.span
+                        aria-hidden="true"
+                        initial={{ scaleX: 0 }}
+                        animate={{ scaleX: 1 }}
+                        transition={{ delay: 0.85, duration: 0.5 }}
+                        style={{ transformOrigin: "left" }}
+                        className="absolute -bottom-1 left-0 right-0 h-[3px] bg-foil"
+                      />
+                    )}
+                  </motion.span>
+                  {!isLast && " "}
+                </Fragment>
               );
             })}
           </h1>

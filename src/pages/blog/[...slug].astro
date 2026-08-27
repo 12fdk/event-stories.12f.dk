@@ -104,11 +104,32 @@ const faqNode =
       }
     : null;
 
-const extraNodes = faqNode ? [faqNode] : [];
+// HowTo node — only for posts whose frontmatter declares an ordered procedure.
+// Step-based guides (timelines, checklists) were previously shipping as plain
+// Article, which forfeits the how-to rich result the content already earns.
+const howToNode = post.data.howTo
+  ? {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "@id": `${canonicalHref}#howto`,
+      name: post.data.howTo.name,
+      description: post.data.howTo.description,
+      ...(post.data.howTo.totalTime && { totalTime: post.data.howTo.totalTime }),
+      step: post.data.howTo.steps.map((step, i) => ({
+        "@type": "HowToStep",
+        position: i + 1,
+        name: step.name,
+        text: step.text,
+        url: `${canonicalHref}#step-${i + 1}`,
+      })),
+    }
+  : null;
+
+const extraNodes = [faqNode, howToNode].filter(Boolean);
 ---
 
 <BlogLayout
-  title={post.data.title + " — Event Stories: Party Planner"}
+  title={post.data.title + " — Event Stories"}
   description={post.data.description}
   ogImage={ogImage}
   canonicalPath={canonicalPath}

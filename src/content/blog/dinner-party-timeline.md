@@ -6,8 +6,26 @@ keyword: "dinner party timeline"
 publishDate: 2026-07-29
 author: "Robert Jensen"
 tags: ["dinner party", "party timeline", "event schedule"]
-cover: "/blog/dinner-party-timeline-cover.png"
+cover: "/blog/dinner-party-timeline-cover.webp"
 coverAlt: "A warm kitchen counter with a wooden cutting board, a roasting pan with herbs, and a clock showing approximately 16:30, soft afternoon light through a window"
+
+howTo:
+  name: "How to plan a dinner party timeline"
+  description: "How to build a dinner party timeline by working backwards from the moment you sit down to eat, so everything lands together and you still get to enjoy the evening."
+  totalTime: "PT3H"
+  steps:
+    - name: "Prep, assemble and set the table"
+      text: "Three hours before you sit down, chop vegetables into bowls, whisk the dressing, set the table, light the candles and get the glasses out."
+    - name: "Oven items go in"
+      text: "Just under two hours out, put in anything that needs passive heat — the roast, the gratin, the bread. Set a timer and walk away."
+    - name: "Hot cooking starts"
+      text: "One hour out, turn on the stovetop for the sautéing, deglazing and sauce-finishing. This is the highest-friction part of the evening, so give it a clear run."
+    - name: "Pour the first drink"
+      text: "Fifteen minutes before dinner, pour the wine and put water on the table. This is the moment you stop cooking and start hosting."
+    - name: "Plate up"
+      text: "Ten minutes out, bring the food out of the oven, toss the salad and pour the gravy — moving quickly and deliberately."
+    - name: "Sit down to eat"
+      text: "Serve at the time you planned. Everything before this point existed to make this moment arrive without a scramble."
 
 tldr:
   - "Work backwards from your dinner time — write 6:45 pm on paper and fill everything before it."
@@ -47,7 +65,7 @@ This is not a cooking problem. It's a timing problem.
 
 The fix is to build a dinner party timeline — a simple, written schedule that tells you exactly what to do and when — and to follow it like a recipe. Not a complicated one. A short one. Four or five time blocks, written backwards from the moment you sit down to eat.
 
-![A kitchen counter at golden hour with a roasting pan fresh from the oven, a salad bowl, and a set table visible through an open doorway, warm natural light](/blog/dinner-party-timeline-cover.png)
+![A kitchen counter at golden hour with a roasting pan fresh from the oven, a salad bowl, and a set table visible through an open doorway, warm natural light](/blog/dinner-party-timeline-cover.webp)
 
 ## Work backwards from 7:00 pm
 
@@ -67,7 +85,7 @@ Write 7:00 pm on a piece of paper. That's when you sit down to eat. Now work bac
 
 This is the skeleton. It looks almost too simple. That's the point.
 
-![A dining table being set with plates, glasses, candles, and cutlery, hands arranging a floral centerpiece, warm evening light](/blog/dinner-party-timeline-img1.png)
+![A dining table being set with plates, glasses, candles, and cutlery, hands arranging a floral centerpiece, warm evening light](/blog/dinner-party-timeline-img1.webp)
 
 ## Why working backwards actually works
 
@@ -123,7 +141,7 @@ Here's what to do:
 4. **Use arrival time as your buffer.** If your guests are twenty minutes early, that's twenty minutes you didn't have to budget for. Use it.
 5. **Give one person a small job.** "Could you grab the bread from the cupboard?" is better than "What can I do to help?" Most people will say yes — they just need a clear, non-intimidating ask.
 
-![A kitchen island with a cheese board, a bottle of open wine, glasses, and crackers — guests mingling in a warm living room, evening light through windows](/blog/dinner-party-timeline-img2.png)
+![A kitchen island with a cheese board, a bottle of open wine, glasses, and crackers — guests mingling in a warm living room, evening light through windows](/blog/dinner-party-timeline-img2.webp)
 
 ## The stovetop trap (and how to avoid it)
 
