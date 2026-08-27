@@ -372,7 +372,7 @@ posts: [
     },
     header: {
       eyebrow: "Party planner · iPhone",
-      headline: "Plan the perfect event",
+      headline: "The party planner for your perfect event",
       subtitle:
         "Event Stories keeps the whole celebration in one place — guest lists and RSVPs, a budget that adds up, the schedule, your vendors, and a professional PDF to share when it all comes together.",
       screenshots: [
@@ -382,7 +382,9 @@ posts: [
       ],
       rewards: [],
       usersDescription: "Free on the App Store · No account required · Works offline",
-      headlineMark: [2, 3],
+      // [start, end) word indices to italicise + underline. Word 5 is "perfect"
+      // in "The party planner for your perfect event".
+      headlineMark: [5, 6],
       programme: {
         title: "Run of show · Sample",
         caption: "One evening",
