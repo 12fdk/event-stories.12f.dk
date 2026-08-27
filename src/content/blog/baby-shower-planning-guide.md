@@ -9,6 +9,26 @@ tags: ["baby shower", "baby shower planning", "first-time host"]
 cover: "/blog/baby-shower-planning-guide-cover.webp"
 coverAlt: "A warm kitchen table covered with baby shower planning papers, a small notebook open to a guest list, a cup of tea, and a single baby shoe sitting nearby, soft morning light through a window"
 
+howTo:
+  name: "How to host a baby shower"
+  description: "A seven-step process for planning a baby shower, from picking the date and venue through to the thank-you notes."
+  totalTime: "P6W"
+  steps:
+    - name: "Pick the date and venue"
+      text: "Settle the date and location before anything else — every other decision depends on them. Aim for the early third trimester and confirm the venue before sending invitations."
+    - name: "Set your budget and guest list together"
+      text: "Budget and headcount move as one number. Decide what you can spend, then let that set how many people you invite, rather than the other way round."
+    - name: "Build a task checklist with real deadlines"
+      text: "Break the work into dated tasks running from six weeks out to the day of, so nothing collects in the final week."
+    - name: "Create a wish list and share it with guests"
+      text: "Set up the registry or wish list early and put the link directly in the invitation so guests are not left guessing."
+    - name: "Plan the day-of timeline"
+      text: "Write an hour-by-hour running order covering arrivals, food, games, gift opening and departure, with buffers between each block."
+    - name: "Prepare for the unexpected"
+      text: "Plan for late guests, weather, and the parent-to-be needing a break. Decide in advance what can be cut without anyone noticing."
+    - name: "Handle the follow-up after the shower"
+      text: "Record who gave what during the shower itself, so thank-you notes are a short task afterwards rather than a reconstruction."
+
 tldr:
   - "Pick the date and venue first — everything else flows from those two decisions."
   - "Set a budget and stick to a guest list of 15 to 30 people for a manageable party."

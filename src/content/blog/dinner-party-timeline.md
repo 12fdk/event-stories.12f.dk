@@ -9,6 +9,24 @@ tags: ["dinner party", "party timeline", "event schedule"]
 cover: "/blog/dinner-party-timeline-cover.webp"
 coverAlt: "A warm kitchen counter with a wooden cutting board, a roasting pan with herbs, and a clock showing approximately 16:30, soft afternoon light through a window"
 
+howTo:
+  name: "How to plan a dinner party timeline"
+  description: "How to build a dinner party timeline by working backwards from the moment you sit down to eat, so everything lands together and you still get to enjoy the evening."
+  totalTime: "PT3H"
+  steps:
+    - name: "Prep, assemble and set the table"
+      text: "Three hours before you sit down, chop vegetables into bowls, whisk the dressing, set the table, light the candles and get the glasses out."
+    - name: "Oven items go in"
+      text: "Just under two hours out, put in anything that needs passive heat — the roast, the gratin, the bread. Set a timer and walk away."
+    - name: "Hot cooking starts"
+      text: "One hour out, turn on the stovetop for the sautéing, deglazing and sauce-finishing. This is the highest-friction part of the evening, so give it a clear run."
+    - name: "Pour the first drink"
+      text: "Fifteen minutes before dinner, pour the wine and put water on the table. This is the moment you stop cooking and start hosting."
+    - name: "Plate up"
+      text: "Ten minutes out, bring the food out of the oven, toss the salad and pour the gravy — moving quickly and deliberately."
+    - name: "Sit down to eat"
+      text: "Serve at the time you planned. Everything before this point existed to make this moment arrive without a scramble."
+
 tldr:
   - "Work backwards from your dinner time — write 6:45 pm on paper and fill everything before it."
   - "At least half your meal should be pre-prepared or oven-based; the stovetop is where timelines break."

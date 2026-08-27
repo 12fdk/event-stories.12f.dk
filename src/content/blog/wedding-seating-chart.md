@@ -9,6 +9,26 @@ tags: ["seating chart", "wedding planning", "guest management"]
 cover: "/blog/wedding-seating-cover.webp"
 coverAlt: "A couple sitting together at a warm kitchen table reviewing wedding planning papers and a tablet, soft natural light from a window"
 
+howTo:
+  name: "How to make a wedding seating chart"
+  description: "A seven-step system for building a wedding seating chart, starting from the floor plan rather than the guest list."
+  totalTime: "PT4H"
+  steps:
+    - name: "Lock your VIP tables"
+      text: "Place the couple, immediate family and wedding party first. These tables are the fixed points everything else arranges around."
+    - name: "Triage the guest list"
+      text: "Sort guests into clear groups — family, school friends, work, plus-ones — before trying to place any individual."
+    - name: "Build the clusters"
+      text: "Group guests into table-sized clusters of people who already know each other or share obvious common ground."
+    - name: "Draw it"
+      text: "Map the clusters onto the actual floor plan, respecting real table sizes and shapes rather than an idealised layout."
+    - name: "Walk through every table"
+      text: "Go table by table and check each guest has at least one person they will be glad to sit beside."
+    - name: "Test with a trusted person"
+      text: "Have someone who knows both families review the chart. They will catch the tensions you are too close to see."
+    - name: "Print and share"
+      text: "Produce the final chart and share it with the venue and caterer so the room is set correctly on the day."
+
 tldr:
   - "Start with your VIP guests first — the bridal party, immediate family, and your oldest friends — then build outward from there."
   - "Group guests by who knows whom, not by seniority or status; tables should be collections of people who will enjoy each other."
