@@ -51,6 +51,11 @@ faq:
     answer: "Finger foods work best because they're easy to serve and don't require setting a formal table. Think fruit platters, mini sandwiches, cheese boards, and a dessert table with cupcakes or a sheet cake. For 20 guests, plan roughly one sandwich per person, two cupcakes each, and enough drinks for two servings per person. Keep it simple — you're not catering a wedding. If the mom-to-be has dietary preferences, make sure there's at least one option that works for everyone."
   - question: "How far in advance should I send baby shower invitations?"
     answer: "Four to six weeks before the event is ideal. That gives guests time to plan, send gifts in advance if they want, and RSVP. If you're sending digital invites, two weeks before is usually sufficient for a reminder. Set an RSVP deadline about one week before the party so you can finalize numbers."
+
+relatedSlugs:
+  - "how-much-food-per-person-for-a-party"
+  - "dinner-party-timeline"
+  - "wedding-planning-checklist"
 ---
 
 You've been asked to host a baby shower and suddenly you're staring at a blank screen wondering where to begin. Baby showers aren't taught in school. Between guest lists, registries, games, food, and the actual day-of logistics, it's easy to feel like you're juggling too much.

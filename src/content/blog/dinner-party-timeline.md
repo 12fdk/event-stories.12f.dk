@@ -51,6 +51,7 @@ faq:
     answer: "Two to three hours is the sweet spot for most people. Plan a clear ending around 10:00 or 10:30 pm — put out coffee and mints at 9:30, and let the natural wind-down happen. You don't need to announce the end; the coffee and the clearing of plates signal it gently."
 
 relatedSlugs:
+  - "how-much-food-per-person-for-a-party"
   - "wedding-planning-checklist"
   - "rsvp-no-shows"
   - "baby-shower-planning-guide"

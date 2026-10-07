@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "how-much-food-per-person-for-a-party",
+          title: "How Much Food Per Person for a Party",
+          description:
+            "How much food per person for a party: dinner, grazing, drinks, and kids' portions by guest count, so you buy enough.",
+          date: "2026-10-07",
+          tags: ["party food", "hosting", "party planning", "food quantities"],
+          readingTime: 10,
+          author: "Robert Jensen",
+        },
+        {
           slug: "wedding-reception-program",
           title: "How to Make Wedding Table Programs That Look Effortless",
           description:
