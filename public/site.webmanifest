@@ -1,0 +1,23 @@
+{
+  "name": "Event Stories: Party Planner",
+  "short_name": "Event Stories",
+  "description": "Free iPhone party and wedding planner for private hosts. Guest lists, budgets, schedules, and vendors. Works offline.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF7EF",
+  "theme_color": "#C0304F",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

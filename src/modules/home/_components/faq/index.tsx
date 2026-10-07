@@ -72,7 +72,7 @@ function Faq() {
                   )}
                 >
                   <div className="overflow-hidden">
-                    <p className="pb-6 pl-10 pr-8 text-base-content/70">
+                    <p className="faq-answer pb-6 pl-10 pr-8 text-base-content/70" data-speakable>
                       {qa.answer}
                     </p>
                   </div>
