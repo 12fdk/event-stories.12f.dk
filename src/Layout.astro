@@ -8,11 +8,26 @@ const { backgroundGrid, seo, logo, theme, forceTheme, appStoreLink, name, home, 
 // Optional overrides so nested layouts (e.g. BlogLayout) can supply their own
 // breadcrumb trail and inject extra @graph nodes, keeping Layout the single
 // place that renders JSON-LD (avoids duplicate/conflicting @id entities).
-const { breadcrumbOverride, extraGraphNodes, noindex, ogImageOverride } = Astro.props as {
+const {
+  breadcrumbOverride,
+  extraGraphNodes,
+  noindex,
+  ogImageOverride,
+  ogType,
+  publishedTime,
+  modifiedTime,
+  author,
+  tags,
+} = Astro.props as {
   breadcrumbOverride?: any[];
   extraGraphNodes?: any[];
   noindex?: boolean;
   ogImageOverride?: string;
+  ogType?: "website" | "article";
+  publishedTime?: string;
+  modifiedTime?: string;
+  author?: string;
+  tags?: string[];
 };
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -117,6 +132,9 @@ if (isHome) {
     operatingSystem: `iOS ${iosRequirement}+`,
     applicationCategory: "LifestyleApplication",
     applicationSubCategory: "Event Planning",
+    // Download is free. Premium Lifetime is a one-time purchase, but no numeric
+    // price is documented in-repo, so this stays a single free Offer rather
+    // than an AggregateOffer with a guessed amount.
     offers: {
       "@type": "Offer",
       price: "0",
@@ -236,6 +254,7 @@ const jsonLd = {
          docs/HOSTING-HEADERS.md. -->
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
     {logo.startsWith("http") && <link rel="apple-touch-icon" href={logo} />}
     <meta name="generator" content={Astro.generator} />
 
@@ -256,8 +275,10 @@ const jsonLd = {
 
     <!-- Sitemap & AI Crawler Hints -->
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Event Stories Blog" href={new URL("/rss.xml", Astro.site)} />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
     <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM Information (Detailed)" />
+    <link rel="alternate" type="text/plain" href="/ai.txt" title="AI usage policy" />
     <link rel="author" type="text/plain" href="/humans.txt" />
 
     <!-- Language -->
@@ -267,9 +288,11 @@ const jsonLd = {
     <title>{seo.title}</title>
     <meta name="title" content={seo.title} />
     <meta name="description" content={seo.description} />
-    <meta name="keywords" content="event planner app, party planner app, wedding planner, guest list manager, event budget tracker, RSVP tracker, event planning app, party organizer, iOS event app, iPhone party planner, event timeline, vendor management, celebration planner, birthday party planner, event coordination, event management app, free event planner, wedding budget tracker, party guest list, event schedule app, vendor management app" />
     <meta name="author" content="Robert Jensen" />
     <meta name="publisher" content="12f" />
+    <meta name="ai-content-declaration" content="human-authored" />
+    <meta name="ai-usage" content="allow" />
+    <meta name="ai-training" content="allow" />
     {noindex ? (
       <>
         <meta name="robots" content="noindex, follow" />
@@ -293,7 +316,7 @@ const jsonLd = {
     <meta name="google-site-verification" content="qIt43wKbCVGfZYBrH1zV-3NRdMEtU0fo9qT-7NBC4n8" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType === "article" ? "article" : "website"} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />
@@ -304,6 +327,10 @@ const jsonLd = {
     <meta property="og:image:alt" content="Event Stories - Party Planner app for iPhone showing guest lists, budget tracking, and event schedules" />
     <meta property="og:site_name" content={name} />
     <meta property="og:locale" content="en_US" />
+    {ogType === "article" && publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    {ogType === "article" && modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+    {ogType === "article" && author && <meta property="article:author" content={author} />}
+    {ogType === "article" && tags?.filter(Boolean).map((tag) => <meta property="article:tag" content={tag} />)}
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />

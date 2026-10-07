@@ -105,6 +105,11 @@ if (seo.title) {
   breadcrumbOverride={breadcrumbItems}
   extraGraphNodes={[articleNode, ...(extraNodes ?? [])]}
   ogImageOverride={resolvedOgImage}
+  ogType="article"
+  publishedTime={publishedTime}
+  modifiedTime={modifiedTime}
+  author={author}
+  tags={tags}
 >
   <SiteNavbar client:load config={config} />
   <div class="max-w-3xl mx-auto px-4 py-10 md:py-16">

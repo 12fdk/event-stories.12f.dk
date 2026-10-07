@@ -1,0 +1,73 @@
+---
+import Layout from "Layout.astro";
+import { SiteNavbar, SiteFooter } from "@components/siteChrome";
+import defaultTemplateConfig from "utils/config";
+import { fetchAppStoreData, fallbackAppStoreData, toAppStoreMetadata } from "utils/appStoreData";
+import type { TemplateConfig } from "utils/configType";
+
+// GitHub Pages serves dist/404.html for unknown paths. Keep the site chrome
+// and point people at real pages. Noindexed: an error URL should not rank.
+const appStoreData = (await fetchAppStoreData()) ?? fallbackAppStoreData;
+const config: TemplateConfig = {
+  ...defaultTemplateConfig,
+  logo: appStoreData.artworkUrl512.startsWith("http")
+    ? appStoreData.artworkUrl512
+    : defaultTemplateConfig.logo,
+  appStore: toAppStoreMetadata(appStoreData),
+  seo: {
+    title: "Page not found — Event Stories",
+    description: "That page was moved or never existed. Try the planning guides instead.",
+  },
+};
+
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/blog", label: "Planning guides" },
+  { href: "/#faq", label: "Questions hosts ask" },
+  { href: "/privacy-policy", label: "Privacy policy" },
+  { href: "/terms-and-conditions", label: "Terms and conditions" },
+  { href: "/cookies-policy", label: "Cookies policy" },
+];
+---
+
+<Layout {...config} noindex>
+  <SiteNavbar client:load config={config} />
+  <main class="mx-auto max-w-3xl px-4 py-16 md:py-24">
+    <p class="tick-label m-0 flex items-center gap-3 text-base-content/50">
+      <span class="inline-block h-0.5 w-8 bg-primary"></span>
+      404
+    </p>
+    <h1 class="mb-4 mt-5 font-display text-4xl font-extrabold leading-[1.05] tracking-tightest md:text-5xl">
+      Page not found
+    </h1>
+    <p class="max-w-xl text-lg leading-relaxed text-base-content/70">
+      This address doesn’t match a page on the site. The link may be out of date.
+    </p>
+    <ul class="mt-8 list-none space-y-3 p-0 text-lg">
+      {
+        links.map((link) => (
+          <li>
+            <a class="text-primary hover:underline" href={link.href}>
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    {
+      config.appStoreLink && (
+        <p class="mt-12">
+          <a
+            class="btn btn-primary gap-2"
+            href={config.appStoreLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Event Stories
+          </a>
+        </p>
+      )
+    }
+  </main>
+  <SiteFooter client:load config={config} />
+</Layout>

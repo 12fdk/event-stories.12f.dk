@@ -60,7 +60,7 @@ const articleSchema = {
   },
   speakable: {
     "@type": "SpeakableSpecification",
-    cssSelector: ["[data-speakable]"],
+    cssSelector: ["[data-speakable]", ".faq-answer"],
   },
   publisher: {
     "@type": "Organization",
@@ -135,7 +135,7 @@ const extraNodes = [faqNode, howToNode].filter(Boolean);
   canonicalPath={canonicalPath}
   articleSchema={articleSchema}
   publishedTime={post.data.publishDate.toISOString()}
-  modifiedTime={post.data.updatedDate ? post.data.updatedDate.toISOString() : undefined}
+  modifiedTime={(post.data.updatedDate ?? post.data.publishDate).toISOString()}
   author={post.data.author}
   tags={[post.data.keyword, ...(post.data.tags || [])]}
   extraNodes={extraNodes}
@@ -196,7 +196,7 @@ const extraNodes = [faqNode, howToNode].filter(Boolean);
         {post.data.faq.map((item) => (
           <div>
             <h3 class="mb-2 text-xl font-bold leading-snug">{item.question}</h3>
-            <p class="m-0 leading-relaxed text-base-content/80">{item.answer}</p>
+            <p class="faq-answer m-0 leading-relaxed text-base-content/80" data-speakable>{item.answer}</p>
           </div>
         ))}
       </div>
