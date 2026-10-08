@@ -1,8 +1,9 @@
 # Event Stories — Blog Post Generation Prompt
 
 > **This file is the single source of truth for the automated blog-writing job.**
-> The Hermes cron job holds only a thin pointer; it clones this repo and follows
-> the instructions below verbatim. Edit *this file* to change how posts are written —
+> The Hermes cron job runs a shared, generic wrapper (execution limits, review
+> gates, publishing checks) that reads this file fresh on every run. Everything
+> about *this* site lives here. Edit *this file* to change how posts are written —
 > never fork the logic into the cron prompt.
 
 ---
@@ -54,49 +55,87 @@ wrong for this app and this reader.
 
 ---
 
-## 2. Topic selection
+## 2. Topic selection — start from live demand
 
-**Goal:** pick topics that real people planning celebrations are actively googling and
-posting about (think r/weddingplanning, r/Weddingsunder10k, r/partyplanning,
-r/EventPlanning, r/babyshowers). Favour concrete, high-intent, long-tail how-to
-searches over vague think-pieces.
+Take the topic from what real hosts are asking **this month**, not from what you
+imagine they worry about:
 
-**Rules:**
-1. **Never duplicate an existing topic.** First run `ls src/content/blog/` and read the
-   `title`/`keyword` frontmatter of every existing post. Pick a clearly distinct angle.
-2. Rotate across occasions and jobs-to-be-done so the blog stays broad (weddings are
-   popular but don't write only weddings — cover birthdays, baby showers, dinner
-   parties, anniversaries, holidays too).
-3. Each topic must map to at least one real app feature (guest list, budget, seating,
-   timeline, checklist, wish list, PDF) — that's how the app becomes the natural answer.
-4. Prefer a specific, useful promise over a generic one. "How to make a wedding seating
-   chart without losing your mind" beats "Wedding planning tips."
+```
+python3 tools/reddit-topics.py > /tmp/event-topics.log 2>&1; echo "exit $?"
+head -60 /tmp/event-topics.log
+```
 
-**Ranked topic bank** (derived from real Reddit search demand × app-feature fit — the
-higher up, the stronger the opportunity). **Pick the highest-ranked topic that is NOT
-already covered by an existing post**, then adapt the exact title for SEO (≤60 chars).
-The bracketed phrase is the primary keyword people actually google.
+The tool reads the celebration-planning subreddits (r/weddingplanning first — it
+is nothing but hosts asking how to do the logistics — then r/Weddingsunder10k,
+r/partyplanning, r/Etiquette, r/EventPlanning, r/babyshowers, r/wedding,
+r/Weddings, and the parenting subs where first-birthday questions surface) over
+Reddit's Atom feeds. It filters out "WE DID IT" photos, dress reveals and
+venting, clusters the real questions into themes, and marks the themes an
+existing post in `src/content/blog/` already covers. It is slow by design
+(about one feed a minute — Reddit rate-limits anything faster) and stops at a
+10-minute budget. Progress lines go to the log; the digest is the last ~60 lines.
 
-1. **Wedding seating chart** — how to make one without the stress · *"how to make a wedding seating chart"* · (seating planner)
-2. **RSVP no-shows** — what to do when guests don't reply, with a polite chase-up script · *"what to do when guests don't RSVP"* · (RSVP tracking)
-3. **Beginner wedding checklist** — 12-month countdown, where to start · *"wedding planning checklist for beginners"* · (task checklist)
-4. **Cost per guest** — real 2026 budget breakdowns · *"average wedding cost per guest"* · (budget charts)
-5. **Wedding under $10k** — a line-by-line budget · *"how to plan a wedding under 10k"* · (budget charts)
-6. **Food & drink per person** — the host's cheat sheet · *"how much food per person for a party"* · (guest count → quantities)
-7. **Cutting the guest list** — without a family feud · *"how to cut wedding guest list politely"* · (guest list)
+**A failed scrape is expected and fine.** Exit code `2` means every feed failed:
+go straight to the topic bank below.
+
+### How to choose (do this, in order)
+
+0. **Check the occasion rotation first.** Weddings are the biggest vertical, but
+   the blog must not turn into a wedding blog. List the two newest posts:
+   ```
+   grep -H '^publishDate' src/content/blog/*.md | sort -t: -k3 | tail -2
+   ```
+   **If both of the two newest posts are wedding posts, this run writes a
+   non-wedding post** (birthday, baby shower, dinner party, anniversary,
+   holiday, reunion, graduation, retirement…). Take the strongest non-wedding
+   theme from the digest; if there is none, take the highest unused non-wedding
+   entry from the bank.
+1. **Take the highest-demand theme under `UNCOVERED THEMES`** that fits the
+   rotation rule above, maps to at least one real app feature (guest list, RSVP,
+   budget, seating, timeline, checklist, wish list, PDF, sharing), and that you
+   can answer usefully without inventing facts.
+2. **The verbatim titles under that theme are your brief.** They are the
+   reader's own words: use their phrasing for the angle, the H2s and the FAQ
+   questions. Name the one title that convinced you in your final report.
+3. **Never duplicate an existing post.** The digest's coverage check only reads
+   titles and keywords, so also run `ls src/content/blog/` and read the
+   `title`/`keyword` frontmatter of every post. A theme under `ALREADY COVERED`
+   may still win if the digest shows a clearly different angle (e.g. the dinner
+   party timeline post does not cover a wedding-day timeline) — say so in the report.
+4. **Prefer the specific over the generic.** "How to make a wedding seating chart
+   without losing your mind" beats "Wedding planning tips". Adapt the title for
+   SEO (≤60 chars) around the phrase people actually search.
+5. **Fallback — the bank.** If the scrape failed (exit `2`), or every strong
+   theme is covered or off-product, take the highest-ranked bank entry that is
+   **not** marked used and not covered by a post.
+6. **If you used a bank entry, mark it used in this file in the same commit**:
+   append `*(used: YYYY-MM-DD, <slug>)*` to the entry, and `git add prompt.md`.
+   A digest-picked topic that matches a bank entry also marks that entry.
+
+### Ranked topic bank (fallback for a failed scrape)
+
+Derived from Reddit search demand × app-feature fit — the higher up, the
+stronger the opportunity. The bracketed phrase is the primary keyword people
+actually google.
+
+1. **Wedding seating chart** — how to make one without the stress · *"how to make a wedding seating chart"* · (seating planner) *(used: 2026-07-17, wedding-seating-chart)*
+2. **RSVP no-shows** — what to do when guests don't reply, with a polite chase-up script · *"what to do when guests don't RSVP"* · (RSVP tracking) *(used: 2026-07-17, rsvp-no-shows)*
+3. **Beginner wedding checklist** — 12-month countdown, where to start · *"wedding planning checklist for beginners"* · (task checklist) *(used: 2026-07-22, wedding-planning-checklist)*
+4. **Cost per guest** — real 2026 budget breakdowns · *"average wedding cost per guest"* · (budget charts) *(used: 2026-08-12, wedding-cost-per-guest)*
+5. **Wedding under $10k** — a line-by-line budget · *"how to plan a wedding under 10k"* · (budget charts) *(used: 2026-08-19, wedding-under-10k)*
+6. **Food & drink per person** — the host's cheat sheet · *"how much food per person for a party"* · (guest count → quantities) *(used: 2026-10-07, how-much-food-per-person-for-a-party)*
+7. **Cutting the guest list** — without a family feud · *"how to cut wedding guest list politely"* · (guest list) *(used: 2026-10-08, how-to-cut-wedding-guest-list)*
 8. **RSVP deadline** — when to set it and how · *"when should wedding RSVP deadline be"* · (RSVP + timeline)
 9. **Baby shower budget** — how much to actually spend · *"how much to budget for a baby shower"* · (budget + guest list)
-10. **Host a baby shower** — step-by-step for first-timers · *"how to host a baby shower checklist"* · (checklist + guest list + registry)
-11. **Dinner party timeline** — cook everything and still sit down · *"dinner party timeline"* · (schedule / run of show)
+10. **Host a baby shower** — step-by-step for first-timers · *"how to host a baby shower checklist"* · (checklist + guest list + registry) *(used: 2026-08-05, baby-shower-planning-guide)*
+11. **Dinner party timeline** — cook everything and still sit down · *"dinner party timeline"* · (schedule / run of show) *(used: 2026-07-29, dinner-party-timeline)*
 12. **Assigned vs open seating** — how to decide + build the chart · *"do I need assigned seating at my wedding"* · (seating planner)
 13. **First birthday checklist** — that works around nap time · *"first birthday party planning checklist"* · (checklist + timeline)
 14. **Surprise party** — plan it without getting caught · *"how to plan a surprise 40th birthday party"* · (shared iCloud checklist + guest list)
 15. **Spreadsheet vs app** — why your Google Sheet keeps falling apart · *"wedding planning spreadsheet"* · (PDF export + iCloud sharing)
 
-> If web access is available, do a quick Reddit/Google scan to confirm current phrasing
-> and pain points before committing to the exact title. Weddings are the highest-volume,
-> highest-emotion, best-fit vertical; baby showers and dinner-party quantity/timeline
-> questions are strong, lower-competition secondary targets.
+Non-wedding entries (for the rotation rule): 6, 9, 13, 14. When fewer than three
+unused entries are left, say so in the final report so a human can refill the bank.
 
 ### Match the reader's emotion to the topic
 
@@ -186,7 +225,7 @@ keyword: "…"             # the primary SEO keyword phrase (matches the title)
 publishDate: YYYY-MM-DD  # today's date
 author: "Robert Jensen"
 tags: ["…", "…", "…"]    # 3–5 relevant tags
-cover: "/blog/SLUG-cover.png"
+cover: "/blog/SLUG-cover.webp"  # omit cover + coverAlt in the §7 no-image fallback
 coverAlt: "…"            # descriptive, photorealistic alt text
 tldr:                    # 3–5 plain-string bullets (NO HTML tags)
   - "…"
@@ -207,30 +246,48 @@ Notes:
 
 ---
 
-## 7. Images (ComfyUI via `comfy-gen`)
+## 7. Images (ComfyUI via `comfy-gen`, with a fallback)
 
-Generate real, warm, **photorealistic** images (not illustrations, no text overlays).
-ComfyUI server: `http://spark-72aa.tail7196c.ts.net:8188` (use the `comfy-gen` tool).
+Generate real, warm, **photorealistic** images (not illustrations, no text overlays)
+on the co-resident ComfyUI with the `comfy-gen` tool (it already knows the server;
+do not pass a URL). Use an `event-` prefix so scratch files are easy to trace:
+
+```
+comfy-gen --prompt "DESCRIPTION" --prefix event-SLUG-cover --copy-to /tmp/event-img
+```
 
 - **1 cover** + **2–3 in-body images** at natural section breaks.
-- Save to `public/blog/`, using an image prefix that matches the post (keep it
-  consistent with the markdown filename/slug so assets are easy to trace):
-  - Cover → `public/blog/SLUG-cover.png`
-  - In-body → `public/blog/SLUG-img1.png`, `public/blog/SLUG-img2.png`, …
-- Reference in the body as `![descriptive alt](/blog/SLUG-img1.png)`.
 - Style: cozy, real, natural light — venues, set tables, decor, food, invitations,
   seating charts, and guest-list notebooks. Match the mood of existing covers.
 - Do not show people. No faces, crowds, close-up hands, bodies, or large silhouettes
   facing the camera. AI-generated people are easy to spot. If a figure is truly
   needed, keep them tiny, distant, and seen from behind.
-- No text overlays and no readable fake UI or lettering.
+- No text overlays, no logos, and no readable fake UI or lettering.
 - Every image needs meaningful alt text that describes what is actually in the picture.
+
+**Optimise every image to WebP before it goes in the repo.** `comfy-gen` writes
+~1–1.7 MB PNGs; the blog serves WebP (issue #49 cut `public/blog/` from 35 MB to
+1.9 MB). Convert with ffmpeg (it is in the container; there is no cwebp or Pillow):
+
+```
+ffmpeg -hide_banner -loglevel error -y -i <the PNG comfy-gen printed> \
+  -c:v libwebp -quality 82 -compression_level 6 public/blog/SLUG-cover.webp
+```
+
+- Cover → `public/blog/SLUG-cover.webp`
+- In-body → `public/blog/SLUG-img1.webp`, `public/blog/SLUG-img2.webp`, …
+- Reference in the body as `![descriptive alt](/blog/SLUG-img1.webp)`.
+- **Never commit a new `.png`** to `public/blog/`. New images are always `.webp`.
+
+**Fallback — if ComfyUI is unreachable or hangs:** publish the post without
+images. Leave `cover` and `coverAlt` out of the frontmatter (both are optional;
+cards and the social image fall back cleanly) and include no in-body images.
+Never reuse another post's image. Say "no images: ComfyUI down" in the final
+report so a human can add them later. Do not block the post on the images.
 
 ---
 
 ## 8. Build, verify, publish
-
-Work in a clone of `git@github.com:12fdk/event-stories.12f.dk.git` (HTTPS clone is fine).
 
 1. Create the post at `src/content/blog/SLUG.md` and the images in `public/blog/`.
    Cross-link: add this post's slug to `relatedSlugs` of 1–2 existing posts too, so the
@@ -239,26 +296,30 @@ Work in a clone of `git@github.com:12fdk/event-stories.12f.dk.git` (HTTPS clone 
    `home.writing.posts` array in `src/utils/config.ts` (newest first), matching the
    shape of the existing entries (`slug`, `title`, `description`, `date`, `tags`,
    `readingTime`, `author`).
-3. **Install & build with pnpm** (this repo uses pnpm, not npm):
+3. **Install & build with npm.** The repo and its CI use pnpm, but the Hermes
+   container has node and npm and **no pnpm binary** — `pnpm build` fails there
+   with command-not-found. npm builds the same site. Redirect the output:
    ```bash
-   pnpm install
-   pnpm build
+   npm install --silent > /tmp/event-install.log 2>&1
+   npm run build > /tmp/event-build.log 2>&1 && echo BUILD OK || tail -30 /tmp/event-build.log
    ```
-   The build MUST pass. A schema/frontmatter error fails the build — fix it before pushing.
+   It must print `BUILD OK`. A schema/frontmatter error fails the build — fix it before pushing.
 4. Sanity-check: title ≤60 chars, description ≤160 chars, keyword appears in title +
    naturally in the body, no invented features, no conference language, one CTA only.
-5. Commit and push to `main` (this auto-deploys via GitHub Actions). Commit **only**
-   the post `.md`, its images, and the `config.ts` homepage/`relatedSlugs` edits — do
-   **not** commit install artifacts. In particular, never commit `pnpm-workspace.yaml`
-   (an empty `packages` field breaks CI with "packages field missing or empty"); it is
-   git-ignored, so run `git status` and confirm your staged files before committing.
+5. Commit and push to `main` (this auto-deploys via GitHub Actions to
+   `https://event-stories.12f.dk/blog/SLUG/`). Commit **only** the post `.md`, its
+   `.webp` images, the `config.ts` homepage/`relatedSlugs` edits, and `prompt.md`
+   if you marked a bank entry used. Do **not** commit install artifacts:
+   - never `package-lock.json` (npm writes one; the repo is pnpm — it is git-ignored),
+   - never `pnpm-workspace.yaml` (an empty `packages` field breaks CI with
+     "packages field missing or empty"; also git-ignored),
+   - never `.cache/` (the Reddit feed cache; git-ignored).
    ```bash
-   git add src/content/blog public/blog src/utils/config.ts
+   git add src/content/blog public/blog src/utils/config.ts   # + prompt.md if a bank entry was used
    git status          # confirm nothing stray is staged
    git commit -m "Blog: <title>"
    git push origin main
    ```
-6. Confirm the push succeeded and the GitHub Actions deploy is green.
 
 ---
 
@@ -271,7 +332,59 @@ Work in a clone of `git@github.com:12fdk/event-stories.12f.dk.git` (HTTPS clone 
 - [ ] The brand name "Event Stories" appears ONLY in the closing CTA — never in the body.
 - [ ] Exactly one honest CTA at the end; at most 1–2 soft *unbranded* in-body mentions.
 - [ ] 1,500–2,200 words, no H1 in body, clean H2/H3 structure.
-- [ ] Frontmatter passes the Zod schema; `pnpm build` is green.
-- [ ] Cover + 2–3 photorealistic images, all with alt text.
+- [ ] Frontmatter passes the Zod schema; `npm run build` prints `BUILD OK`.
+- [ ] Cover + 2–3 photorealistic `.webp` images, all with alt text (or the §7 no-image fallback).
 - [ ] `relatedSlugs` point to posts that exist.
 - [ ] Title ≤60 chars and description ≤160 chars, both include the keyword.
+
+---
+
+## Site-specific review checks
+
+Run these in the review pass before you commit, on top of the generic checks.
+Each one has broken, or nearly broken, a post on this site.
+
+1. **Brand-name count.** `grep -c "Event Stories" src/content/blog/SLUG.md` —
+   the name appears only in the closing CTA section, never in the body above it
+   and never in the frontmatter. Any mention above the CTA heading: rewrite it
+   as an unbranded capability.
+2. **Conference-language sweep.** `grep -niE "attendee|session|keynote|speaker|networking|breakout|ticket|check-in|badge" src/content/blog/SLUG.md`
+   must return nothing (or only an innocent use you can defend in the report).
+3. **Feature claims vs §1.** Every capability the post attributes to "a good
+   planner app" or to Event Stories is in the §1 list. No guest-facing app, no
+   push notifications to guests, no messaging, no analytics.
+4. **Pricing.** If the post mentions price at all: the app is free, and Premium
+   Lifetime is a **one-time** purchase — never "subscription", never a monthly
+   price, never a specific price figure (prices vary by country).
+5. **The CTA is exact.** One link to
+   `https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151`,
+   and the closing line "Free on the App Store · No account required · Works offline."
+6. **Money figures say whose money.** Any dollar figure, cost-per-guest or
+   percentage is labelled with its market (e.g. "US averages") and its year, and
+   says that local prices differ.
+7. **`howTo` matches the page.** If you set the optional `howTo` frontmatter,
+   every step's `name` appears as a heading or a numbered step in the body.
+8. **Links and images resolve.** Every `relatedSlugs` entry is a file in
+   `src/content/blog/`; every `/blog/…webp` referenced exists in `public/blog/`;
+   the homepage entry in `src/utils/config.ts` has the same slug and title.
+
+---
+
+## 10. Final report (your last message)
+
+Report concisely:
+
+- The new post: title, slug, primary keyword, word count, occasion (wedding or
+  which non-wedding occasion), and the live URL `https://event-stories.12f.dk/blog/SLUG/`.
+- Where the topic came from: the Reddit theme and one verbatim title that
+  convinced you — or, if the tool exited `2` or nothing fit, which bank entry you
+  used and that you marked it used in `prompt.md`.
+- Whether the rotation rule (§2 step 0) forced a non-wedding topic.
+- `npm run build` printed `BUILD OK`, and the push to `main` succeeded.
+- Images: cover + N in-body `.webp` images, or "no images: ComfyUI down".
+- The site-specific review checks above: passed, or what you fixed.
+- Anything worth a human glance — e.g. "fewer than three unused bank entries
+  left", "Reddit blocked two runs in a row", "ComfyUI down for two runs".
+
+If — and only if — there is genuinely nothing new worth publishing, reply with
+exactly `[SILENT]`. Otherwise always ship a post.

@@ -1,4 +1,4 @@
-.PHONY: dev build preview clean install docker-up docker-down docker-build help
+.PHONY: dev build preview clean install docker-up docker-down docker-build help test
 
 # Default target
 help:
@@ -14,6 +14,9 @@ help:
 	@echo "  make dev            Start development server"
 	@echo "  make build          Build for production"
 	@echo "  make preview        Preview production build"
+	@echo ""
+	@echo "Tests:"
+	@echo "  make test           Run the tools/ unit tests (stdlib, no deps)"
 	@echo ""
 	@echo "Utility:"
 	@echo "  make clean          Remove build artifacts and node_modules"
@@ -40,6 +43,10 @@ build:
 
 preview:
 	pnpm preview
+
+# Tests (stdlib unittest, no deps) — run before every PR
+test:
+	python3 -m unittest discover -s tools -p 'test_*.py'
 
 # Utility
 clean:

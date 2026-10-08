@@ -29,3 +29,11 @@ pnpm-debug.log*
 # never commit an accidentally-generated workspace file — an empty `packages`
 # field breaks the CI `pnpm install` ("packages field missing or empty")
 pnpm-workspace.yaml
+
+# reddit-topics.py feed cache
+.cache/
+
+# the Hermes container builds with npm (no pnpm there); the repo and CI use
+# pnpm, so a lockfile from that build must never be committed
+package-lock.json
+__pycache__/

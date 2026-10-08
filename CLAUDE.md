@@ -52,6 +52,17 @@ pnpm build
 ```
 Output in `dist/` folder.
 
+### Tests
+```bash
+make test
+```
+Stdlib `unittest` for `tools/` (no deps). Run before every PR, together with `pnpm build`.
+
+### Blog topic research
+`python3 tools/reddit-topics.py` prints a ranked digest of what hosts ask on
+Reddit (stdlib, slow by design: ~1 feed/minute, cached in `.cache/`). The weekly
+Hermes blog job runs it first; see `prompt.md` §2.
+
 ## Configuration
 Main configuration in `src/utils/config.ts` - customize:
 - App details
