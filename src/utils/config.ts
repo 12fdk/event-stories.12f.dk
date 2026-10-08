@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "how-to-cut-wedding-guest-list",
+          title: "How to Cut Wedding Guest List Politely",
+          description:
+            "How to cut wedding guest list politely: an A/B/C method, scripts for parents and plus-ones, and what each cut guest saves.",
+          date: "2026-10-08",
+          tags: ["wedding guest list", "wedding planning", "plus-ones", "wedding budget"],
+          readingTime: 10,
+          author: "Robert Jensen",
+        },
+        {
           slug: "how-much-food-per-person-for-a-party",
           title: "How Much Food Per Person for a Party",
           description:
