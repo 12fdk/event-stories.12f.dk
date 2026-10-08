@@ -7,6 +7,7 @@ publishDate: 2026-07-17
 author: "Robert Jensen"
 tags: ["RSVP tracking", "guest list", "event planning"]
 relatedSlugs:
+  - "how-to-cut-wedding-guest-list"
   - "wedding-planning-checklist"
   - "wedding-seating-chart"
   - "dinner-party-timeline"

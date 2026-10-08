@@ -33,6 +33,7 @@ faq:
     answer: "It won't. The average is an average, not a target. If you're having an intimate wedding of 30 people, your cost per guest will be higher because fixed costs like the venue and photography don't shrink. If you're hosting 300 people, your per-guest cost will be lower because those fixed costs are spread thin. Neither is wrong. Use the average as a benchmark, not a rulebook."
 
 relatedSlugs:
+  - "how-to-cut-wedding-guest-list"
   - "wedding-planning-checklist"
   - "ultimate-event-budget-guide"
   - "rsvp-no-shows"
