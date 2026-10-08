@@ -218,9 +218,13 @@ ComfyUI server: `http://spark-72aa.tail7196c.ts.net:8188` (use the `comfy-gen` t
   - Cover → `public/blog/SLUG-cover.png`
   - In-body → `public/blog/SLUG-img1.png`, `public/blog/SLUG-img2.png`, …
 - Reference in the body as `![descriptive alt](/blog/SLUG-img1.png)`.
-- Style: cozy, real, human, natural light — actual celebrations, tables, hands
-  writing lists, a couple reviewing plans. Match the mood of existing covers.
-- Every image needs meaningful alt text.
+- Style: cozy, real, natural light — venues, set tables, decor, food, invitations,
+  seating charts, and guest-list notebooks. Match the mood of existing covers.
+- Do not show people. No faces, crowds, close-up hands, bodies, or large silhouettes
+  facing the camera. AI-generated people are easy to spot. If a figure is truly
+  needed, keep them tiny, distant, and seen from behind.
+- No text overlays and no readable fake UI or lettering.
+- Every image needs meaningful alt text that describes what is actually in the picture.
 
 ---
 

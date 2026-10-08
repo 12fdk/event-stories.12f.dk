@@ -86,7 +86,7 @@ Write 7:00 pm on a piece of paper. That's when you sit down to eat. Now work bac
 
 This is the skeleton. It looks almost too simple. That's the point.
 
-![A dining table being set with plates, glasses, candles, and cutlery, hands arranging a floral centerpiece, warm evening light](/blog/dinner-party-timeline-img1.webp)
+![A dining table mid-setup with stacked plates, upside-down glasses, loose cutlery, and flowers waiting beside an empty vase](/blog/dinner-party-timeline-img1.webp)
 
 ## Why working backwards actually works
 
@@ -142,7 +142,7 @@ Here's what to do:
 4. **Use arrival time as your buffer.** If your guests are twenty minutes early, that's twenty minutes you didn't have to budget for. Use it.
 5. **Give one person a small job.** "Could you grab the bread from the cupboard?" is better than "What can I do to help?" Most people will say yes — they just need a clear, non-intimidating ask.
 
-![A kitchen island with a cheese board, a bottle of open wine, glasses, and crackers — guests mingling in a warm living room, evening light through windows](/blog/dinner-party-timeline-img2.webp)
+![A kitchen island cheese board with an open bottle of wine and two glasses, and an empty lamp-lit living room beyond the doorway](/blog/dinner-party-timeline-img2.webp)
 
 ## The stovetop trap (and how to avoid it)
 

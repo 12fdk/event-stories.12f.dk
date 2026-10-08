@@ -158,7 +158,7 @@ A large bag of salad greens is about 5 to 6 cups. For 24 guests, four bags is th
 
 **Buffets need a little extra. Plated dinners do not.** On a buffet or a grazing table, add about **10 percent** to the dishes you expect to vanish, usually the meat, the potatoes, and the one dip everyone likes. A plated plate is already portioned. Extra steaks "just in case" are Thursday's lunch.
 
-![Hands arranging a home grazing board with cheese, grapes, olives, bread, and vegetables on a kitchen island](/blog/how-much-food-per-person-for-a-party-img1.png)
+![A finished grazing board of cheese, grapes, olives, bread, and vegetables on a butcher-block kitchen island in daylight](/blog/how-much-food-per-person-for-a-party-img1.png)
 
 ## A 24-guest Saturday you can copy
 

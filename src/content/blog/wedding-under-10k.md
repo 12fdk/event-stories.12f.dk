@@ -7,7 +7,7 @@ publishDate: 2026-08-19
 author: "Robert Jensen"
 tags: ["wedding budget", "budget wedding", "wedding under 10k", "wedding planning"]
 cover: "/blog/wedding-under-10k-cover.webp"
-coverAlt: "A young couple on the floor of their living room in the evening, planning their wedding with guest lists, a notebook, and a single champagne flute."
+coverAlt: "A closed notebook, blank index cards, and a single champagne flute on a wooden floor beside a knit throw in warm evening lamplight"
 tldr:
   - "A realistic under-10k wedding runs about $150–200 per guest, which fits roughly 50–70 people with room for surprises."
   - "Spend the big three — venue, food, and a small band or DJ — on the things guests remember, and trim the invisible stuff (decor, favors, signage)."
@@ -43,7 +43,7 @@ I've planned weddings at every price point. I've also planned milestone birthday
 
 This is the line-by-line version. Real numbers, real trade-offs, and the few places where "cheaper" is the wrong word.
 
-![A couple on the floor of their living room in the evening, planning their wedding with guest lists, a notebook, and a single champagne flute](/blog/wedding-under-10k-cover.webp)
+![A closed notebook, blank index cards, and a single champagne flute on a wooden floor beside a knit throw in warm evening lamplight](/blog/wedding-under-10k-cover.webp)
 
 ## Where the $10,000 actually goes (a realistic 2026 breakdown)
 
@@ -69,7 +69,7 @@ A few notes on that table:
 - **The buffer is not optional.** It's the reason a $9,500 budget doesn't become a $12,000 surprise. More on it below.
 - **These are realistic 2026 numbers** for a small, self-organized wedding — not the national averages, which are skewed by big-venue, big-ballroom spending.
 
-![Hands writing a budget breakdown on a paper grid with a pencil, a calculator, and a cup of coffee on a wooden kitchen table](/blog/wedding-under-10k-img1.webp)
+![A blank yellow notepad, a black pencil, and a small glass of water on a dark walnut table in evening light](/blog/wedding-under-10k-img1.webp)
 
 ## Step 1: Decide the guest count first (it sets everything)
 
