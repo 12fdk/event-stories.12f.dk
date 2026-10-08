@@ -76,7 +76,7 @@ If your evening has more than eight moments, group them. "Dinner and toasts" cou
 
 **Name the moments by what guests experience.** "First dance" not "we're going to dance." "Grandmother's toast" not "my mom's speech." "Cocktail hour" not "people wait for the room." The program is the guest's guide, so it should be written in the guest's voice — even though you're the one writing it.
 
-![Hands writing on a small folded paper table program, a fountain pen mid-stroke, on a wooden reception table beside a candle and wildflowers](/blog/wedding-reception-program-img1.webp)
+![A blank folded program standing beside a lit taper candle, wildflowers, and a fountain pen on a wooden reception table](/blog/wedding-reception-program-img1.webp)
 
 ## Times, or no times?
 
@@ -119,7 +119,7 @@ A few variations by occasion:
 
 The pattern is always the same: *start, entrance, meal, toasts, send-off.* If your evening follows that arc, you already have your program — you just need to write it down.
 
-![A hand placing a folded paper place card on a reception table with white linen and a taper candle, warm golden evening light, guests blurred in the background](/blog/wedding-reception-program-img2.webp)
+![An empty reception table corner with white linen, an ivory taper candle, a blank place card, and an empty chair in golden evening light](/blog/wedding-reception-program-img2.webp)
 
 ## Printing and laying them out on the day
 

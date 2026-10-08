@@ -13,7 +13,7 @@ relatedSlugs:
   - "dinner-party-timeline"
   - "baby-shower-planning-guide"
 cover: "/blog/rsvp-no-shows-cover.webp"
-coverAlt: "A person sitting at a kitchen table with a laptop open to a guest list, looking thoughtfully at the screen, a cup of coffee and a notebook nearby, warm natural light from a window"
+coverAlt: "A closed laptop, a stack of blank envelopes, a ribbon-tied notebook, and a cup of coffee on a kitchen table beside an empty chair"
 
 tldr:
   - "Send your first gentle nudge at the one-week mark before your RSVP deadline."

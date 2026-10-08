@@ -7,7 +7,7 @@ publishDate: 2026-07-17
 author: "Robert Jensen"
 tags: ["seating chart", "wedding planning", "guest management"]
 cover: "/blog/wedding-seating-cover.webp"
-coverAlt: "A couple sitting together at a warm kitchen table reviewing wedding planning papers and a tablet, soft natural light from a window"
+coverAlt: "An overhead view of a blank seating diagram of empty circles, colored pencils, a face-down tablet, and rosemary on a kitchen table"
 
 howTo:
   name: "How to make a wedding seating chart"
@@ -186,7 +186,7 @@ The goal isn't a flawless matrix. The goal is a room full of people who feel wel
 
 And when you look around that room and see strangers sharing dessert at a table they'd never have chosen on their own, you'll know it was worth the effort.
 
-![A hand arranging place cards around a round dinner table, warm natural light, soft depth of field](/blog/wedding-seating-img3.webp)
+![Blank tented place cards standing in a ring on a linen-covered round table, with a single white flower in a bud vase](/blog/wedding-seating-img3.webp)
 
 ## One last thought
 
