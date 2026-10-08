@@ -97,7 +97,7 @@ THEMES: dict[str, tuple[str, list[str]]] = {
         "save money", "cheap", "frugal", "expensive", "cost per guest",
         "how much does", "under 10k", "under $10k"]),
     "vendor-costs": ("Vendors: quotes, deposits, tipping and what to pay", [
-        "vendor", "vendors", "quote", "quoted", "deposit", "caterer", "catering cost",
+        "vendor", "vendors", "a quote", "quoted", "deposit", "caterer", "catering cost",
         "photographer", "dj", "florist", "tipping", "how much to tip", "contract",
         "invoice"]),
     "food-drink": ("How much food and drink per guest", [

@@ -43,6 +43,12 @@ class ThemeMatching(unittest.TestCase):
         self.assertNotIn("vendor-costs", rt.themes_of("Any tips for a first birthday party?"))
         self.assertIn("vendor-costs", rt.themes_of("How much to tip the DJ and caterer?"))
 
+    def test_movie_quotes_are_not_vendor_quotes(self):
+        # Seen on the 2026-10-08 live run.
+        self.assertNotIn("vendor-costs", rt.themes_of(
+            'Hosting a "Mean Girls" party! Need your fetch ideas, quotes, & details'))
+        self.assertIn("vendor-costs", rt.themes_of("Got a quote of $4k from the caterer, normal?"))
+
     def test_smart_quotes_are_normalised(self):
         self.assertIn("rsvp", rt.themes_of("Guests didn’t reply by the deadline"))
 
