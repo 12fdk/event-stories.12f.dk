@@ -62,6 +62,11 @@ class Usefulness(unittest.TestCase):
     def test_venting_is_noise(self):
         self.assertFalse(rt.is_useful("Rant: why do people never RSVP on time?"))
 
+    def test_meta_posts_are_noise(self):
+        # Both got through on the first live run, 2026-10-08.
+        self.assertFalse(rt.is_useful('Petition to ban "how do people afford weddings" posts'))
+        self.assertFalse(rt.is_useful("...and this is why some venues ban candles!"))
+
     def test_tag_question_is_noise(self):
         self.assertFalse(rt.is_useful("Open bars are worth every penny, right?"))
 

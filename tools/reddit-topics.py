@@ -173,6 +173,9 @@ NOISE = [
     "rant", "vent", "venting", "unpopular opinion", "am i wrong", "aita", "wibta",
     ", right?", "why do people", "so tired of", "i'm done with", "im done with",
     "the audacity", "you won't believe", "you wont believe", "shaming",
+    # Seen on the first live run (2026-10-08): community meta-posts and
+    # cautionary tales that a "how" or "why" sneaks past is_useful().
+    "petition", "this is why", "reminder that", "mod post", "weekly thread",
 ]
 
 # Rhetorical tag questions ending a title — "…, right?", "…, isn't it?". These
