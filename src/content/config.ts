@@ -46,6 +46,12 @@ const blog = defineCollection({
       })
       .optional(),
     relatedSlugs: z.array(z.string()).default([]),
+    // Mid-article App Store CTA knobs (src/plugins/rehype-inline-cta.mjs).
+    // `inlineCta: false` turns the card off for one post, `inlineCtaAfter`
+    // names the H2 to put it after, `inlineCtaText` replaces the sentence.
+    inlineCta: z.boolean().optional(),
+    inlineCtaAfter: z.string().optional(),
+    inlineCtaText: z.string().max(240).optional(),
     draft: z.boolean().default(false),
   }),
 });

@@ -4,6 +4,7 @@ import path from "node:path";
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
+import { rehypeInlineCta } from "./src/plugins/rehype-inline-cta.mjs";
 
 const SITE = "https://event-stories.12f.dk";
 const BLOG_DIR = "src/content/blog";
@@ -67,6 +68,11 @@ export default defineConfig({
         limitInputPixels: false,
       },
     },
+  },
+  markdown: {
+    // rehypeInlineCta renders the mid-article App Store CTA card on blog
+    // posts, placed from each post's own structure.
+    rehypePlugins: [rehypeInlineCta],
   },
   integrations: [
     react(),
