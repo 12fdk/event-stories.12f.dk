@@ -6,7 +6,7 @@ keyword: "how to cut wedding guest list politely"
 publishDate: 2026-10-08
 author: "Robert Jensen"
 tags: ["wedding guest list", "wedding planning", "plus-ones", "wedding budget"]
-cover: "/blog/how-to-cut-wedding-guest-list-cover.png"
+cover: "/blog/how-to-cut-wedding-guest-list-cover.webp"
 coverAlt: "Three stacks of blank cream cards, brass scissors, and a white coffee cup on a dark walnut kitchen table in late-afternoon sun"
 
 howTo:
@@ -58,7 +58,7 @@ You already know who you want in the room. The hard part is everyone else: the c
 
 That guilt is normal. How to cut wedding guest list politely is not a gift for letting people down. It is a cap, a letter next to each name, and a few short messages you can copy. The rules do the uncomfortable work.
 
-![Three stacks of blank cream cards, brass scissors, and a white coffee cup on a dark walnut kitchen table in late-afternoon sun](/blog/how-to-cut-wedding-guest-list-cover.png)
+![Three stacks of blank cream cards, brass scissors, and a white coffee cup on a dark walnut kitchen table in late-afternoon sun](/blog/how-to-cut-wedding-guest-list-cover.webp)
 
 ## How to cut wedding guest list politely
 
@@ -104,7 +104,7 @@ Number the B list. Number 1 is the first seat that opens if someone declines. Th
 
 Keep the letter and the plus-one on that same page. A C slides back on when the list lives in three text threads.
 
-![A fan of blank ivory cards, a graphite pencil, and a speckled mug of tea on a pale oak table in cool morning light](/blog/how-to-cut-wedding-guest-list-img1.png)
+![A fan of blank ivory cards, a graphite pencil, and a speckled mug of tea on a pale oak table in cool morning light](/blog/how-to-cut-wedding-guest-list-img1.webp)
 
 ## Rules you can point to when someone pushes back
 
@@ -176,7 +176,7 @@ If you already promised a seat and the cap will not hold it, say so before anyon
 
 Then stop. Offer the dinner only if you mean it. Do not promise a seat "if someone cancels" unless you will actually call.
 
-![Two empty wooden chairs at a small kitchen table set with mismatched teacups, a closed navy notebook, and dried hydrangeas](/blog/how-to-cut-wedding-guest-list-img2.png)
+![Two empty wooden chairs at a small kitchen table set with mismatched teacups, a closed navy notebook, and dried hydrangeas](/blog/how-to-cut-wedding-guest-list-img2.webp)
 
 ## What each cut guest saves
 
@@ -204,7 +204,7 @@ Read the minimum. If the contract requires 80 guests, cutting from 100 to 80 sav
 
 Write $171 next to the cap. Adding a name is that decision. Keep food and drink as their own budget line, on paper or in a sheet, and change it when the headcount changes.
 
-![A dining table set for six, with extra wooden chairs pulled away and lined against the wall in daylight](/blog/how-to-cut-wedding-guest-list-img3.png)
+![A dining table set for six, with extra wooden chairs pulled away and lined against the wall in daylight](/blog/how-to-cut-wedding-guest-list-img3.webp)
 
 ## Say it once, then stop reopening the list
 
