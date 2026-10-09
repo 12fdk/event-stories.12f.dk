@@ -81,7 +81,7 @@ function Navbar() {
             ))}
           </ul>
           {topNavbar.cta && appStoreLink && (
-            <a href={appStoreLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary ml-3 py-4">
+            <a data-umami-event="appstore-click" data-umami-event-placement="nav" href={appStoreLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary ml-3 py-4">
               {topNavbar.cta}
             </a>
           )}
@@ -114,14 +114,14 @@ function Navbar() {
         >
           {googlePlayLink && (
             <li className="mb-2">
-              <a href={googlePlayLink} target="_blank" rel="noopener noreferrer">
+              <a data-umami-event="playstore-click" data-umami-event-placement="nav" href={googlePlayLink} target="_blank" rel="noopener noreferrer">
                 <img className="h-12" src={withBase("/stores/google-play.svg")} alt="Download on Google Play" width={144} height={48} />
               </a>
             </li>
           )}
           {appStoreLink && (
             <li className="mb-2">
-              <a href={appStoreLink} target="_blank" rel="noopener noreferrer">
+              <a data-umami-event="appstore-click" data-umami-event-placement="nav" href={appStoreLink} target="_blank" rel="noopener noreferrer">
                 <img className="h-12" src={withBase("/stores/app-store.svg")} alt="Download on App Store" width={144} height={48} />
               </a>
             </li>

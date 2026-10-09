@@ -46,7 +46,7 @@ function AppBanner() {
             <ul className="mt-8 flex list-none flex-wrap gap-4 p-0">
               {googlePlayLink && (
                 <li className="m-0 p-0">
-                  <a href={googlePlayLink}>
+                  <a data-umami-event="playstore-click" data-umami-event-placement="cta" href={googlePlayLink}>
                     <img
                       className="h-[52px]"
                       alt="Download on Google Play"
@@ -59,7 +59,7 @@ function AppBanner() {
               )}
               {appStoreLink && (
                 <li className="m-0 p-0">
-                  <a href={appStoreLink} target="_blank" rel="noopener noreferrer">
+                  <a data-umami-event="appstore-click" data-umami-event-placement="cta" href={appStoreLink} target="_blank" rel="noopener noreferrer">
                     <img
                       className="h-[52px]"
                       alt="Download on the App Store"

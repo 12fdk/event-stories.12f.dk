@@ -35,7 +35,7 @@ function SectionCta({ text = "Ready to plan your event?", variant = "default" }:
               {text}
             </span>
           </p>
-          <a
+          <a data-umami-event="appstore-click" data-umami-event-placement="cta"
             href={appStoreLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -57,7 +57,7 @@ function SectionCta({ text = "Ready to plan your event?", variant = "default" }:
       className="flex flex-col items-center gap-4 px-4 py-12"
     >
       <p className="text-center text-lg text-base-content/70">{text}</p>
-      <a
+      <a data-umami-event="appstore-click" data-umami-event-placement="cta"
         href={appStoreLink}
         target="_blank"
         rel="noopener noreferrer"
