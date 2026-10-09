@@ -18,7 +18,7 @@ function StickyDownload() {
       style={{ opacity, y }}
       className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-t from-base-100 via-base-100 to-transparent md:hidden"
     >
-      <a
+      <a data-umami-event="appstore-click" data-umami-event-placement="cta"
         href={appStoreLink}
         className="flex items-center justify-center gap-3 w-full py-3 px-6 bg-primary text-primary-content rounded-btn shadow-lg font-semibold text-lg hover:bg-primary-focus transition-colors"
       >

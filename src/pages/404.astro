@@ -57,7 +57,7 @@ const links = [
     {
       config.appStoreLink && (
         <p class="mt-12">
-          <a
+          <a data-umami-event="appstore-click" data-umami-event-placement="cta"
             class="btn btn-primary gap-2"
             href={config.appStoreLink}
             target="_blank"

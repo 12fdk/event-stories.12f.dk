@@ -173,7 +173,7 @@ function Header() {
             className="not-prose mt-8 flex flex-wrap items-center gap-x-5 gap-y-4"
           >
             {appStoreLink && (
-              <a
+              <a data-umami-event="appstore-click" data-umami-event-placement="hero"
                 href={appStoreLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -189,7 +189,7 @@ function Header() {
               </a>
             )}
             {googlePlayLink && (
-              <a href={googlePlayLink} className="inline-flex">
+              <a data-umami-event="playstore-click" data-umami-event-placement="hero" href={googlePlayLink} className="inline-flex">
                 <img
                   className="h-[52px]"
                   alt="Get Event Stories on Google Play"
