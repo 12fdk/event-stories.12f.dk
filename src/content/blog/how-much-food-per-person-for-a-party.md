@@ -6,7 +6,7 @@ keyword: "how much food per person for a party"
 publishDate: 2026-10-07
 author: "Robert Jensen"
 tags: ["party food", "hosting", "party planning", "food quantities"]
-cover: "/blog/how-much-food-per-person-for-a-party-cover.png"
+cover: "/blog/how-much-food-per-person-for-a-party-cover.webp"
 coverAlt: "A home dining table set for a casual party, with roast chicken, a wooden salad bowl, bread, and wine glasses in warm afternoon light"
 
 howTo:
@@ -60,7 +60,7 @@ You have stood in the grocery aisle doing the math on your fingers. Twelve peopl
 
 How much food per person for a party is a short list of portions, multiplied by the people who actually said yes. Once that headcount is real, the shopping list is just arithmetic. Here is the cheat sheet I use for birthdays, showers, and dinner at home.
 
-![A home dining table set for a casual party, with roast chicken, a wooden salad bowl, bread, and wine glasses in warm afternoon light](/blog/how-much-food-per-person-for-a-party-cover.png)
+![A home dining table set for a casual party, with roast chicken, a wooden salad bowl, bread, and wine glasses in warm afternoon light](/blog/how-much-food-per-person-for-a-party-cover.webp)
 
 ## Count the plates, not the invitations
 
@@ -158,7 +158,7 @@ A large bag of salad greens is about 5 to 6 cups. For 24 guests, four bags is th
 
 **Buffets need a little extra. Plated dinners do not.** On a buffet or a grazing table, add about **10 percent** to the dishes you expect to vanish, usually the meat, the potatoes, and the one dip everyone likes. A plated plate is already portioned. Extra steaks "just in case" are Thursday's lunch.
 
-![A finished grazing board of cheese, grapes, olives, bread, and vegetables on a butcher-block kitchen island in daylight](/blog/how-much-food-per-person-for-a-party-img1.png)
+![A finished grazing board of cheese, grapes, olives, bread, and vegetables on a butcher-block kitchen island in daylight](/blog/how-much-food-per-person-for-a-party-img1.webp)
 
 ## A 24-guest Saturday you can copy
 
@@ -202,7 +202,7 @@ For a **three-hour dinner**, plan **two alcoholic drinks per adult** if people a
 
 **Coffee and tea after dinner.** About two-thirds of a dinner crowd wants a cup. One 8-cup pot per 12 guests. For 24, brew two pots, and put the milk out with the cups.
 
-![A home drinks station with wine bottles, a pitcher of water, a bucket of ice, and glasses on a wooden sideboard](/blog/how-much-food-per-person-for-a-party-img2.png)
+![A home drinks station with wine bottles, a pitcher of water, a bucket of ice, and glasses on a wooden sideboard](/blog/how-much-food-per-person-for-a-party-img2.webp)
 
 ## Kids, diets, and the ten percent
 
@@ -231,7 +231,7 @@ A home party you cook yourself often lands around **$12 to $25 per person** for 
 
 Give food and drink their own line in the budget, with a quantity checklist you can tick off as you buy.
 
-![A morning kitchen counter with a chicken, lettuce, bread, lemons, herbs, and sparkling water ready for a party shop](/blog/how-much-food-per-person-for-a-party-img3.png)
+![A morning kitchen counter with a chicken, lettuce, bread, lemons, herbs, and sparkling water ready for a party shop](/blog/how-much-food-per-person-for-a-party-img3.webp)
 
 ### What to put out, and when
 
