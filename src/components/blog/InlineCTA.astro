@@ -1,0 +1,55 @@
+---
+import defaultTemplateConfig from "../../utils/config";
+import { TOPICS, topicFor } from "../../utils/blogCta.mjs";
+
+/**
+ * End-of-post App Store CTA box.
+ *
+ * Topic-aware copy from src/utils/blogCta.mjs (shared with the mid-article
+ * card, src/plugins/rehype-inline-cta.mjs). The body is the `end` sentence —
+ * the mid-article card uses the `inline` sentence, so the two never repeat
+ * each other.
+ *
+ * Tracking: `blog-cta-end-<slug>`, mirroring the mid-article card's
+ * `blog-inline-cta-<slug>` so Umami reads the two surfaces on separate rows.
+ */
+
+interface Props {
+  slug: string;
+  keyword?: string;
+  tags?: string[];
+  heading?: string;
+  body?: string;
+  buttonText?: string;
+  appStoreLink?: string;
+}
+
+const {
+  slug,
+  keyword,
+  tags = [],
+  heading = "Plan the event. Keep the story.",
+  body,
+  buttonText = "Get Event Stories — Free on the App Store",
+  appStoreLink = defaultTemplateConfig.appStoreLink,
+} = Astro.props;
+
+const topic = TOPICS[topicFor({ slug, keyword, tags })];
+const ctaBody = body ?? topic.end;
+---
+
+<aside class="not-prose mt-12 rounded-box border border-base-300 bg-base-200/60 p-6 sm:p-8" data-cta-id={`blog-cta-end-${slug}`}>
+  <h3 class="mb-2 font-display text-2xl font-bold tracking-tight text-base-content">
+    {heading}
+  </h3>
+  <p class="mb-5 leading-relaxed text-base-content/80">{ctaBody}</p>
+  <a
+    href={appStoreLink}
+    target="_blank"
+    rel="noopener"
+    data-umami-event={`blog-cta-end-${slug}`}
+    class="btn btn-primary"
+  >
+    {buttonText}
+  </a>
+</aside>

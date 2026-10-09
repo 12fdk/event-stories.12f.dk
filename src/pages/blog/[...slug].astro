@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
 import BlogLayout from "../../layouts/BlogLayout.astro";
+import InlineCTA from "../../components/blog/InlineCTA.astro";
 import { readingTime } from "../../utils/readingTime";
 
 export async function getStaticPaths() {
@@ -212,6 +213,12 @@ const extraNodes = [faqNode, howToNode].filter(Boolean);
       {post.data.authorBio}
     </p>
   </aside>
+
+  <InlineCTA
+    slug={post.slug}
+    keyword={post.data.keyword}
+    tags={post.data.tags}
+  />
 
   {
     related.length > 0 && (
