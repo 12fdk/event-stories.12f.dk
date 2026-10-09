@@ -112,6 +112,27 @@ go straight to the topic bank below.
    append `*(used: YYYY-MM-DD, <slug>)*` to the entry, and `git add prompt.md`.
    A digest-picked topic that matches a bank entry also marks that entry.
 
+### Comparison posts (at least one in three)
+
+The posts that earn real search traffic are the comparison posts, the ones
+phrased in the reader's own search words. **At least one post in three
+should be a comparison post**, in one of two shapes:
+
+- **"Event Stories vs <competitor>"**, or
+- **"best <category> apps (<year>)"** (or the site's own phrasing, e.g.
+  "best wedding planning apps 2026").
+
+When you write one, **name the real competitors that actually rank for the
+category and be fair and accurate about them** — what each genuinely does
+and what it costs, with no invented features or prices. Real competitors
+that rank here: **The Knot, Zola, a paper planner and a spreadsheet** — the
+planning tools people already weigh up. Keep Event Stories' in-body mention
+inside the §4 promotion rule: the comparison is carried by naming the
+competitors, not by repeating our name. A comparison post must still be
+complete and honest on its own — remove our app and it should read as a
+fair, useful ranking of the others. Note in the report when you wrote one,
+so the one-in-three cadence stays easy to audit.
+
 ### Ranked topic bank (fallback for a failed scrape)
 
 Derived from Reddit search demand × app-feature fit — the higher up, the
