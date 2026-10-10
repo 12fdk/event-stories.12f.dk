@@ -14,7 +14,7 @@
 - **Contact Email**: robert@12f.dk
 - **Website**: https://event-stories.12f.dk
 - **Privacy Policy**: https://www.12f.dk/event-stories/privacy-policy/
-- **App Store URL**: https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151
+- **App Store URL**: https://apps.apple.com/app/id6755695151?ct=llms-event-stories&mt=8
 - **App Store ID**: 6755695151
 - **Bundle ID**: 12f.event-stories
 
@@ -169,7 +169,7 @@ Compared to generic productivity apps (Notion, spreadsheets), Event Stories prov
 ## Links
 
 - **Home**: https://event-stories.12f.dk/
-- **App Store**: https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151
+- **App Store**: https://apps.apple.com/app/id6755695151?ct=llms-event-stories&mt=8
 - **Privacy Policy**: https://event-stories.12f.dk/privacy-policy/
 - **Terms and Conditions**: https://event-stories.12f.dk/terms-and-conditions/
 - **Cookies Policy**: https://event-stories.12f.dk/cookies-policy/

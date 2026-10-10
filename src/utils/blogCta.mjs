@@ -24,9 +24,6 @@
  *   inlineCtaText: "…"      — custom sentence for an inserted card
  */
 
-export const APP_STORE_URL =
-  "https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151";
-
 /** Umami event name for the mid-article card (carries the post slug). */
 export const INLINE_SURFACE = "blog-inline-cta";
 /** Umami event name for the end-of-article box. */

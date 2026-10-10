@@ -218,6 +218,6 @@ A dinner party timeline is just one piece of a bigger picture. The guest list yo
 
 Keeping the whole plan in one place — guest list with RSVPs, budget for food and drink, timeline for the evening, task checklist with due dates, and a seating layout for the table — means you can stop carrying it all in your head and start executing with confidence.
 
-If that sounds like it could make your life easier, [Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151) is free on the App Store with no account required and works offline. Guest list with RSVP tracking, budget charts, timeline building, seating planner, task checklist, and PDF export — everything in one place.
+If that sounds like it could make your life easier, [Event Stories](https://apps.apple.com/app/id6755695151?ct=blog-dinner-party-timeline&mt=8) is free on the App Store with no account required and works offline. Guest list with RSVP tracking, budget charts, timeline building, seating planner, task checklist, and PDF export — everything in one place.
 
 Free on the App Store · No account required · Works offline.

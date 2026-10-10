@@ -1,5 +1,5 @@
 ---
-import defaultTemplateConfig from "../../utils/config";
+import { blogCampaignUrl } from "../../utils/appStoreCampaign.mjs";
 import { TOPICS, topicFor } from "../../utils/blogCta.mjs";
 
 /**
@@ -31,7 +31,7 @@ const {
   heading = "Plan the event. Keep the story.",
   body,
   buttonText = "Get Event Stories — Free on the App Store",
-  appStoreLink = defaultTemplateConfig.appStoreLink,
+  appStoreLink = blogCampaignUrl(slug),
 } = Astro.props;
 
 const topic = TOPICS[topicFor({ slug, keyword, tags })];

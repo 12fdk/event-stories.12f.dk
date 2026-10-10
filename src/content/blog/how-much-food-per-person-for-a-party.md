@@ -247,6 +247,6 @@ The portions are the easy part once the number is real. The hard part is the num
 
 Keep the guest list and the yeses, the food-and-drink budget, and the shopping checklist in one place. The cheat sheet above stays a multiplication problem.
 
-If you want that on your phone, [Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151) is a free party planner for private celebrations. It keeps the guest list and RSVPs, a budget by category, a task checklist for the shop, and the run of the day together. Premium Lifetime is a one-time purchase, never a subscription.
+If you want that on your phone, [Event Stories](https://apps.apple.com/app/id6755695151?ct=blog-how-much-food-per-person-for-a-part&mt=8) is a free party planner for private celebrations. It keeps the guest list and RSVPs, a budget by category, a task checklist for the shop, and the run of the day together. Premium Lifetime is a one-time purchase, never a subscription.
 
 Free on the App Store · No account required · Works offline.

@@ -211,9 +211,11 @@ problem the article describes — never the subject of the article.
   CTA. If you've typed "Event Stories" before the final section, delete it and describe
   the capability instead. Optional; zero in-body mentions is fine if none fit naturally.
 - **One honest CTA at the very end**, as its own short section — the model is the
-  closing of `ultimate-event-budget-guide.md`. Link once:
-  `[Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151)`,
-  describe only real features, and close with "Free on the App Store · No account
+  closing of `ultimate-event-budget-guide.md`. Link once, with campaign token
+  `ct=blog-<slug>` (this post's filename, truncated so `ct` is at most 40 characters):
+  `[Event Stories](https://apps.apple.com/app/id6755695151?ct=blog-<slug>&mt=8)`.
+  For `dinner-party-timeline.md` that is `ct=blog-dinner-party-timeline`. Do not add `pt=`.
+  Describe only real features, and close with "Free on the App Store · No account
   required · Works offline." No hard sell. No fake urgency.
 - Never open with the app. Never say "our app." Let the usefulness earn the click.
 
@@ -377,9 +379,10 @@ Each one has broken, or nearly broken, a post on this site.
 4. **Pricing.** If the post mentions price at all: the app is free, and Premium
    Lifetime is a **one-time** purchase — never "subscription", never a monthly
    price, never a specific price figure (prices vary by country).
-5. **The CTA is exact.** One link to
-   `https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151`,
-   and the closing line "Free on the App Store · No account required · Works offline."
+5. **The CTA is exact.** One link of the form
+   `https://apps.apple.com/app/id6755695151?ct=blog-<slug>&mt=8`,
+   where `<slug>` is this post's filename and `blog-<slug>` is truncated to 40
+   characters. Do not add `pt=`. Closing line: "Free on the App Store · No account required · Works offline."
 6. **Money figures say whose money.** Any dollar figure, cost-per-guest or
    percentage is labelled with its market (e.g. "US averages") and its year, and
    says that local prices differ.

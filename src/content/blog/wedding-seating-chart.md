@@ -194,6 +194,6 @@ Planning a wedding involves a lot of moving parts — guest lists, RSVPs, budget
 
 Keeping the whole thing in one place — guest list with RSVPs and dietary needs, budget with charts, timeline, vendors, and a drag-and-drop seating plan — means you can actually breathe while planning. No more juggling five different sources of truth.
 
-If you're looking for a tool that holds all of this in one place and works on your iPhone without needing an account or internet access, [Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151) is free on the App Store with no account required and works offline. It covers guest lists with RSVP tracking, budget charts, timeline building, a drag-and-drop seating planner, and PDF export for sharing with your venue.
+If you're looking for a tool that holds all of this in one place and works on your iPhone without needing an account or internet access, [Event Stories](https://apps.apple.com/app/id6755695151?ct=blog-wedding-seating-chart&mt=8) is free on the App Store with no account required and works offline. It covers guest lists with RSVP tracking, budget charts, timeline building, a drag-and-drop seating planner, and PDF export for sharing with your venue.
 
 Free on the App Store · No account required · Works offline.

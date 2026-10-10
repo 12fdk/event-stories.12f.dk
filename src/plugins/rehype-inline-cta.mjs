@@ -1,9 +1,5 @@
-import {
-  APP_STORE_URL,
-  TOPICS,
-  planInlineCta,
-  topicFor,
-} from "../utils/blogCta.mjs";
+import { blogCampaignUrl } from "../utils/appStoreCampaign.mjs";
+import { TOPICS, planInlineCta, topicFor } from "../utils/blogCta.mjs";
 
 /**
  * Mid-article App Store CTA for blog posts.
@@ -51,6 +47,21 @@ function track(slug) {
   };
 }
 
+/** Point every App Store link on this post at its `blog-<slug>` campaign. */
+function retagAppStoreLinks(node, slug) {
+  if (!node || typeof node !== "object") return;
+  if (
+    node.type === "element" &&
+    node.tagName === "a" &&
+    String(node.properties?.href ?? "").includes("apps.apple.com")
+  ) {
+    node.properties.href = blogCampaignUrl(slug, {
+      preservePtFrom: String(node.properties.href),
+    });
+  }
+  (node.children ?? []).forEach((child) => retagAppStoreLinks(child, slug));
+}
+
 /** Stamp the tracking attributes onto App Store links inside a paragraph. */
 function stampLinks(node, slug) {
   if (node.type !== "element") return;
@@ -96,7 +107,7 @@ function card({ label, paragraph, slug }) {
         el(
           "a",
           {
-            href: APP_STORE_URL,
+            href: blogCampaignUrl(slug),
             target: "_blank",
             rel: "noopener",
             className: ["btn", "btn-primary", "normal-case"],
@@ -116,6 +127,8 @@ export function rehypeInlineCta() {
     // Only blog posts: they are the only content with this frontmatter shape.
     if (!fm || !fm.keyword || !String(file.path ?? file.history?.[0] ?? "").includes("content/blog")) return;
     const slug = String(file.path ?? file.history?.[0] ?? "").split("/").pop().replace(/\.mdx?$/, "");
+    // Prose links and the inserted button share one campaign token per post.
+    retagAppStoreLinks(tree, slug);
 
     // Group root children into H2 sections, as planInlineCta expects.
     const sections = [{ heading: "", words: 0, mentions: 0, start: 0, nodes: [] }];

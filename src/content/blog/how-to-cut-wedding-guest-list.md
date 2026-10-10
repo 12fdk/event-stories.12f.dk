@@ -223,6 +223,6 @@ A parent will remember a godparent. A friend will assume a plus-one. Someone wil
 
 Look at it when you order invitations, when replies are due, and when you send the final headcount. Silence at the deadline is a no for the caterer. A spreadsheet works if you open it. A page on the fridge works if you cross names out.
 
-If you want the names, the plus-ones, the replies, and the food budget in one place on your phone, [Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151) is a free party planner for private celebrations. You can keep the guest list and RSVPs, including plus-ones, and log catering by category as the headcount moves. Premium Lifetime is a one-time purchase, never a subscription.
+If you want the names, the plus-ones, the replies, and the food budget in one place on your phone, [Event Stories](https://apps.apple.com/app/id6755695151?ct=blog-how-to-cut-wedding-guest-list&mt=8) is a free party planner for private celebrations. You can keep the guest list and RSVPs, including plus-ones, and log catering by category as the headcount moves. Premium Lifetime is a one-time purchase, never a subscription.
 
 Free on the App Store · No account required · Works offline.
