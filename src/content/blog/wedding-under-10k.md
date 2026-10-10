@@ -211,6 +211,6 @@ A wedding under 10k is not a lesser wedding. It's a more intentional one. The co
 
 ## How Event Stories makes a small wedding feel manageable
 
-[Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151) was built around this exact approach. Create your event, set each budget category, and track every expense as it happens from your phone. The visual charts show you exactly where you stand — clearly, calmly, without the spreadsheet stress. Guest list, seating plan, schedule, and budget all in one place, so a smaller day stays organized instead of chaotic.
+[Event Stories](https://apps.apple.com/app/id6755695151?ct=blog-wedding-under-10k&mt=8) was built around this exact approach. Create your event, set each budget category, and track every expense as it happens from your phone. The visual charts show you exactly where you stand — clearly, calmly, without the spreadsheet stress. Guest list, seating plan, schedule, and budget all in one place, so a smaller day stays organized instead of chaotic.
 
 Free on the App Store · No account required · Works offline.

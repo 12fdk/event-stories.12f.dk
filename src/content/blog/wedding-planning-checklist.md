@@ -269,6 +269,6 @@ The hardest thing about wedding planning isn't the individual tasks — it's the
 
 Keeping everything in one place — your guest list with RSVP tracking, budget with charts, timeline, task checklist, and seating planner — means you can open one app and see the full picture. No more juggling five different sources of truth.
 
-If that sounds like it could make your life easier right now, [Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151) is free on the App Store with no account required and works offline. Guest list with RSVP tracking, budget charts, timeline building, seating planner, task checklist, and PDF export — everything in one place.
+If that sounds like it could make your life easier right now, [Event Stories](https://apps.apple.com/app/id6755695151?ct=blog-wedding-planning-checklist&mt=8) is free on the App Store with no account required and works offline. Guest list with RSVP tracking, budget charts, timeline building, seating planner, task checklist, and PDF export — everything in one place.
 
 Free on the App Store · No account required · Works offline.

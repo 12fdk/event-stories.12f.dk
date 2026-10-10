@@ -1,4 +1,5 @@
 import type { TemplateConfig } from "./configType";
+import { SITE_APP_STORE_URL } from "./appStoreCampaign.mjs";
 
 const templateConfig: TemplateConfig = {
   name: "Event Stories",
@@ -15,8 +16,7 @@ const templateConfig: TemplateConfig = {
   forceTheme: false,
   // Shows switch to toggle between dark and light modes
   showThemeSwitch: true,
-  appStoreLink:
-    "https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151",
+  appStoreLink: SITE_APP_STORE_URL,
   googlePlayLink: "",
   footer: {
     legalLinks: {

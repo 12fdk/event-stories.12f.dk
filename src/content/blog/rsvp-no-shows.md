@@ -152,6 +152,6 @@ The thing that makes RSVP tracking feel stressful is rarely the RSVPs themselves
 
 Keeping your guest list, RSVP responses, dietary needs, plus-ones, and budget all in one app on your phone means you stop context-switching and start planning. You open the app. You see the list. You follow up. You update the count. Done.
 
-If that sounds like it could make your life easier right now, [Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151) is free on the App Store with no account required and works offline. Guest list with RSVP tracking and dietary needs, budget charts, timeline building, seating planner, task checklist, and PDF export — everything in one place.
+If that sounds like it could make your life easier right now, [Event Stories](https://apps.apple.com/app/id6755695151?ct=blog-rsvp-no-shows&mt=8) is free on the App Store with no account required and works offline. Guest list with RSVP tracking and dietary needs, budget charts, timeline building, seating planner, task checklist, and PDF export — everything in one place.
 
 Free on the App Store · No account required · Works offline.

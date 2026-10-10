@@ -164,6 +164,6 @@ This isn't about perfection. It's about awareness. When you check in weekly, you
 
 ## How Event Stories makes budgeting feel manageable
 
-[Event Stories](https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151) was built around this exact approach. Create your event, set each budget category, and track every expense as it happens from your phone. The visual summaries show you exactly where you stand — clearly, calmly, without the spreadsheet stress.
+[Event Stories](https://apps.apple.com/app/id6755695151?ct=blog-ultimate-event-budget-guide&mt=8) was built around this exact approach. Create your event, set each budget category, and track every expense as it happens from your phone. The visual summaries show you exactly where you stand — clearly, calmly, without the spreadsheet stress.
 
 No account required. Works offline. Free on the App Store.

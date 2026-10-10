@@ -1,5 +1,6 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
+import { LLMS_APP_STORE_URL } from "../utils/appStoreCampaign.mjs";
 
 // llms.txt is generated rather than committed as a static file. The previous
 // hand-maintained public/llms.txt listed only the homepage and the three policy
@@ -28,7 +29,7 @@ export const GET: APIRoute = async () => {
 - **Platform**: iPhone (iOS 17.0+)
 - **Price**: Free (optional Premium Lifetime upgrade — one-time purchase, no subscription)
 - **Developer**: Robert Jensen (12f)
-- **App Store**: https://apps.apple.com/dk/app/event-stories-party-planner/id6755695151
+- **App Store**: ${LLMS_APP_STORE_URL}
 - **Website**: ${SITE}
 - **Contact**: robert@12f.dk
 - **Last updated**: ${lastUpdated}
