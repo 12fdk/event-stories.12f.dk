@@ -410,6 +410,11 @@ Report concisely:
   as a **traffic line** (0 in the first hours is normal — real traffic and
   indexing take time; never fail or retry a publish because of it, the
   publish proof is the deploy + the HTTP 200).
+- Search line: `python3 /opt/data/profiles/blogger/scripts/gsc.py page-views
+  https://event-stories.12f.dk/ /blog/SLUG/ 14` and report its output (e.g.
+  `GSC_SEARCH 12 impressions, 2 clicks, position 5.3`). Google indexes new posts
+  over days, so `0 impressions … no position yet` is normal for a fresh post —
+  never fail a publish on it; the publish proof is the deploy + the HTTP 200.
 - `npm run build` printed `BUILD OK`, and the push to `main` succeeded.
 - Images: cover + N in-body `.webp` images, or "no images: ComfyUI down".
 - The site-specific review checks above: passed, or what you fixed.
