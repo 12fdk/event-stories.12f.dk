@@ -404,6 +404,12 @@ Report concisely:
   convinced you — or, if the tool exited `2` or nothing fit, which bank entry you
   used and that you marked it used in `prompt.md`.
 - Whether the rotation rule (§2 step 0) forced a non-wedding topic.
+- Traffic check: after the deploy is green, run
+  `python3 /opt/data/profiles/blogger/scripts/umami_post_views.py
+  0df3d4bd-48ba-46d8-b04c-bfee9f848988 /blog/SLUG/ 12` and report the number
+  as a **traffic line** (0 in the first hours is normal — real traffic and
+  indexing take time; never fail or retry a publish because of it, the
+  publish proof is the deploy + the HTTP 200).
 - `npm run build` printed `BUILD OK`, and the push to `main` succeeded.
 - Images: cover + N in-body `.webp` images, or "no images: ComfyUI down".
 - The site-specific review checks above: passed, or what you fixed.
