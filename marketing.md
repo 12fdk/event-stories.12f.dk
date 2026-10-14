@@ -7,7 +7,7 @@ Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 
 - Hermes owns this file and runs every step in it. Robert reviews it and owns
   the decisions marked *Robert* in §9.
 - Pipeline (Appwrite db `marketing`, app slug `event-stories`, on app.12f.dk):
-  - Weekly cron (Monday) creates the week's posts with `status=queued`; `queue-comfyui` renders them (`queued` → `ready`); `publish-social` publishes once `scheduledAt` has passed.
+  - Weekly cron (Monday) renders the images on the spark (`comfy-gen`) and creates the post with `marketing-post` as `status=ready` (media uploaded by the CLI, spark#125); `publish-social` publishes once `scheduledAt` has passed. `queue-comfyui` is not used: the platform has no renderer and needs no ComfyUI URL.
   - Function `publish-social` (every 15 min) publishes to IG and FB; enforces a 20h minimum gap.
   - Function `collect-metrics` (every 2h) writes IG/FB engagement into the post docs.
   - Function `optimize-guidelines` (monthly) — **dormant**.
