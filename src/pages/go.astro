@@ -1,0 +1,103 @@
+---
+// /go/?src=<slug> — source-attribution redirect hop.
+//
+// Points the social-profile bio link here instead of at the bare homepage,
+// so the profile -> landing hop is countable in Umami (in-app browsers send
+// no referrer). Fires `social-landing` with { src } BEFORE redirecting to the
+// homepage with `src` preserved, so the homepage can fire `social-landing-home`
+// and tag its App Store CTA clicks with the same source. `to` may also be an
+// App Store URL (exact-origin whitelist in appStoreTarget), in which case the
+// hop redirects straight to the store after tracking.
+//
+// Standalone document on purpose: no Layout, no JSON-LD, no hero preloads.
+// Keep this hop fast.
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Opening Event Stories…</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://umami.robert-jensen.dk" />
+    <!-- Static host: without JS the query string cannot be read, so no-JS visitors go to the homepage (which links to the App Store). -->
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/" />
+    </noscript>
+    <style>
+      html {
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: #0b0c0e;
+        color: #e6e8eb;
+        text-align: center;
+        padding: 1rem;
+      }
+      main {
+        display: grid;
+        gap: 0.75rem;
+        justify-items: center;
+      }
+      a {
+        color: #0a84ff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p role="status">Opening Event Stories…</p>
+      <p>
+        <a id="go-continue" href="/">Continue to Event Stories</a>
+      </p>
+    </main>
+    <script>
+      import { runGo, buildDestination } from "../utils/sourceAttribution.mjs";
+
+      const UMAMI_HOST = "event-stories.12f.dk";
+      const isProd =
+        location.hostname === UMAMI_HOST ||
+        location.hostname === "www." + UMAMI_HOST;
+
+      const link = document.getElementById("go-continue");
+      if (link) link.setAttribute("href", buildDestination(location.search).path);
+
+      function loadTracker(): Promise<
+        ((n: string, d: object) => any) | null
+      > {
+        if (!isProd) return Promise.resolve(null);
+        return new Promise<((n: string, d: object) => any) | null>(
+          (resolve) => {
+          const s = document.createElement("script");
+          s.src = "https://umami.robert-jensen.dk/script.js";
+          s.dataset.websiteId = "0df3d4bd-48ba-46d8-b04c-bfee9f848988";
+          s.dataset.autoTrack = "false";
+          s.onload = () => {
+            const u = (window as any).umami;
+            resolve(
+              u && typeof u.track === "function"
+                ? (n: string, d: object) => u.track(n, d)
+                : null
+            );
+          };
+          s.onerror = () => resolve(null);
+          document.head.appendChild(s);
+        }
+        );
+      }
+
+      runGo({
+        search: location.search,
+        loadTracker,
+        redirect: (p) => location.replace(p),
+      });
+    </script>
+  </body>
+</html>

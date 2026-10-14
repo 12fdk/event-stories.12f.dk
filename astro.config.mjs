@@ -80,8 +80,10 @@ export default defineConfig({
     sitemap({
       changefreq: "weekly",
       priority: 0.7,
-      // /app is a redirect stub. /404 is the error page (also noindex).
-      filter: (page) => !page.includes("/app/") && !page.includes("/404"),
+      // /app is a redirect stub, /404 is the error page, and /go/ is the
+      // source-attribution tracking hop — none of them belongs in the index.
+      filter: (page) =>
+        !page.includes("/app/") && !page.includes("/404") && !page.endsWith("/go/"),
       serialize(item) {
         if (item.url === `${SITE}/`) {
           item.priority = 1.0;

@@ -1,6 +1,7 @@
 ---
 import "@styles/styles.scss";
 import type { TemplateConfig } from "utils/configType";
+import SourceAttribution from "./components/SourceAttribution.astro";
 
 const { backgroundGrid, seo, logo, theme, forceTheme, appStoreLink, name, home, appStore } =
   Astro.props as TemplateConfig;
@@ -374,5 +375,6 @@ const jsonLd = {
   <body class="relative">
     {backgroundGrid && <div class="backgroundGrid" />}
     <slot />
-  </body>
+        <SourceAttribution />
+    </body>
 </html>
