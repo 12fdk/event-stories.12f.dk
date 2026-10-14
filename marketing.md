@@ -42,6 +42,9 @@ Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 
 
 ## 3. Content rules
 
+- Text-slide colours: background #2d1b2e · text #f8f0e3 · accent #e8a87c
+  (carousel text slides; `marketing-post --colors-from` reads this line, so
+  keep its format. Robert's decision 2026-10-14, spark#129.)
 - Real footage and stills only. Assets: `/workspace/motion/assets/event-stories/`
   (es-c1..c5 clips, es-s1..s4 stills).
 - Never AI-generated faces.
