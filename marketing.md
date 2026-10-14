@@ -1,6 +1,6 @@
 # Event Stories — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-14
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-15
 
 ## 1. What this is & how it's updated
 
@@ -181,6 +181,7 @@ Append-only. Newest at bottom. Never edit or delete rows.
 | Date | Post | Numbers | Verdict | Change |
 |---|---|---|---|---|
 | 2026-10-14 | BASELINE: 25 posts (21 with metrics), all images | median reach 2; best reach 4–5 (Mar–Apr wedding collab, graduation, RSVPs-in-DMs); worst reach 1 (generic seasonal openers); last published 2026-05-07; no reels/carousels yet | BASELINE | Concrete event + concrete problem hooks; no generic seasonal openers. No /go hop existed before this PR: source-attributed funnel data starts once the bio links are set. |
+| 2026-10-15 | §7 review: window Oct 2–8 | no event-stories posts published in the window (last publish 2026-05-07); funnel 7d: 0 landings, 1 App Store tap | NO-DATA | none — no posts to judge; week of Oct 19 rows executed as planned (reel + carousel, no swap) |
 
 ## 9. Open questions & watch items
 
@@ -191,6 +192,10 @@ Append-only. Newest at bottom. Never edit or delete rows.
   last 24–48h.
 - **Stories decision** (owner: Robert) — the brand profile wants daily
   polls/countdowns; the pipeline is feed-only today.
+- **Upload size cap** (owner: Hermes) — the platform's upload path rejects
+  request bodies between 8 and 12 MB (8 MB passes, 12 MB gets a 413 /
+  connection reset). Reels must be encoded under that: 2-pass h264 at 2.6 Mbps
+  + aac 128k put a 32 s 1080x1920 reel at 9.3 MB (found 2026-10-15).
 - **Appwrite `umamiWebsiteId` is null** for `event-stories`; the funnel report
   takes the id via `--app` for now.
 - **Review window** (resolved 2026-10-14) — "published 7–13 days ago, not yet
