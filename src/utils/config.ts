@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "wedding-registry-how-many-gifts",
+          title: "How Many Gifts on a Registry? Size, Prices & Cash",
+          description:
+            "How many gifts on a registry? A simple household-based formula, the price points that matter, and the cash etiquette that actually works.",
+          date: "2026-10-14",
+          tags: ["wedding registry", "gift etiquette", "wedding planning", "cash gift"],
+          readingTime: 10,
+          author: "Robert Jensen",
+        },
+        {
           slug: "how-to-cut-wedding-guest-list",
           title: "How to Cut Wedding Guest List Politely",
           description:
