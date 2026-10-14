@@ -1,0 +1,28 @@
+---
+// Source attribution bootstrap.
+//
+// When this page was opened with a valid `?src=<slug>` (i.e. the visitor came
+// through the /go source-attribution hop from a social profile), fire the
+// `social-landing-home` event { src, path } and tag click events with `src` so
+// App Store taps can be grouped by source. See src/utils/sourceAttribution.mjs.
+//
+// No markup. One processed <script> (bundled once). No cookies/storage.
+---
+<script>
+  import {
+    normalizeSource,
+    attachSourceToClicks,
+    waitForUmami,
+    SOURCE_PARAM,
+  } from "../utils/sourceAttribution.mjs";
+
+  const src = normalizeSource(
+    new URLSearchParams(location.search).get(SOURCE_PARAM)
+  );
+  if (src) {
+    attachSourceToClicks(window, src);
+    waitForUmami(window).then((track) => {
+      if (track) track("social-landing-home", { src, path: location.pathname });
+    });
+  }
+</script>
