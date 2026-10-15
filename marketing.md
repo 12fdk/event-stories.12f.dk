@@ -7,11 +7,14 @@ Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 
 - Hermes owns this file and runs every step in it. Robert reviews it and owns
   the decisions marked *Robert* in §9.
 - Pipeline (Appwrite db `marketing`, app slug `event-stories`, on app.12f.dk):
-  - Weekly cron (Monday) renders the images on the spark (`comfy-gen`) and creates the post with `marketing-post` as `status=ready` (media uploaded by the CLI, spark#125); `publish-social` publishes once `scheduledAt` has passed. `queue-comfyui` is not used: the platform has no renderer and needs no ComfyUI URL.
+  - Nightly job (`event-stories-social-content`, shared `social-post` template, channel
+    platform): builds the next due §6 row — media rendered on the spark (`comfy-gen`,
+    `motion-render`), created with `marketing-post` as `status=ready` at the time it picks
+    (Hermes owns the schedule, marketing#97); `publish-social` publishes it then.
   - Function `publish-social` (every 15 min) publishes to IG and FB; enforces a 20h minimum gap.
   - Function `collect-metrics` (every 2h) writes IG/FB engagement into the post docs.
   - Function `optimize-guidelines` (monthly) — **dormant**.
-- The Monday cron also runs the §7 review and appends rows to §8.
+- The nightly job also runs the §7 review and appends rows to §8.
 - Editing rules for this file:
   - Append-only to §8: never delete or rewrite past log rows.
   - Plan changes go in §6, plus a §8 row that says why. §3 and §4 change only
@@ -116,25 +119,28 @@ direction real):
 
 ## 6. Content plan (next 4 weeks)
 
-| Week of | # | Format | Feature / message | Hook (first 1–2 s) |
-|---|---|---|---|---|
-| Oct 19 | 1 | Reel | Guest list / RSVPs | "Halloween party in 12 days. Who actually said yes?" |
-| Oct 19 | 2 | Carousel | Checklist / timeline | "Halloween party checklist: two weeks out to the doorbell." |
-| Oct 26 | 1 | Reel | Budget tracking | "Halloween party budget: decorations, food, costumes — one total." |
-| Oct 26 | 2 | Carousel | Co-planner sharing | "Planning a wedding together? One shared plan, synced via iCloud." |
-| Oct 26 | 3 | Reel | Offline planning | "Basement venue, no signal — your guest list still opens." |
-| Nov 2 | 1 | Reel | Co-planner sharing | "Two co-planners, one wedding to-do list, nothing done twice." |
-| Nov 2 | 2 | Carousel | Budget tracking | "Wedding budget across every vendor, tracked in one place." |
-| Nov 2 | 3 | Reel | Guest list / RSVPs | "Stop losing track of RSVPs in your DMs." |
-| Nov 2 | 4 | Carousel | Checklist / timeline | "Baby shower timeline: six weeks out to the big day." |
-| Nov 9 | 1 | Reel | Guest list + budget | "NYE party: who's bringing what, and what it costs." |
-| Nov 9 | 2 | Reel | Photos & docs | "Graduation party: invites, receipts and photos in one app." |
-| Nov 9 | 3 | Carousel | Checklist / timeline | "Class reunion checklist: find people, pick a date, track RSVPs." |
-| Nov 9 | 4 | Carousel | Budget tracking | "NYE party budget: drinks, food, decorations, slide by slide." |
+| Week of | # | Format | Feature / message | Hook (first 1–2 s) | Status |
+|---|---|---|---|---|---|
+| Oct 19 | 1 | Reel | Guest list / RSVPs | "Halloween party in 12 days. Who actually said yes?" | posted 2026-10-15 6ad00932e133538b2d7b |
+| Oct 19 | 2 | Carousel | Checklist / timeline | "Halloween party checklist: two weeks out to the doorbell." | built 2026-10-15 6ad00941d7b6ea002b02 |
+| Oct 26 | 1 | Reel | Budget tracking | "Halloween party budget: decorations, food, costumes — one total." | queued |
+| Oct 26 | 2 | Carousel | Co-planner sharing | "Planning a wedding together? One shared plan, synced via iCloud." | queued |
+| Oct 26 | 3 | Reel | Offline planning | "Basement venue, no signal — your guest list still opens." | queued |
+| Nov 2 | 1 | Reel | Co-planner sharing | "Two co-planners, one wedding to-do list, nothing done twice." | queued |
+| Nov 2 | 2 | Carousel | Budget tracking | "Wedding budget across every vendor, tracked in one place." | queued |
+| Nov 2 | 3 | Reel | Guest list / RSVPs | "Stop losing track of RSVPs in your DMs." | queued |
+| Nov 2 | 4 | Carousel | Checklist / timeline | "Baby shower timeline: six weeks out to the big day." | queued |
+| Nov 9 | 1 | Reel | Guest list + budget | "NYE party: who's bringing what, and what it costs." | queued |
+| Nov 9 | 2 | Reel | Photos & docs | "Graduation party: invites, receipts and photos in one app." | queued |
+| Nov 9 | 3 | Carousel | Checklist / timeline | "Class reunion checklist: find people, pick a date, track RSVPs." | queued |
+| Nov 9 | 4 | Carousel | Budget tracking | "NYE party budget: drinks, food, decorations, slide by slide." | queued |
 
 - Every post ends with "Download free on the App Store"; carousels may add
   "Save this checklist for later". All reels use `{"bed":"beat","clips":true}`.
-- The Monday cron may swap a row only per a §7 verdict, and must log it in §8.
+- The nightly job may swap a row only per a §7 verdict, and must log it in §8.
+- **Status** (spark#136): `queued` → `built <date> <postId>` (created, scheduled)
+  → `posted <date> <postId>`. The nightly job builds the first `queued` row whose
+  week starts within 7 days, one row per night, and writes its status here.
 
 ## 7. 7-day review procedure
 
@@ -182,6 +188,8 @@ Append-only. Newest at bottom. Never edit or delete rows.
 |---|---|---|---|---|
 | 2026-10-14 | BASELINE: 25 posts (21 with metrics), all images | median reach 2; best reach 4–5 (Mar–Apr wedding collab, graduation, RSVPs-in-DMs); worst reach 1 (generic seasonal openers); last published 2026-05-07; no reels/carousels yet | BASELINE | Concrete event + concrete problem hooks; no generic seasonal openers. No /go hop existed before this PR: source-attributed funnel data starts once the bio links are set. |
 | 2026-10-15 | §7 review: window Oct 2–8 | no event-stories posts published in the window (last publish 2026-05-07); funnel 7d: 0 landings, 1 App Store tap | NO-DATA | none — no posts to judge; week of Oct 19 rows executed as planned (reel + carousel, no swap) |
+
+- 2026-10-15 — plan format: §6 got a Status column and the content job runs nightly (one due row per night) instead of Monday-weekly (Robert; spark#136). Rows Oct 19 #1–#2 were built by the earlier weekly runs.
 
 ## 9. Open questions & watch items
 
