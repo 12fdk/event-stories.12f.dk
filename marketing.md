@@ -107,6 +107,13 @@ Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 
 |---|---|---|---|
 | Reel (30–60 s) | Reach to non-followers (+36% vs carousels) | The reach driver per the brand profile | Event reveals, before/after setups, planning hacks, with clips shot fresh for the post; product in second 0–1 |
 | Carousel (8–12 slides) | Earns saves (+109% engagement per person reached) | Checklists/timelines/budgets are the most saveable | Slide 1 = concrete event + concrete problem; last slide = CTA |
+
+**Carousels are photo-led (Robert, 2026-10-15):** most slides are
+photographic; at most 2–3 short text slides (hook + one CTA). The 2026-10-15
+carousels shipped "2 photos + 7 text" and read flat — rebuild as ≥6 rendered
+photos + 1–2 text slides. Every photo slide is a fresh `comfy-gen` render
+(photographic, no phone screens, no visible faces); the caption still carries
+the saveable content, the slides carry the look.
 | Stories | Polls, countdowns to events, vendor tips | Brand profile wants them daily | Pipeline is feed-only today — decision in §9 |
 | Static image | Announcements only | Historically our best reach was story/advice images (baseline below) | Not in the steady mix; its lesson goes to carousel slide 1 |
 
