@@ -1,6 +1,6 @@
 # Event Stories — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-15
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-16
 
 ## 1. What this is & how it's updated
 
@@ -212,7 +212,6 @@ patterns, not dates: never state a date or a statistic for them in a post.
 
 | Week of | # | Format | Feature / message | Hook (first 1–2 s) | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|
-| Oct 19 | 1 | Reel | Guest list / RSVPs | "Halloween party in 12 days. Who actually said yes?" | (built) | posted 2026-10-15 6ad00932e133538b2d7b |
 | Oct 19 | 2 | Carousel | Checklist / timeline | "Halloween party checklist: two weeks out to the doorbell." | — | — | published 2026-10-15 6ad00941d7b6ea002b02 (text-heavy, superseded) |
 | Oct 15 | 1 | Carousel | Co-planner sharing (wedding) | "120 guests. 14 vendors. 3 months." (photo-led rebuild) | 7 photos + 2 text | — | published 2026-10-15 6ad0c101c6029493303d, IG p/Deg7gp2Cdfd |
 | Oct 26 | 1 | Reel | Budget tracking | "Halloween party budget: decorations, food, costumes — one total." | kitchen counter at night, pumpkins and craft-store bags, amber candle light, handheld close-ups | queued |
