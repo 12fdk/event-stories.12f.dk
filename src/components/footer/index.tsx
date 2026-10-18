@@ -6,6 +6,15 @@ import TwitterLogo from "./svgs/twitter";
 import { withBase } from "../../utils/basePath";
 import { motion } from "framer-motion";
 
+// Sister apps from the same developer. Plain links with descriptive anchors,
+// rendered in the static HTML of every page, so readers and crawlers can find
+// the other 12f apps. #151 (12fdk/home-stories.12f.dk)
+const MORE_APPS = [
+  { title: "Home Stories – renovation planner & budget tracker", href: "https://home-stories.12f.dk/" },
+  { title: "Travel Stories – trip planner & travel journal", href: "https://travel-stories.12f.dk/" },
+  { title: "Bike Stories – bike maintenance log", href: "https://bike-stories.12f.dk/" },
+];
+
 function Footer() {
   const {
     name,
@@ -79,6 +88,19 @@ function Footer() {
           <nav className="flex flex-col gap-3">
             <p className="tick-label text-base-content/45">On this page</p>
             {links.map(({ title, href }) => (
+              <a
+                key={href}
+                className="w-fit text-base-content/75 transition-colors hover:text-primary"
+                href={href}
+              >
+                {title}
+              </a>
+            ))}
+          </nav>
+
+          <nav className="flex max-w-xs flex-col gap-3" aria-label="More apps from 12f">
+            <p className="tick-label text-base-content/45">More apps from 12f</p>
+            {MORE_APPS.map(({ title, href }) => (
               <a
                 key={href}
                 className="w-fit text-base-content/75 transition-colors hover:text-primary"
