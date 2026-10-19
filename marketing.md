@@ -1,6 +1,6 @@
 # Event Stories — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-16
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-19
 
 ## 1. What this is & how it's updated
 
@@ -214,7 +214,7 @@ patterns, not dates: never state a date or a statistic for them in a post.
 |---|---|---|---|---|---|---|
 | Oct 19 | 2 | Carousel | Checklist / timeline | "Halloween party checklist: two weeks out to the doorbell." | — | — | published 2026-10-15 6ad00941d7b6ea002b02 (text-heavy, superseded) |
 | Oct 15 | 1 | Carousel | Co-planner sharing (wedding) | "120 guests. 14 vendors. 3 months." (photo-led rebuild) | 7 photos + 2 text | — | published 2026-10-15 6ad0c101c6029493303d, IG p/Deg7gp2Cdfd |
-| Oct 26 | 1 | Reel | Budget tracking | "Halloween party budget: decorations, food, costumes — one total." | kitchen counter at night, pumpkins and craft-store bags, amber candle light, handheld close-ups | queued |
+| Oct 26 | 1 | Reel | Budget tracking | "Halloween party budget: decorations, food, costumes — one total." | kitchen counter at night, pumpkins and craft-store bags, amber candle light, handheld close-ups | built 2026-10-19 6ad57b66252b0cf6bddf |
 | Oct 26 | 2 | Carousel | Co-planner sharing | "Planning a wedding together? One shared plan, synced via iCloud." | Sunday-morning sofa, two coffee cups, linen and sage, soft window daylight | queued |
 | Oct 26 | 3 | Reel | Offline planning | "Basement venue, no signal — your guest list still opens." | brick basement venue mid-setup, string lights, cool tungsten, phone in back pocket | queued |
 | Oct 26 | 4 | Carousel | Guest list (dietary) | "Friendsgiving for 12: who's vegan, who's gluten-free, who's bringing pie?" | overhead harvest table, rust and cream, late-afternoon side light | queued |
@@ -360,9 +360,11 @@ Append-only. Newest at bottom. Never edit or delete rows.
 |---|---|---|---|---|
 | 2026-10-14 | BASELINE: 25 posts (21 with metrics), all images | median reach 2; best reach 4–5 (Mar–Apr wedding collab, graduation, RSVPs-in-DMs); worst reach 1 (generic seasonal openers); last published 2026-05-07; no reels/carousels yet | BASELINE | Concrete event + concrete problem hooks; no generic seasonal openers. No /go hop existed before this PR: source-attributed funnel data starts once the bio links are set. |
 | 2026-10-15 | §7 review: window Oct 2–8 | no event-stories posts published in the window (last publish 2026-05-07); funnel 7d: 0 landings, 1 App Store tap | NO-DATA | none — no posts to judge; week of Oct 19 rows executed as planned (reel + carousel, no swap) |
+| 2026-10-19 | §7 review: window Oct 6–12 | no event-stories posts published in the window (last publish 2026-10-15, 4 days ago); funnel 7d: 0 landings, 1 App Store tap | NO-DATA | none — no posts to judge; week of Oct 26 #1 built (reel, budget tracking, scheduled 2026-10-27T18:00Z) |
 
 - 2026-10-15 — plan format: §6 got a Status column and the content job runs nightly (one due row per night) instead of Monday-weekly (Robert; spark#136). Rows Oct 19 #1–#2 were built by the earlier weekly runs.
 - 2026-10-15 — plan expanded (Robert's request: a full post-by-post plan through the next months that piggybacks on external events such as Halloween): §6 now runs week of Oct 19, 2026 – week of Feb 22, 2027 (82 rows, 80 queued) with a Calendar hooks table and a Look column so each row starts from a distinct scene (every post looks new, spark#133); §5 got a claim sheet of verbatim site lines. Changed queued rows: Oct 26 #4 added (Friendsgiving, ramp 3–4); Nov 2 #3 hook now names an event ("30th birthday, 40 invites: stop losing track of RSVPs in your DMs." — every hook must be event + problem); Nov 2 #5 added (office party); Nov 9 #1 and #4 (NYE) moved unchanged to Dec 7 #1–#2 because NYE is 7 weeks out on Nov 9, replaced by Thanksgiving schedule and office-party budget; Nov 9 #2 graduation → wedding venue tour (graduation is a May–June moment); Nov 9 #5 added. §3 (Robert's say-so, both implied by his rules): hashtag rule fixed from the After Stories brand tag (a copy-paste error from that app) to `#EventStories` plus the app record's brandHashtags; the assets line now follows the fresh-shoot rule (spark#133) instead of "Real footage and stills only" from the fixed asset set. §4 unchanged.
+- 2026-10-19 — Week of Oct 26 #1 built: reel (31 s, budget tracking, hook on frame 0) in a new "bold night-kitchen cut" look — heavy white sans caps with a pumpkin-orange #FF6A13 chip on dark plum, no serif, no gold, no editorial-scrim reuse (differs from the 2026-10-15 editorial-gold Halloween reel and the bright garden/sage carousel); fresh shoot es-hb-s1…s7 (7 new stills, 3 LTX clips; s1 and s5 re-shot after first takes failed frame review — a hand entering + pumpkin morph, and garbled pseudo-text). Post 6ad57b66252b0cf6bddf, status ready, scheduled 2026-10-27T18:00Z (Tuesday, active day/hour; inside the row's week, ≥20 h from all other slots). Upload encode: 2-pass h264 1.7 Mbps + aac 128k → 7.0 MB (under the 8 MB upload limit, §9).
 
 ## 9. Open questions & watch items
 
