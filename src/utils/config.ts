@@ -278,6 +278,21 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "first-birthday-party-checklist",
+          title: "First Birthday Party Checklist That Works Around Nap Time",
+          description:
+            "A first birthday party checklist that works around nap time: who to invite, what to feed, and the wording for the awkward asks.",
+          date: "2026-10-21",
+          tags: [
+            "first birthday",
+            "kids birthday party",
+            "party checklist",
+            "toddler party",
+          ],
+          readingTime: 10,
+          author: "Robert Jensen",
+        },
+        {
           slug: "wedding-registry-how-many-gifts",
           title: "How Many Gifts on a Registry? Size, Prices & Cash",
           description:

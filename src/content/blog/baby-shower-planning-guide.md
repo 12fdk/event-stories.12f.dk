@@ -55,7 +55,7 @@ faq:
 relatedSlugs:
   - "how-much-food-per-person-for-a-party"
   - "dinner-party-timeline"
-  - "wedding-registry-how-many-gifts"
+  - "first-birthday-party-checklist"
 ---
 
 You've been asked to host a baby shower and suddenly you're staring at a blank screen wondering where to begin. Baby showers aren't taught in school. Between guest lists, registries, games, food, and the actual day-of logistics, it's easy to feel like you're juggling too much.

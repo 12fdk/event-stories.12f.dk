@@ -151,7 +151,7 @@ actually google.
 10. **Host a baby shower** — step-by-step for first-timers · *"how to host a baby shower checklist"* · (checklist + guest list + registry) *(used: 2026-08-05, baby-shower-planning-guide)*
 11. **Dinner party timeline** — cook everything and still sit down · *"dinner party timeline"* · (schedule / run of show) *(used: 2026-07-29, dinner-party-timeline)*
 12. **Assigned vs open seating** — how to decide + build the chart · *"do I need assigned seating at my wedding"* · (seating planner)
-13. **First birthday checklist** — that works around nap time · *"first birthday party planning checklist"* · (checklist + timeline)
+13. **First birthday checklist** — that works around nap time · *"first birthday party planning checklist"* · (checklist + timeline) *(used: 2026-10-21, first-birthday-party-checklist)*
 14. **Surprise party** — plan it without getting caught · *"how to plan a surprise 40th birthday party"* · (shared iCloud checklist + guest list)
 15. **Spreadsheet vs app** — why your Google Sheet keeps falling apart · *"wedding planning spreadsheet"* · (PDF export + iCloud sharing)
 

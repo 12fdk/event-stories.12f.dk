@@ -53,7 +53,7 @@ faq:
 relatedSlugs:
   - "dinner-party-timeline"
   - "baby-shower-planning-guide"
-  - "ultimate-event-budget-guide"
+  - "first-birthday-party-checklist"
 ---
 
 You have stood in the grocery aisle doing the math on your fingers. Twelve people, maybe sixteen if the cousins come. Is one chicken enough? The fear is the same either way. The food runs out, or you are eating meatballs until Thursday.
