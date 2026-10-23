@@ -1,6 +1,6 @@
 # Event Stories — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-22
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-23
 
 ## 1. What this is & how it's updated
 
@@ -214,7 +214,6 @@ patterns, not dates: never state a date or a statistic for them in a post.
 |---|---|---|---|---|---|---|
 | Oct 19 | 2 | Carousel | Checklist / timeline | "Halloween party checklist: two weeks out to the doorbell." | — | — | published 2026-10-15 6ad00941d7b6ea002b02 (text-heavy, superseded) |
 | Oct 15 | 1 | Carousel | Co-planner sharing (wedding) | "120 guests. 14 vendors. 3 months." (photo-led rebuild) | 7 photos + 2 text | — | published 2026-10-15 6ad0c101c6029493303d, IG p/Deg7gp2Cdfd |
-| Oct 26 | 4 | Carousel | Guest list (dietary) | "Friendsgiving for 12: who's vegan, who's gluten-free, who's bringing pie?" | overhead harvest table, rust and cream, late-afternoon side light | built 2026-10-22 6ad96c3c7da8c782ef90 |
 | Nov 2 | 1 | Reel | Co-planner sharing | "Two co-planners, one wedding to-do list, nothing done twice." | florist's workshop, eucalyptus and ribbon, cool morning light, slow pans | queued |
 | Nov 2 | 2 | Carousel | Budget tracking | "Wedding budget across every vendor, tracked in one place." | paper flat-lay: swatches, contract envelopes, calculator, ivory and gold | queued |
 | Nov 2 | 3 | Reel | Guest list / RSVPs | "30th birthday, 40 invites: stop losing track of RSVPs in your DMs." | rooftop bar at dusk, balloons in the wind, pink-orange sky | queued |
@@ -361,6 +360,7 @@ Append-only. Newest at bottom. Never edit or delete rows.
 | 2026-10-22 | 6ad00932e133538b2d7b "Halloween party in 12 days. Who actually said yes?" (reel, guest list / RSVP) | IG 0/0/0/0/0 · FB –/0/0/–/0 · Umami 7d 0 ig / 1 fb landing, 1 store tap (appstore-click) | NO-DATA | none — metrics stale since 2026-10-15T06:00Z (last-collected >24h; collect-metrics has not rewritten this doc since ~1h after publish); rerun in the 2026-10-26 review while the post is still in the 7–13 day window |
 | 2026-10-22 | 6ad00941d7b6ea002b02 "Halloween party checklist: two weeks out to the doorbell." (carousel, checklist / timeline) | IG 0/0/0/0/0 · FB –/–/–/–/– · Umami 7d 0 ig / 1 fb landing, 1 store tap (appstore-click) | NO-DATA | none — metrics stale since 2026-10-15T10:00Z (last-collected >24h; FB Graph returned nothing); rerun in the 2026-10-26 review |
 | 2026-10-22 | 6ad0c101c6029493303d "A wedding with 120 guests is 120 decisions a day." (carousel, co-planner sharing) | IG 0/0/0/0/0 · FB –/–/–/–/– · Umami 7d 0 ig / 1 fb landing, 1 store tap (appstore-click) | NO-DATA | none — metrics stale since 2026-10-15T14:00Z (last-collected >24h; FB Graph returned nothing); rerun in the 2026-10-26 review |
+| 2026-10-23 | b5c33868af49 "Halloween party in two weeks. Your invites are out." (reel, checklist / budget / timeline) | IG 0/0/0/0/0 · FB –/0/0/–/0 · Umami 7d 0 ig / 1 fb landing, 1 store tap (appstore-click) | NO-DATA | none — metrics stale (last-collected 2026-10-14T18:00Z, >24h; collect-metrics has not rewritten this doc since publish); rerun in the 2026-10-26 review while it is still in the 7–13 day window |
 
 - 2026-10-15 — plan format: §6 got a Status column and the content job runs nightly (one due row per night) instead of Monday-weekly (Robert; spark#136). Rows Oct 19 #1–#2 were built by the earlier weekly runs.
 - 2026-10-15 — plan expanded (Robert's request: a full post-by-post plan through the next months that piggybacks on external events such as Halloween): §6 now runs week of Oct 19, 2026 – week of Feb 22, 2027 (82 rows, 80 queued) with a Calendar hooks table and a Look column so each row starts from a distinct scene (every post looks new, spark#133); §5 got a claim sheet of verbatim site lines. Changed queued rows: Oct 26 #4 added (Friendsgiving, ramp 3–4); Nov 2 #3 hook now names an event ("30th birthday, 40 invites: stop losing track of RSVPs in your DMs." — every hook must be event + problem); Nov 2 #5 added (office party); Nov 9 #1 and #4 (NYE) moved unchanged to Dec 7 #1–#2 because NYE is 7 weeks out on Nov 9, replaced by Thanksgiving schedule and office-party budget; Nov 9 #2 graduation → wedding venue tour (graduation is a May–June moment); Nov 9 #5 added. §3 (Robert's say-so, both implied by his rules): hashtag rule fixed from the After Stories brand tag (a copy-paste error from that app) to `#EventStories` plus the app record's brandHashtags; the assets line now follows the fresh-shoot rule (spark#133) instead of "Real footage and stills only" from the fixed asset set. §4 unchanged.
