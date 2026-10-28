@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "surprise-30th-birthday-party",
+          title: "Surprise 30th Birthday Party: Plan It, Keep It Secret",
+          description:
+            "Plan a surprise 30th birthday party that stays secret: who to tell, the arrival timing, what to tell guests to bring, and the budget question answered.",
+          date: "2026-10-28",
+          tags: ["surprise party", "milestone birthday", "birthday party planning", "party budget"],
+          readingTime: 11,
+          author: "Robert Jensen",
+        },
+        {
           slug: "first-birthday-party-checklist",
           title: "First Birthday Party Checklist That Works Around Nap Time",
           description:

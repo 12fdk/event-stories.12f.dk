@@ -152,7 +152,7 @@ actually google.
 11. **Dinner party timeline** — cook everything and still sit down · *"dinner party timeline"* · (schedule / run of show) *(used: 2026-07-29, dinner-party-timeline)*
 12. **Assigned vs open seating** — how to decide + build the chart · *"do I need assigned seating at my wedding"* · (seating planner)
 13. **First birthday checklist** — that works around nap time · *"first birthday party planning checklist"* · (checklist + timeline) *(used: 2026-10-21, first-birthday-party-checklist)*
-14. **Surprise party** — plan it without getting caught · *"how to plan a surprise 40th birthday party"* · (shared iCloud checklist + guest list)
+14. **Surprise party** — plan it without getting caught · *"how to plan a surprise 40th birthday party"* · (shared iCloud checklist + guest list) *(used: 2026-10-28, surprise-30th-birthday-party)*
 15. **Spreadsheet vs app** — why your Google Sheet keeps falling apart · *"wedding planning spreadsheet"* · (PDF export + iCloud sharing)
 
 Non-wedding entries (for the rotation rule): 6, 9, 13, 14. When fewer than three

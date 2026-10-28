@@ -32,7 +32,7 @@ faq:
 relatedSlugs:
   - "baby-shower-planning-guide"
   - "how-much-food-per-person-for-a-party"
-  - "dinner-party-timeline"
+  - "surprise-30th-birthday-party"
 ---
 
 You meant to plan a small party. Now there are a dozen tabs open: a balloon shop, a cake site, and a friend who "kind of" wants to invite the whole class. Take a breath. A first birthday is a smaller, calmer job than it looks, and there is an order to doing it in. Here it is.
