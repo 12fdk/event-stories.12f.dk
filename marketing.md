@@ -1,6 +1,6 @@
 # Event Stories — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-30
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-31
 
 ## 1. What this is & how it's updated
 
@@ -214,7 +214,6 @@ patterns, not dates: never state a date or a statistic for them in a post.
 |---|---|---|---|---|---|---|
 | Oct 19 | 2 | Carousel | Checklist / timeline | "Halloween party checklist: two weeks out to the doorbell." | — | — | published 2026-10-15 6ad00941d7b6ea002b02 (text-heavy, superseded) |
 | Oct 15 | 1 | Carousel | Co-planner sharing (wedding) | "120 guests. 14 vendors. 3 months." (photo-led rebuild) | 7 photos + 2 text | — | published 2026-10-15 6ad0c101c6029493303d, IG p/Deg7gp2Cdfd |
-| Nov 2 | 5 | Reel | Vendors | "Office Christmas party in 6 weeks — the venue wants a deposit by Friday." | empty event hall being measured, tape measure, grey-blue daylight | built 2026-10-30 6ae40c639f650208f62a |
 | Nov 9 | 1 | Reel | Schedule / timeline | "Thanksgiving for 14, one oven: what goes in at 10, what at 2?" | early-morning kitchen, frost on the window, steam, cold-to-warm light | queued |
 | Nov 9 | 2 | Reel | Photos & docs | "Wedding venue tour number three: which one had the garden?" | empty barn venue, dust in golden light, wide shots | queued |
 | Nov 9 | 3 | Carousel | Checklist / timeline | "Class reunion checklist: find people, pick a date, track RSVPs." | school gym with bunting, old yearbooks, 90s film grain | queued |
