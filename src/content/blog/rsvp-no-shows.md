@@ -9,7 +9,7 @@ tags: ["RSVP tracking", "guest list", "event planning"]
 relatedSlugs:
   - "how-to-cut-wedding-guest-list"
   - "wedding-planning-checklist"
-  - "wedding-seating-chart"
+  - "save-the-date-vs-wedding-invitation"
   - "dinner-party-timeline"
   - "baby-shower-planning-guide"
 cover: "/blog/rsvp-no-shows-cover.webp"

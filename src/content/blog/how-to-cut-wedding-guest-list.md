@@ -51,7 +51,7 @@ faq:
 relatedSlugs:
   - "wedding-cost-per-guest"
   - "rsvp-no-shows"
-  - "wedding-seating-chart"
+  - "save-the-date-vs-wedding-invitation"
 ---
 
 You already know who you want in the room. The hard part is everyone else: the cousin from a funeral three years ago, your mom's book club, the coworker who will hear about it on Monday. Taking a name off feels like a verdict, so the list sits there until the caterer asks for a number.

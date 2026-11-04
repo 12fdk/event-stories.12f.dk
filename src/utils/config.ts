@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "save-the-date-vs-wedding-invitation",
+          title: "Save the Date vs Wedding Invitation: When to Send Each",
+          description:
+            "Save the date vs wedding invitation: when to send each, what goes on each one, and the timeline that keeps your RSVPs coming on time.",
+          date: "2026-11-04",
+          tags: ["save the dates", "wedding invitations", "wedding planning", "RSVP"],
+          readingTime: 11,
+          author: "Robert Jensen",
+        },
+        {
           slug: "surprise-30th-birthday-party",
           title: "Surprise 30th Birthday Party: Plan It, Keep It Secret",
           description:
