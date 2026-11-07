@@ -1,6 +1,6 @@
 # Event Stories — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-06
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-07
 
 ## 1. What this is & how it's updated
 
@@ -214,7 +214,6 @@ patterns, not dates: never state a date or a statistic for them in a post.
 |---|---|---|---|---|---|---|
 | Oct 19 | 2 | Carousel | Checklist / timeline | "Halloween party checklist: two weeks out to the doorbell." | — | — | published 2026-10-15 6ad00941d7b6ea002b02 (text-heavy, superseded) |
 | Oct 15 | 1 | Carousel | Co-planner sharing (wedding) | "120 guests. 14 vendors. 3 months." (photo-led rebuild) | 7 photos + 2 text | — | published 2026-10-15 6ad0c101c6029493303d, IG p/Deg7gp2Cdfd |
-| Nov 9 | 5 | Reel | Seating planner | "Thanksgiving: three tables, two uncles who can't sit together." | dining room from above, place cards, mustard and plum, warm tungsten | built 2026-11-06 6aed421de013d4c0ac16 |
 | Nov 16 | 1 | Reel | Tasks / checklist | "Friendsgiving potluck: three mashed potatoes, zero pies." | apartment hallway, friends arriving with dishes (no faces), cool evening blue | queued |
 | Nov 16 | 2 | Carousel | Checklist / timeline | "Hosting Thanksgiving for the first time? The 10-day countdown." | farmhouse table, deep burgundy, taper candles, low-key | queued |
 | Nov 16 | 3 | Reel | Vendors | "Christmas party: caterer, DJ, venue — three quotes in three email threads." | city bar at blue hour, neon reflections on glass | queued |
