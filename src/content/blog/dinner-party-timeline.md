@@ -56,6 +56,7 @@ relatedSlugs:
   - "rsvp-no-shows"
   - "baby-shower-planning-guide"
   - "wedding-reception-program"
+  - "backyard-party-rain-plan"
 ---
 
 ## The problem isn't the cooking. It's the ordering.

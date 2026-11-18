@@ -35,6 +35,7 @@ relatedSlugs:
   - "baby-shower-planning-guide"
   - "wedding-cost-per-guest"
   - "surprise-30th-birthday-party"
+  - "backyard-party-rain-plan"
 ---
 
 

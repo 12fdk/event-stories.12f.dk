@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "backyard-party-rain-plan",
+          title: "Backyard Party Rain Plan: What to Do Before It Pours",
+          description:
+            "A backyard party rain plan you can build in a day: the forecast rules, the canopy to rent, the indoor room, and the steps to switch without losing the party.",
+          date: "2026-11-18",
+          tags: ["backyard party", "rain plan", "outdoor party", "party checklist"],
+          readingTime: 9,
+          author: "Robert Jensen",
+        },
+        {
           slug: "save-the-date-vs-wedding-invitation",
           title: "Save the Date vs Wedding Invitation: When to Send Each",
           description:
