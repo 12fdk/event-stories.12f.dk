@@ -214,7 +214,6 @@ patterns, not dates: never state a date or a statistic for them in a post.
 |---|---|---|---|---|---|---|
 | Oct 19 | 2 | Carousel | Checklist / timeline | "Halloween party checklist: two weeks out to the doorbell." | — | — | published 2026-10-15 6ad00941d7b6ea002b02 (text-heavy, superseded) |
 | Oct 15 | 1 | Carousel | Co-planner sharing (wedding) | "120 guests. 14 vendors. 3 months." (photo-led rebuild) | 7 photos + 2 text | — | published 2026-10-15 6ad0c101c6029493303d, IG p/Deg7gp2Cdfd |
-| Nov 16 | 5 | Reel | Schedule → calendar export | "Christmas party Friday: setup at 4, doors at 7, speeches at 8 — in your calendar." | hotel function room mid-setup, round tables, crisp white light | posted 2026-11-13 6af67813ef4309c33b2a |
 | Nov 30 | 1 | Reel | Budget tracking | "Christmas party budget: last year the drinks ran out at 9." | home bar cart, ice and citrus, warm red light | queued |
 | Nov 30 | 2 | Carousel | Checklist / timeline | "Cookie-swap party for 10: from the invite to the clean-up." | flour-dusted counter, cookie tins, bright morning | queued |
 | Nov 30 | 3 | Reel | Co-planner sharing | "Two families, one Christmas dinner — one plan you can both edit." | two front doors with wreaths, snow, split-screen feel | queued |
