@@ -278,6 +278,16 @@ const templateConfig: TemplateConfig = {
         "Tips and guides for planning memorable events.",
 posts: [
         {
+          slug: "plan-a-birthday-dinner",
+          title: "Plan a Birthday Dinner: Who Pays, What to Budget",
+          description:
+            "Plan a birthday dinner that works: who pays, a $12–25 per person budget, portions by guest count, and a simple evening timeline you can copy.",
+          date: "2026-11-25",
+          tags: ["birthday dinner", "birthday party planning", "party budget", "dinner party"],
+          readingTime: 9,
+          author: "Robert Jensen",
+        },
+        {
           slug: "backyard-party-rain-plan",
           title: "Backyard Party Rain Plan: What to Do Before It Pours",
           description:

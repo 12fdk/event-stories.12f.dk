@@ -51,6 +51,7 @@ faq:
     answer: "No. Cook and shop for the people who said yes, including the hosts. A maybe is not a plate. If a few late yeses appear, a buffet can absorb them with the 10 percent you already added to the popular dishes, plus extra bread and salad. That is a kinder problem than eight extra steaks."
 
 relatedSlugs:
+  - "plan-a-birthday-dinner"
   - "dinner-party-timeline"
   - "baby-shower-planning-guide"
   - "first-birthday-party-checklist"
